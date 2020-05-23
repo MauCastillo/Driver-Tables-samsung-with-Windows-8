@@ -1,0 +1,140 @@
+# ISP tuning file for OV8830 Still
+#
+##############################################################
+#	how to read floating point comments
+#
+#	u : unsigned, s : signed
+#	u0.16 : unsigned int (16 bit) and its number of decimals is 16
+#			-> (2^16-1) means (2^16-1)/(2^16) = 0.999984....
+#	u8.8  : unsigned int (16 bit) and its number of decimals is 8
+#			-> (2^16-1) means (2^16-1)/(2^8) = 255.996093....
+#	s0.15 : signed int (16bit) and the 1-th MSB is sign bit and the number of decimals is 15
+#			-> (2^15 + x) means -(x/(2^15))
+#	uint8 : unsigned int (8 bit, 0 <= range <= 2^8-1)
+#	uint16 : unsigned int (16 bit, 0 <= range <= 2^16-1)
+#	boolean : value which can take value only 0 or 1
+#################################################################
+#
+################# Black Level Removal #################
+mblObMode	1,1,1,1,1 #1 fixed mode, 0 raster mode
+#Parameters for fixed mode
+# ISO           100  200  400  800  1600
+muiObBLGr	1024,1024,1088,1152,1152 
+muiObBLRr	1024,1024,1088,1152,1152 
+muiObBLBb	1024,1024,1088,1152,1152 
+muiObBLGb	1024,1024,1088,1152,1152 
+#Parameters for fixed mode (not supported)
+muiObSttp	0,0,0,0,0
+muiObEndp	0,0,0,0,0
+#
+################# Defect Pixel Parameters #################
+#DPC Threshold, allowed intensity difference of adjacent pixels
+#    1.0: Disable DPC 0.0: Almost every pixel will be treated as DP
+#    Default values in uint16Q16: 8192, 8192, 8192, 8192, 8192
+muiDpThres	16384,16384,16384,16384,16384 # use higher value since sensor has own DPC
+# The sensitivity to prevent false detection
+#     0: No effect 65535: Maximize prevention of false DP detection
+#    Default values in uint16: 4096, 4096, 3072, 2048, 2048
+muiDpGain	8192,8192,6144,4096,4096 # use higher value since sensor has own DPC 
+#
+################# Weights of Colors for Y #################
+# use defaults
+muiAecYcoefR	25559 # u0.16
+muiAecYcoefG	32768 # u0.16
+muiAecYcoefB	7209  # u0.16
+#
+################# AWB maximum level gate #################
+muiAwbLgR	65535 # u0.16
+muiAwbLgG	65535 # u0.16
+muiAwbLgB	65535 # u0.16
+#
+################# AF filter coefficients  #################
+#use default for Still
+#msiAfcFir1	-6689,-12207,-32768,32767,12207,6689,0
+msiAfcFir1 -1412,-3979,-6776,24334,-6776,-3979,-1412
+#msiAfcFir2	2053,0,-18437,32767,-18437,2053,0
+msiAfcFir2	-579,-3232,-7680,22982,-7680,-3232,-579
+#
+################# pixel noise used in moir?elimination  #################
+#
+muiDePixelNoise	0
+#
+################# CC matrix  #################
+#Common exponent of CC Matrix
+muiCcSft	2
+#Cc Matrix
+msiCcMtx	18055,-10503,639,-2691,14313,-3430,-663,-6043,14898
+#
+################# CS matrix  #################
+#Common exponent of CS Matrix
+muiCsSft	0
+#CS Matrix
+msiCsMtx	9798,19235,3736,-5529,-10855,16384,16384,-13720,-2664
+#
+################# Multi Axes Color Control  #################
+# no MACC
+#msiStMaccMtx	8192,0,0,8192,8192,0,0,8192,8192,0,0,8192,8192,0,0,8192,8192,0,0,8192,8192,0,0,8192,8192,0,0,8192,8192,0,0,8192,8192,0,0,8192,8192,0,0,8192,8192,0,0,8192,8192,0,0,8192,8192,0,0,8192,8192,0,0,8192,8192,0,0,8192,8192,0,0,8192
+# Grayscale (for test)
+#msiStMaccMtx	0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+# FFRD MACC tuning 11/07/2012
+msiStMaccMtx	2721,6339,-849,6696,6580,-1380,-1204,7405,6105,-904,1211,4990,2691,802,206,5493,11279,802,-3025,5493,14912,2619,-5166,4422,18487,6194,-2700,6888,11190,-8400,-1624,9040,11190,2320,-1624,8493,15514,-6330,-2309,9863,11094,-1909,-1722,9276,8614,-669,-2437,9634,5189,-669,-3169,9634,6973,223,3846,13141,2516,-4234,3549,12845,2721,-3824,-849,4048
+
+################# Gamma Correction and Chroma Enhance  #################
+# IGrorred in case of GBCE (?)
+# Chroma range
+muiUVLevelMin	0
+muiUVLevelMax	255
+#Chroma gain with gamma compensation (Boolean)
+muiCeAuto	1
+# gamma correction parameters (use defaults)
+muiGmVal	384
+muiGmToe	123
+muiGmKne	287
+muiGmDyr	256
+# Luminance range
+muiGmLevelMin	0
+muiGmLevelMax	255
+# Correction gains for red and blue (use recommended, better not to change)
+muiYuvGmGainK1	19000
+muiYuvGmGainK2	19000
+#
+################ Bayer and YUV Noise reduction###############
+# Bayer noise reduction (defaults)
+muiBNrGain	16384,20480,26624,32768,32768 # prev 14336,20480,26624,32768,32768	# u0.16
+# Y noise reduction (defaults)
+muiYNrGain	16384,20480,26624,32768,32768 # prev 14336,20480,26624,32768,32768	# u0.16
+# Edge Sencetivity  (defaults)
+muiNrDir	512,1536,2560,3584,4608 # prev 1280,1760,2240,3200,5120
+# Chroma noise  (defaults)
+muiNrThCb	64,80,96,112,128
+muiNrThCr	64,80,96,112,128
+#
+################ Sharpening (Edge Enhancement) ###############
+# The strength of sharpness (defaults)
+muiEeGain	10000,9000,8000,7168,6144 # prev 8192,7936,7680,7168,6144
+# Edge and noise separation threshold  (defaults)
+muiEeNois	256,320,448,512,576		# u8.8
+#Sharpening strength in flat area (defaults)
+muiEeDetl	2048,2048,2048,2048,2048
+#
+################ Temporal Noise reduction, used only for video (use defaults) ###############
+muiTrGain	24576,24576,24576,24576,24576	# u0.16
+muiTrThrY	1536,1536,1536,1536,1536	# u0.16
+muiTrThrUV	2048,2048,2048,2048,2048	# u0.16
+#
+################ Extra NR for chroma (SW), not anabled(?) use defaults ################
+muiXrThrs	4096,6144,8192,12288,16384
+#
+################ Not clear, propably Starting WB gains ################
+muiWbGainSf	1	# uint16
+muiWbGainTblGr	32768	# u[muiWbGainSf].[16-muiWbGainSf]
+muiWbGainTblRr	32768	# u[muiWbGainSf].[16-muiWbGainSf]
+muiWbGainTblBb	32768	# u[muiWbGainSf].[16-muiWbGainSf]
+muiWbGainTblGb	32768	# u[muiWbGainSf].[16-muiWbGainSf]
+#
+################ Constant WB offsets ################
+# used for CCT > 4200K. CCT< 3000K are 1024, 3000K < CCT < 4200 - interpolate
+muiWbGainWR	1024
+muiWbGainWG	1024
+muiWbGainWB	1024
+

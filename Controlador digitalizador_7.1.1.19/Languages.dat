@@ -1,0 +1,205 @@
+[EN]
+TutorialFN=Tutorial
+ReadMeFN=Read Me
+UsersManualFN=User's Manual
+WarrantyFN=Warranty
+LangFolder=English
+LicenseFile=.\\English\\License.rtf
+RegValueString;!SERVICEBASEPEN!;BaseLanguages;EN
+RegValueString;!SERVICEBASETOUCH!;BaseLanguages;EN
+RegValueString;HKEY_USERS\\.Default\\Software\\Wacom\\Parameters;BaseLanguages;EN
+DONE
+
+[ZH_CN]
+TutorialFN=Tutorial
+ReadMeFN=Read Me
+UsersManualFN=User's Manual-SC
+WarrantyFN=Warranty
+LangFolder=ChineseS
+LicenseFile=.\\ChineseS\\License.rtf
+RegValueString;!SERVICEBASEPEN!;BaseLanguages;ZH_CN
+RegValueString;!SERVICEBASETOUCH!;BaseLanguages;ZH_CN
+RegValueString;HKEY_USERS\\.Default\\Software\\Wacom\\Parameters;BaseLanguages;ZH_CN
+DONE
+
+[ZH_TW]
+TutorialFN=Tutorial
+ReadMeFN=Read Me
+UsersManualFN=User's Manual-TC
+WarrantyFN=Warranty
+LangFolder=ChineseT
+LicenseFile=.\\ChineseT\\License.rtf
+RegValueString;!SERVICEBASEPEN!;BaseLanguages;ZH_TW
+RegValueString;!SERVICEBASETOUCH!;BaseLanguages;ZH_TW
+RegValueString;HKEY_USERS\\.Default\\Software\\Wacom\\Parameters;BaseLanguages;ZH_TW
+DONE
+
+[FR]
+TutorialFN=Tutorial
+ReadMeFN=Lisez-moi
+UsersManualFN=Manuel Utilisateur
+WarrantyFN=Garantie
+LangFolder=French
+LicenseFile=.\\French\\Licence.rtf
+RegValueString;!SERVICEBASEPEN!;BaseLanguages;FR
+RegValueString;!SERVICEBASETOUCH!;BaseLanguages;FR
+RegValueString;HKEY_USERS\\.Default\\Software\\Wacom\\Parameters;BaseLanguages;FR
+DONE
+
+[DE]
+TutorialFN=Tutorial
+ReadMeFN=Lies Mich
+UsersManualFN=Benutzerhandbuch
+WarrantyFN=Garantie
+LangFolder=German
+LicenseFile=.\\German\\Lizenz.rtf
+RegValueString;!SERVICEBASEPEN!;BaseLanguages;DE
+RegValueString;!SERVICEBASETOUCH!;BaseLanguages;DE
+RegValueString;HKEY_USERS\\.Default\\Software\\Wacom\\Parameters;BaseLanguages;DE
+DONE
+
+[JA]
+TutorialFN=Tutorial
+ReadMeFN=Read Me
+UsersManualFN=User's Manual-JP
+WarrantyFN=Warranty
+LangFolder=Japanese
+LicenseFile=.\\Japanese\\License.rtf
+RegValueString;!SERVICEBASEPEN!;BaseLanguages;JA
+RegValueString;!SERVICEBASETOUCH!;BaseLanguages;JA
+RegValueString;HKEY_USERS\\.Default\\Software\\Wacom\\Parameters;BaseLanguages;JA
+DONE
+
+[KO]
+TutorialFN=Tutorial
+ReadMeFN=Read Me
+UsersManualFN=User's Manual-KR
+WarrantyFN=Warranty
+LangFolder=Korean
+LicenseFile=.\\Korean\\License.rtf
+RegValueString;!SERVICEBASEPEN!;BaseLanguages;KO
+RegValueString;!SERVICEBASETOUCH!;BaseLanguages;KO
+RegValueString;HKEY_USERS\\.Default\\Software\\Wacom\\Parameters;BaseLanguages;KO
+DONE
+
+[IT]
+TutorialFN=Tutorial
+ReadMeFN=Leggi
+UsersManualFN=Guida per l'utente
+WarrantyFN=Garanzia
+LangFolder=Italian
+LicenseFile=.\\Italian\\Licenza.rtf
+RegValueString;!SERVICEBASEPEN!;BaseLanguages;IT
+RegValueString;!SERVICEBASETOUCH!;BaseLanguages;IT
+RegValueString;HKEY_USERS\\.Default\\Software\\Wacom\\Parameters;BaseLanguages;IT
+DONE
+
+[ES]
+TutorialFN=Tutorial
+ReadMeFN=Leame
+UsersManualFN=Manual del Usuario
+WarrantyFN=Garantia
+LangFolder=Spanish
+LicenseFile=.\\Spanish\\Licencia.rtf
+RegValueString;!SERVICEBASEPEN!;BaseLanguages;ES
+RegValueString;!SERVICEBASETOUCH!;BaseLanguages;ES
+RegValueString;HKEY_USERS\\.Default\\Software\\Wacom\\Parameters;BaseLanguages;ES
+DONE
+
+[PT]
+TutorialFN=Tutorial
+ReadMeFN=Leiame
+UsersManualFN=Manual do Usuario
+WarrantyFN=Warranty
+LangFolder=Portuguese
+LicenseFile=.\\Portuguese\\Licenca.rtf
+RegValueString;!SERVICEBASEPEN!;BaseLanguages;PT
+RegValueString;!SERVICEBASETOUCH!;BaseLanguages;PT
+RegValueString;HKEY_USERS\\.Default\\Software\\Wacom\\Parameters;BaseLanguages;PT
+DONE
+
+[NL]
+TutorialFN=Tutorial
+ReadMeFN=Lees mij
+UsersManualFN=Handleiding
+WarrantyFN=Garantie
+LangFolder=Dutch
+LicenseFile=.\\Dutch\\Licentie.rtf
+RegValueString;!SERVICEBASEPEN!;BaseLanguages;NL
+RegValueString;!SERVICEBASETOUCH!;BaseLanguages;NL
+RegValueString;HKEY_USERS\\.Default\\Software\\Wacom\\Parameters;BaseLanguages;NL
+DONE
+
+[SV]
+TutorialFN=Tutorial
+ReadMeFN=Readme
+UsersManualFN=Handbok
+WarrantyFN=Garanti
+LangFolder=Swedish
+LicenseFile=.\\Swedish\\Licens.rtf
+RegValueString;!SERVICEBASEPEN!;BaseLanguages;SV
+RegValueString;!SERVICEBASETOUCH!;BaseLanguages;SV
+RegValueString;HKEY_USERS\\.Default\\Software\\Wacom\\Parameters;BaseLanguages;SV
+DONE
+
+[RU]
+TutorialFN=Tutorial
+ReadMeFN=Prasmatr Faijla
+UsersManualFN=Manualney
+WarrantyFN=Garantija
+LangFolder=Russian
+LicenseFile=.\\Russian\\Lizienzija.rtf
+RegValueString;!SERVICEBASEPEN!;BaseLanguages;RU
+RegValueString;!SERVICEBASETOUCH!;BaseLanguages;RU
+RegValueString;HKEY_USERS\\.Default\\Software\\Wacom\\Parameters;BaseLanguages;RU
+DONE
+
+[PL]
+TutorialFN=Tutorial
+ReadMeFN=Plik Readme
+UsersManualFN=Instrukcja obslugi
+WarrantyFN=Warranty
+LangFolder=Polish
+LicenseFile=.\\Polish\\Licencja.rtf
+RegValueString;!SERVICEBASEPEN!;BaseLanguages;PL
+RegValueString;!SERVICEBASETOUCH!;BaseLanguages;PL
+RegValueString;HKEY_USERS\\.Default\\Software\\Wacom\\Parameters;BaseLanguages;PL
+Exist;!Program Files!\\Tablet\\Pen\\Warranty.wri;5
+CopyFile;.\\English\\Warranty.wri;!Program Files!\\Tablet\\Pen\\Warranty.wri
+DONE
+
+[DA]
+TutorialFN=Vejledning
+ReadMeFN=Læs mig
+UsersManualFN=Brugervejledning
+WarrantyFN=
+LangFolder=Danish
+LicenseFile=.\\Danish\\licens.rtf
+RegValueString;!SERVICEBASEPEN!;BaseLanguages;DA
+RegValueString;!SERVICEBASETOUCH!;BaseLanguages;DA
+RegValueString;HKEY_USERS\\.Default\\Software\\Wacom\\Parameters;BaseLanguages;DA
+DONE
+
+[FI]
+TutorialFN=Opastus
+ReadMeFN=Lue minut
+UsersManualFN=Käyttäjän opas
+WarrantyFN=
+LangFolder=Finnish
+LicenseFile=.\\Finnish\\license.rtf
+RegValueString;!SERVICEBASEPEN!;BaseLanguages;FI
+RegValueString;!SERVICEBASETOUCH!;BaseLanguages;FI
+RegValueString;HKEY_USERS\\.Default\\Software\\Wacom\\Parameters;BaseLanguages;FI
+DONE
+
+[NO]
+TutorialFN=Veiledning
+ReadMeFN=Viktig-fil
+UsersManualFN=Brukerhåndbok
+WarrantyFN=
+LangFolder=Norwegian
+LicenseFile=.\\Norwegian\\license.rtf
+RegValueString;!SERVICEBASEPEN!;BaseLanguages;NO
+RegValueString;!SERVICEBASETOUCH!;BaseLanguages;NO
+RegValueString;HKEY_USERS\\.Default\\Software\\Wacom\\Parameters;BaseLanguages;NO
+DONE

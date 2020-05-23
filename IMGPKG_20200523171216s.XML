@@ -1,0 +1,3261 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<MaxList>
+  <Head>
+    <BOMID>SamsungUpdateSetupPackage</BOMID>
+    <Region>DNC</Region>
+    <OS>DNC</OS>
+    <Language>DNC</Language>
+  </Head>
+  <Item>
+    <CISCode>BASW-84261A16</CISCode>
+    <ItemType>SOFTWARE</ItemType>
+    <DisplayName>William-L + New Service_2(3) WW36 PR15 + Cam Reg</DisplayName>
+    <Region>DNC</Region>
+    <OS>WBPR32/WBSL32/WBST32/W8PR32/W8SL32/W8ST32</OS>
+    <Lang>DNC</Lang>
+    <ROLString>ALL</ROLString>
+    <InstallType>PSTEXE</InstallType>
+    <InstallPath>Controlador de conjunto de chips_86_32\</InstallPath>
+    <InstallFile>Inst.exe</InstallFile>
+    <InstallPara1 />
+    <InstallPara2>/pbr /REBOOT</InstallPara2>
+    <InstallOrgFileSize>10710582</InstallOrgFileSize>
+    <InstallFileSize>4290226</InstallFileSize>
+    <ImageCate>C2P1</ImageCate>
+    <ImageType>GCP</ImageType>
+    <ImageSequence>21010</ImageSequence>
+    <MediaType>SM1</MediaType>
+    <MediaSubCate>ITMRQR</MediaSubCate>
+    <MediaSequence>110</MediaSequence>
+    <CheckType>RegVer</CheckType>
+    <CheckRoot>HKEY_LOCAL_MACHINE\SOFTWARE\Intel\SOCPackageInfo</CheckRoot>
+    <VerifyAttribute>86</VerifyAttribute>
+    <VerifyPara1>VersionNumber</VerifyPara1>
+    <VerifyPara2 />
+    <System>NotePC</System>
+    <Selectable>Y</Selectable>
+    <AND />
+    <XOR />
+    <FURL>http://orcaservice.samsungmobile.com/FileDownloader.aspx?FILENAME=BASW-84261A16.ZIP</FURL>
+    <MultiLangDisplayName>
+      <Default>ENG</Default>
+      <Value>
+        <Lang>ARA</Lang>
+        <Str>برنامج تشغيل مجموعة الشرائح</Str>
+      </Value>
+      <Value>
+        <Lang>UKR</Lang>
+        <Str>Драйвер набору мікросхем</Str>
+      </Value>
+      <Value>
+        <Lang>TUR</Lang>
+        <Str>Yonga Kümesi Sürücüsü</Str>
+      </Value>
+      <Value>
+        <Lang>THA</Lang>
+        <Str>ไดรเวอร์ชิปเซ็ต</Str>
+      </Value>
+      <Value>
+        <Lang>SWE</Lang>
+        <Str>Chipset-drivrutin</Str>
+      </Value>
+      <Value>
+        <Lang>SPA</Lang>
+        <Str>Controlador de conjunto de chips</Str>
+      </Value>
+      <Value>
+        <Lang>SLV</Lang>
+        <Str>Gonilnik nabora vezij</Str>
+      </Value>
+      <Value>
+        <Lang>SLO</Lang>
+        <Str>Ovládač čipovej súpravy</Str>
+      </Value>
+      <Value>
+        <Lang>SCR</Lang>
+        <Str>Upravljački program za čipset</Str>
+      </Value>
+      <Value>
+        <Lang>SCC</Lang>
+        <Str>Upravljački program skupa čipova</Str>
+      </Value>
+      <Value>
+        <Lang>RUS</Lang>
+        <Str>Драйвер чипсета</Str>
+      </Value>
+      <Value>
+        <Lang>RUM</Lang>
+        <Str>Driver procesor</Str>
+      </Value>
+      <Value>
+        <Lang>POR</Lang>
+        <Str>Controlador do Conjunto de Chips</Str>
+      </Value>
+      <Value>
+        <Lang>POL</Lang>
+        <Str>Sterownik Chipset</Str>
+      </Value>
+      <Value>
+        <Lang>NOR</Lang>
+        <Str>Systembrikkesettdriver</Str>
+      </Value>
+      <Value>
+        <Lang>KOR</Lang>
+        <Str>칩셋 드라이버</Str>
+      </Value>
+      <Value>
+        <Lang>JPN</Lang>
+        <Str>チップセット ドライバー</Str>
+      </Value>
+      <Value>
+        <Lang>ITA</Lang>
+        <Str>Driver del chipset</Str>
+      </Value>
+      <Value>
+        <Lang>IND</Lang>
+        <Str>Driver Chipset</Str>
+      </Value>
+      <Value>
+        <Lang>HUN</Lang>
+        <Str>Lapkakészlet-illesztőprogram</Str>
+      </Value>
+      <Value>
+        <Lang>HEB</Lang>
+        <Str>מנהל התקן של קבוצת שבבים</Str>
+      </Value>
+      <Value>
+        <Lang>GRE</Lang>
+        <Str>Πρόγραμμα οδήγησης Chipset</Str>
+      </Value>
+      <Value>
+        <Lang>GER</Lang>
+        <Str>Chipsatz-Treiber</Str>
+      </Value>
+      <Value>
+        <Lang>FRE</Lang>
+        <Str>Pilote du jeu de puces</Str>
+      </Value>
+      <Value>
+        <Lang>FIN</Lang>
+        <Str>Piirilevyohjain</Str>
+      </Value>
+      <Value>
+        <Lang>DUT</Lang>
+        <Str>Chipset-stuurprogramma</Str>
+      </Value>
+      <Value>
+        <Lang>DAN</Lang>
+        <Str>Chipset-driver</Str>
+      </Value>
+      <Value>
+        <Lang>CZE</Lang>
+        <Str>Ovladač čipové sady</Str>
+      </Value>
+      <Value>
+        <Lang>CHT-TW</Lang>
+        <Str>晶片組驅動程式</Str>
+      </Value>
+      <Value>
+        <Lang>BUL</Lang>
+        <Str>Драйвер за чипсет</Str>
+      </Value>
+      <Value>
+        <Lang>BRA</Lang>
+        <Str>Driver de Chipset</Str>
+      </Value>
+      <Value>
+        <Lang>CHT-HK</Lang>
+        <Str>晶片組驅動程式</Str>
+      </Value>
+      <Value>
+        <Lang>CHS</Lang>
+        <Str>芯片组驱动程序</Str>
+      </Value>
+      <Value>
+        <Lang>ENG</Lang>
+        <Str>Chipset Driver</Str>
+      </Value>
+    </MultiLangDisplayName>
+    <Version>86</Version>
+    <DDesc>
+      <Default>ENG</Default>
+      <Value>
+        <Lang>ARA</Lang>
+        <Str>برنامج تشغيل مجموعة الشرائح عبارة عن برنامج يشغل مكونات اللوحة الأم لجهاز الكمبيوتر. يوصى بتثبيت برنامج تشغيل مجموعة الشرائح لضمان ثبات النظام وتحسين أدائه.</Str>
+      </Value>
+      <Value>
+        <Lang>UKR</Lang>
+        <Str>Драйвер набору мікросхем – це програма, яка керує роботою компонентів материнської плати комп’ютера. Рекомендується встановити програму драйвера набору мікросхем для забезпечення стабільності та покращення роботи системи.</Str>
+      </Value>
+      <Value>
+        <Lang>TUR</Lang>
+        <Str>Yonga kümesi sürücüsü, bilgisayarın anakart bileşimlerini çalıştıran bir programdır. Sistemin kararlılığını sağlamak ve performansını geliştirmek için bir yonga kümesi sürücüsü yüklenmesi önerilir.</Str>
+      </Value>
+      <Value>
+        <Lang>THA</Lang>
+        <Str>ไดรเวอร์ชิปเซ็ต คือโปรแกรมที่ทำให้ส่วนประกอบต่างๆ ของแผงวงจรหลักของคอมพิวเตอร์ทำงาน แนะนำให้ติดตั้งไดรเวอร์ชิปเซ็ตเพื่อให้เกิดความเสถียรและระบบมีประสิทธิภาพที่ดีขึ้น</Str>
+      </Value>
+      <Value>
+        <Lang>SWE</Lang>
+        <Str>Chipset-drivrutinen är ett program som styr komponenterna på datorns moderkort. Vi rekommenderar att du installerar Chipset-drivrutinen så att datorn blir mer stabil och får bättre prestanda.</Str>
+      </Value>
+      <Value>
+        <Lang>SPA</Lang>
+        <Str>El controlador de conjunto de chips es un programa que regula el funcionamiento de los componentes de la placa base del equipo. Se recomienda la instalación del controlador de conjunto de chips para garantizar la estabilidad y el rendimiento mejorado del sistema.</Str>
+      </Value>
+      <Value>
+        <Lang>SLV</Lang>
+        <Str>Gonilnik nabora vezij je program, ki omogoča delovanje komponent matične plošče računalnika. Če želite zagotoviti stabilnost in boljšo učinkovitost delovanja računalnika, vam priporočamo, da namestite gonilnik nabora vezij.</Str>
+      </Value>
+      <Value>
+        <Lang>SLO</Lang>
+        <Str>Ovládač čipovej súpravy je program, ktorý riadi súčasti na základnej doske počítača. Inštalácia ovládača čipovej súpravy sa odporúča na zabezpečenie stability a zlepšeného výkonu systému.</Str>
+      </Value>
+      <Value>
+        <Lang>SCR</Lang>
+        <Str>Upravljački program za čipset program je koji upravlja komponentama na matičnoj ploči računala. Preporučuje se instalacija upravljačkog programa za čipset kako bi se osigurala stabilnost i poboljšale performanse računala.</Str>
+      </Value>
+      <Value>
+        <Lang>SCC</Lang>
+        <Str>Upravljački program skupa čipova je program koji upravlja komponentama matične ploče računara. Instalacija upravljačkog programa skupa čipova se preporučuje radi obezbeđivanja stabilnosti i poboljšanih performansi sistema.</Str>
+      </Value>
+      <Value>
+        <Lang>RUS</Lang>
+        <Str>Драйвер чипсета – это программа, отвечающая за функционирование компонентов материнской платы компьютера. Рекомендуется установить драйвер чипсета для обеспечения стабильности и улучшения рабочих характеристик системы.</Str>
+      </Value>
+      <Value>
+        <Lang>RUM</Lang>
+        <Str>Driverul de procesor este un program care comandă componentele plăcii de bază a computerului. Instalarea unui driver de procesor este recomandată pentru a asigura stabilitatea și performanța îmbunătățită a sistemului.</Str>
+      </Value>
+      <Value>
+        <Lang>POR</Lang>
+        <Str>O controlador do conjunto de chips é um programa que controla os componentes da placa principal do computador. Recomenda-se a instalação do controlador do conjunto de chips para garantir a estabilidade e o melhoramento do desempenho do sistema.</Str>
+      </Value>
+      <Value>
+        <Lang>POL</Lang>
+        <Str>Sterownik Chipset to program, który steruje elementami płyty głównej komputera. Zainstalowanie sterownika Chipset jest wskazane, ponieważ poprawia on stabilność i wydajność systemu.</Str>
+      </Value>
+      <Value>
+        <Lang>NOR</Lang>
+        <Str>Systembrikkesettdriver er et program som driver datamaskinens hovedkortkomponenter. Installasjon av en systembrikkesettdriver anbefales for å sikre stabilitet og forbedret ytelse på systemet.</Str>
+      </Value>
+      <Value>
+        <Lang>KOR</Lang>
+        <Str>PC 내 메인보드에 장착된 부품들을 구동시켜주는 프로그램입니다. 메인보드의 칩셋 드라이버는 안정성 및 성능향상을 위해 반드시 설치해 주는 것이 좋습니다.</Str>
+      </Value>
+      <Value>
+        <Lang>JPN</Lang>
+        <Str>チップセット ドライバーは、コンピューターのマザーボード コンポーネントを駆動するプログラムです。システムの安定性とパフォーマンス向上を確保するため、チップセット ドライバーをインストールすることをお勧めします。</Str>
+      </Value>
+      <Value>
+        <Lang>ITA</Lang>
+        <Str>I driver del chipset gestiscono i componenti della scheda madre del computer. Si consiglia di installare i driver del chipset per garantire la stabilità e le prestazioni ottimali del sistema.</Str>
+      </Value>
+      <Value>
+        <Lang>IND</Lang>
+        <Str>Driver chipset adalah program yang menggerakkan komponen motherboard komputer. Penginstalan driver chipset disarankan guna memastikan stabilitas dan peningkatan kinerja sistem.</Str>
+      </Value>
+      <Value>
+        <Lang>HUN</Lang>
+        <Str>A Lapkakészlet-illesztőprogram a számítógép alaplapi elemeit vezérlő program. Ilyen illesztőprogram telepítése javasolt a rendszer stabilitása és megnövelt teljesítménye érdekében.</Str>
+      </Value>
+      <Value>
+        <Lang>HEB</Lang>
+        <Str>מנהל התקן של קבוצת שבבים הוא תוכנה המפעילה את רכיבי לוח האם במחשב. מומלץ להתקין מנהל התקן של קבוצת שבבים כדי להבטיח את יציבות המערכת ואת שיפור ביצועיה.</Str>
+      </Value>
+      <Value>
+        <Lang>GRE</Lang>
+        <Str>Το πρόγραμμα οδήγησης chipset είναι ένα πρόγραμμα οδήγησης των στοιχείων της μητρικής πλακέτας του υπολογιστή. Συνιστάται η εγκατάσταση του προγράμματος οδήγησης chipset για σταθερότητα και βελτιωμένη απόδοση του συστήματος.</Str>
+      </Value>
+      <Value>
+        <Lang>GER</Lang>
+        <Str>Der Chipsatz-Treiber steuert die Komponenten der Hauptplatine im Computer. Installieren Sie einen Chipsatz-Treiber, um die Stabilität und eine optimale Leistung des Systems sicherzustellen.</Str>
+      </Value>
+      <Value>
+        <Lang>FRE</Lang>
+        <Str>Le Pilote du jeu de puces est un programme qui pilote les composants de la carte mère de l'ordinateur. L'installation d'un pilote Pilote du jeu de puces est recommandée pour assurer la stabilité du système et améliorer ses performances.</Str>
+      </Value>
+      <Value>
+        <Lang>FIN</Lang>
+        <Str>Piirilevyohjain on ohjelma, joka ohjaa tietokoneen emolevyllä olevien komponenttien toimintaa. Piirilevyohjaimen asentaminen on suositeltavaa järjestelmän vakauden ja parannetun suorituskyvyn varmistamiseksi.</Str>
+      </Value>
+      <Value>
+        <Lang>DUT</Lang>
+        <Str>Het chipset-stuurprogramma is een programma dat de moederbordcomponenten van de computer aanstuurt. Installatie van een chipset-stuurprogramma wordt aanbevolen om de stabiliteit en prestaties van het systeem te verbeteren.</Str>
+      </Value>
+      <Value>
+        <Lang>DAN</Lang>
+        <Str>Chipset-driver er et program, der styrer computerens bundkortkomponenter. Det anbefales, at en chipset-driver installeres for at sikre systemets stabilitet og en bedre ydeevne.</Str>
+      </Value>
+      <Value>
+        <Lang>CZE</Lang>
+        <Str>Ovladač čipové sady je program obstarávající činnost komponent základní desky počítače. Instalaci ovladače čipové sady doporučujeme k zajištění stability systému a zvýšení jeho výkonu.</Str>
+      </Value>
+      <Value>
+        <Lang>CHT-TW</Lang>
+        <Str>晶片組驅動程式是驅動電腦主機板組件的程式。建議您安裝晶片組驅動程式以確保系統的穩定性並提升其效能。</Str>
+      </Value>
+      <Value>
+        <Lang>BUL</Lang>
+        <Str>Драйверът за чипсет е програма, която управлява компонентите на дънната платка на компютъра. Инсталирането на драйвер за чипсет се препоръчва, за да се осигури стабилност и подобрена производителност на системата.</Str>
+      </Value>
+      <Value>
+        <Lang>BRA</Lang>
+        <Str>O driver de chipset é um programa que orienta os componentes da placa-mãe do computador. A instalação de um driver de chipset é recomendada para garantir a estabilidade e o desempenho aprimorado do sistema.</Str>
+      </Value>
+      <Value>
+        <Lang>CHT-HK</Lang>
+        <Str>晶片組驅動程式是驅動電腦主機板組件的程式。建議您安裝晶片組驅動程式以確保系統的穩定性並提升其效能。</Str>
+      </Value>
+      <Value>
+        <Lang>CHS</Lang>
+        <Str>芯片组驱动程序是一款可驱动计算机主板组件的程序。建议安装芯片组驱动程序，以确保系统稳定性和性能改进。</Str>
+      </Value>
+      <Value>
+        <Lang>ENG</Lang>
+        <Str>Chipset driver is a program that drives the computer’s motherboard components. Installation of a chipset driver is recommended to ensure stability and improved performance of the system.</Str>
+      </Value>
+    </DDesc>
+    <SWCate2>Driver</SWCate2>
+    <Keyword1>Device&amp;Driver</Keyword1>
+    <Keyword2>Chipset</Keyword2>
+    <Keyword3>Chipset</Keyword3>
+    <Feature></Feature>
+    <AdURL>
+      <URL>0</URL>
+      <FromDate>0</FromDate>
+      <ToDate>0</ToDate>
+    </AdURL>
+    <Thumbnail>BASW-84261A99_thumb.png</Thumbnail>
+    <Screenshot1 />
+    <Screenshot2 />
+    <Screenshot3 />
+  </Item>
+  <Item>
+    <CISCode>BASW-84381A06</CISCode>
+    <ItemType>SOFTWARE</ItemType>
+    <DisplayName>Win8.1 Intel CloverTrail Sound Driver 32bits V6.2.9200.34712L_Rtk3082L</DisplayName>
+    <Region>DNC</Region>
+    <OS>WBPR32/WBSL32/WBST32</OS>
+    <Lang>DNC</Lang>
+    <ROLString>ALL</ROLString>
+    <InstallType>PSTEXE</InstallType>
+    <InstallPath>Controlador de sonido_6.2.9200.34712_32\</InstallPath>
+    <InstallFile>Setup.exe</InstallFile>
+    <InstallPara1 />
+    <InstallPara2>/pbr</InstallPara2>
+    <InstallOrgFileSize>15726176</InstallOrgFileSize>
+    <InstallFileSize>9156626</InstallFileSize>
+    <ImageCate>C2P1</ImageCate>
+    <ImageType>GCP</ImageType>
+    <ImageSequence>21060</ImageSequence>
+    <MediaType>SM1</MediaType>
+    <MediaSubCate>ITMRQR</MediaSubCate>
+    <MediaSequence>120</MediaSequence>
+    <CheckType>DrvVer</CheckType>
+    <CheckRoot>%WinDir%system32\drivers</CheckRoot>
+    <VerifyAttribute>6.2.9200.34712</VerifyAttribute>
+    <VerifyPara1 />
+    <VerifyPara2 />
+    <System>NotePC</System>
+    <Selectable>Y</Selectable>
+    <AND />
+    <XOR />
+    <FURL>http://orcaservice.samsungmobile.com/FileDownloader.aspx?FILENAME=BASW-84381A06.ZIP</FURL>
+    <MultiLangDisplayName>
+      <Default>ENG</Default>
+      <Value>
+        <Lang>POR</Lang>
+        <Str>Controlador de Som</Str>
+      </Value>
+      <Value>
+        <Lang>POL</Lang>
+        <Str>Sterownik dźwięku</Str>
+      </Value>
+      <Value>
+        <Lang>NOR</Lang>
+        <Str>Lyddriver</Str>
+      </Value>
+      <Value>
+        <Lang>KOR</Lang>
+        <Str>사운드 드라이버</Str>
+      </Value>
+      <Value>
+        <Lang>JPN</Lang>
+        <Str>サウンド ドライバー</Str>
+      </Value>
+      <Value>
+        <Lang>ITA</Lang>
+        <Str>Driver audio</Str>
+      </Value>
+      <Value>
+        <Lang>IND</Lang>
+        <Str>Driver Suara</Str>
+      </Value>
+      <Value>
+        <Lang>HUN</Lang>
+        <Str>Hangkártya-illesztőprogram</Str>
+      </Value>
+      <Value>
+        <Lang>HEB</Lang>
+        <Str>מנהל התקן קול</Str>
+      </Value>
+      <Value>
+        <Lang>GRE</Lang>
+        <Str>Πρόγραμμα οδήγησης ήχου</Str>
+      </Value>
+      <Value>
+        <Lang>GER</Lang>
+        <Str>Soundtreiber</Str>
+      </Value>
+      <Value>
+        <Lang>FRE</Lang>
+        <Str>Pilote de carte son</Str>
+      </Value>
+      <Value>
+        <Lang>FIN</Lang>
+        <Str>Ääniohjain</Str>
+      </Value>
+      <Value>
+        <Lang>DUT</Lang>
+        <Str>Geluidsstuurprogramma</Str>
+      </Value>
+      <Value>
+        <Lang>DAN</Lang>
+        <Str>Lyddriver</Str>
+      </Value>
+      <Value>
+        <Lang>CZE</Lang>
+        <Str>Ovladač zvukové karty</Str>
+      </Value>
+      <Value>
+        <Lang>CHT-TW</Lang>
+        <Str>音效驅動程式</Str>
+      </Value>
+      <Value>
+        <Lang>CHT-HK</Lang>
+        <Str>音效驅動程式</Str>
+      </Value>
+      <Value>
+        <Lang>CHS</Lang>
+        <Str>声音驱动程序</Str>
+      </Value>
+      <Value>
+        <Lang>BUL</Lang>
+        <Str>Драйвер за звук</Str>
+      </Value>
+      <Value>
+        <Lang>BRA</Lang>
+        <Str>Driver de Som</Str>
+      </Value>
+      <Value>
+        <Lang>ARA</Lang>
+        <Str>برنامج تشغيل الصوت</Str>
+      </Value>
+      <Value>
+        <Lang>UKR</Lang>
+        <Str>Драйвер звукової карти</Str>
+      </Value>
+      <Value>
+        <Lang>TUR</Lang>
+        <Str>Ses Kartı Sürücüsü</Str>
+      </Value>
+      <Value>
+        <Lang>THA</Lang>
+        <Str>ไดรเวอร์เสียง</Str>
+      </Value>
+      <Value>
+        <Lang>SWE</Lang>
+        <Str>Ljuddrivrutin</Str>
+      </Value>
+      <Value>
+        <Lang>SPA</Lang>
+        <Str>Controlador de sonido</Str>
+      </Value>
+      <Value>
+        <Lang>SLV</Lang>
+        <Str>Gonilnik za zvok</Str>
+      </Value>
+      <Value>
+        <Lang>SLO</Lang>
+        <Str>Ovládač zvuku</Str>
+      </Value>
+      <Value>
+        <Lang>SCR</Lang>
+        <Str>Upravljački program za zvuk</Str>
+      </Value>
+      <Value>
+        <Lang>SCC</Lang>
+        <Str>Upravljački program zvučne kartice</Str>
+      </Value>
+      <Value>
+        <Lang>RUS</Lang>
+        <Str>Звуковой драйвер</Str>
+      </Value>
+      <Value>
+        <Lang>RUM</Lang>
+        <Str>Driver de sunet</Str>
+      </Value>
+      <Value>
+        <Lang>ENG</Lang>
+        <Str>Sound Driver</Str>
+      </Value>
+    </MultiLangDisplayName>
+    <Version>6.2.9200.34712</Version>
+    <DDesc>
+      <Default>ENG</Default>
+      <Value>
+        <Lang>POR</Lang>
+        <Str>O controlador da placa de som é um programa que controla o hardware de som do sistema. O áudio poderá ficar indisponível se não tiver um controlador de placa de som instalado ou se tiver um controlador incompatível instalado.</Str>
+      </Value>
+      <Value>
+        <Lang>POL</Lang>
+        <Str>Sterownik karty dźwiękowej to program, który steruje kartą dźwiękową komputera. Jeśli sterownik karty dźwiękowej nie jest zainstalowany lub jest niekompatybilny, dźwięk może nie być generowany.</Str>
+      </Value>
+      <Value>
+        <Lang>NOR</Lang>
+        <Str>Lydkortdriver er et program som driver systemets lydmaskinvare. Lyd er kanskje ikke tilgjengelig hvis en lydkortdriver ikke er installert eller en inkompatibel driver er installert.</Str>
+      </Value>
+      <Value>
+        <Lang>KOR</Lang>
+        <Str>PC에 장착된 사운드장치를 구동시켜주는 프로그램입니다. 설치하지 않거나 내 사운드장치에 맞지 않는 드라이버를 설치할 경우 소리가 나지 않을 수 있습니다.</Str>
+      </Value>
+      <Value>
+        <Lang>JPN</Lang>
+        <Str>サウンド カード ドライバーは、システムのサウンド ハードウェアを駆動するプログラムです。サウンド カード ドライバーがインストールされていないか、互換性のないドライバーがインストールされていると、オーディオを利用できないことがあります。</Str>
+      </Value>
+      <Value>
+        <Lang>ITA</Lang>
+        <Str>I driver della scheda audio gestiscono l'hardware audio del sistema. Se non viene installato un driver della scheda audio o se viene installato un driver non compatibile, l'audio potrebbe non essere disponibile.</Str>
+      </Value>
+      <Value>
+        <Lang>IND</Lang>
+        <Str>Driver kartu suara adalah program yang menggerakkan perangkat keras audio sistem. Audio tidak akan tersedia bila driver kartu suara tidak terinstal atau terinstal driver yang tidak kompatibel.</Str>
+      </Value>
+      <Value>
+        <Lang>HUN</Lang>
+        <Str>A hangkártya-illesztőprogram a számítógép audiohardverét vezérlő program. Előfordulhat, hogy a számítógép nem ad ki sem hangot, sem hangvezérlési jelet, ha nincs telepítve hangkártya-illesztőprogram, vagy ha a telepített változat nem kompatibilis.</Str>
+      </Value>
+      <Value>
+        <Lang>HEB</Lang>
+        <Str>מנהל התקן כרטיס קול הוא תוכנית המפעילה את חומרת הקול במערכת. אם לא הותקן מנהל התקן כרטיס קול או אם הותקן מנהל התקנים שאינו תואם, יתכן והשמע לא יהיה זמין.</Str>
+      </Value>
+      <Value>
+        <Lang>GRE</Lang>
+        <Str>Το πρόγραμμα οδήγησης κάρτας ήχου είναι ένα πρόγραμμα οδήγησης του υλικού ήχου του συστήματος. Ενδέχεται να μην είναι διαθέσιμη η λειτουργία ήχων εάν δεν έχει εγκατασταθεί πρόγραμμα οδήγησης κάρτας ήχου ή έχει εγκατασταθεί μη συμβατό πρόγραμμα οδήγησης.</Str>
+      </Value>
+      <Value>
+        <Lang>GER</Lang>
+        <Str>Der Soundkartentreiber steuert die Soundhardware des Systems. Audio ist möglicherweise nicht verfügbar, wenn kein Soundkartentreiber oder ein inkompatibler Treiber installiert ist.</Str>
+      </Value>
+      <Value>
+        <Lang>FRE</Lang>
+        <Str>Le Pilote de carte son est un programme qui pilote le matériel audio du système. Si aucun Pilote de carte son n'est installé ou si le pilote installé n'est pas compatible, le son ne sera pas disponible.</Str>
+      </Value>
+      <Value>
+        <Lang>FIN</Lang>
+        <Str>Äänikorttiohjain on ohjelma, joka ohjaa järjestelmän äänilaitteiden toimintaa. Ääntä ei ehkä kuulu, jos äänikorttiohjainta ei ole asennettu tai järjestelmään on asennettu yhteensopimaton ohjain.</Str>
+      </Value>
+      <Value>
+        <Lang>DUT</Lang>
+        <Str>Het geluidskaartstuurprogramma is een programma dat de audiohardware van het systeem aanstuurt. Geluid is mogelijk niet beschikbaar als er geen geluidskaartstuurprogramma of een incompatibel stuurprogramma is geїnstalleerd.</Str>
+      </Value>
+      <Value>
+        <Lang>DAN</Lang>
+        <Str>Lydkort-driveren er et program, der styrer systemets lydhardware. Der vil muligvis ikke være nogen lyd, hvis der ikke er installeret en lydkort-driver, eller hvis der er installeret en driver, der ikke er kompatibel.</Str>
+      </Value>
+      <Value>
+        <Lang>CZE</Lang>
+        <Str>Ovladač zvukové karty je program řídící zvukovou kartu počítače. Pokud není ovladač zvukové karty nainstalován nebo je nainstalována nekompatibilní verze, nemusí se zvuk přehrávat správně.</Str>
+      </Value>
+      <Value>
+        <Lang>CHT-TW</Lang>
+        <Str>音效卡驅動程式是驅動系統音效硬件的程式。如果未安裝音效卡驅動程式或安裝了不相容的驅動程式，音訊可能會無法使用。</Str>
+      </Value>
+      <Value>
+        <Lang>CHT-HK</Lang>
+        <Str>音效卡驅動程式是驅動系統音效硬件的程式。如果未安裝音效卡驅動程式或安裝了不相容的驅動程式，音訊可能會無法使用。</Str>
+      </Value>
+      <Value>
+        <Lang>CHS</Lang>
+        <Str>声卡驱动程序是一款可驱动系统声音硬件的程序。如果未安装声卡驱动程序或安装的驱动程序不兼容，可能无法使用音频。</Str>
+      </Value>
+      <Value>
+        <Lang>BUL</Lang>
+        <Str>Драйверът за звукова карта е програма, която управлява хардуера на звука на системата. Може да няма звук, ако няма инсталиран драйвер за звуковата карта или е инсталиран несъвместим драйвер.</Str>
+      </Value>
+      <Value>
+        <Lang>BRA</Lang>
+        <Str>O driver de placa de som é um programa que orienta o hardware de som do sistema. O áudio não estará disponível se um driver de placa de som não estiver instalado ou se houver um driver incompatível.</Str>
+      </Value>
+      <Value>
+        <Lang>ARA</Lang>
+        <Str>برنامج تشغيل بطاقة الصوت عبارة عن برنامج يشغل جهاز الصوت الخاص بالنظام. قد لا يتوفر الصوت في حالة عدم تثبيت برنامج تشغيل بطاقة الصوت أو تثبيت برنامج تشغيل غير متوافق.</Str>
+      </Value>
+      <Value>
+        <Lang>UKR</Lang>
+        <Str>Драйвер звукової карти – це програма, яка керує роботою звукового обладнання системи. Якщо драйвер звукової карти не встановлений, або встановлений несумісний драйвер, звук може не відтворюватися.</Str>
+      </Value>
+      <Value>
+        <Lang>TUR</Lang>
+        <Str>Ses kartı sürücüsü, sistemin ses donanımını çalıştıran bir programdır. Ses kartı sürücüsü yüklü değilse veya uyumsuz bir sürücü yüklenmişse ses özelliği kullanılamayabilir.</Str>
+      </Value>
+      <Value>
+        <Lang>THA</Lang>
+        <Str>ไดรเวอร์การ์ดเสียง คือโปรแกรมที่ทำให้ฮาร์ดแวร์เสียงของระบบทำงาน หากไม่ได้ติดตั้งไดรเวอร์การ์ดเสียง หรือติดตั้งไดรเวอร์ที่ไม่สามารถทำงานร่วมกันได้ เสียงอาจไม่ทำงาน</Str>
+      </Value>
+      <Value>
+        <Lang>SWE</Lang>
+        <Str>Ljudkortsdrivrutinen är ett program som styr datorns ljudmaskinvara. Ljudet kanske inte är tillgängligt om du inte installerar en ljudkortsdrivrutin eller om du installerar en inkompatibel drivrutin.</Str>
+      </Value>
+      <Value>
+        <Lang>SPA</Lang>
+        <Str>El controlador de la tarjeta de sonido es un programa que regula el funcionamiento del hardware de audio del sistema. Puede que el sonido no sea el adecuado si el controlador de la tarjeta de sonido no está instalado o está instalada una versión incompatible.</Str>
+      </Value>
+      <Value>
+        <Lang>SLV</Lang>
+        <Str>Gonilnik zvočne kartice je program, ki omogoča delovanje zvočne strojne opreme v računalniku. Če gonilnik zvočne kartice ni nameščen ali če je nameščen nezdružljivi gonilnik, zvok morda ne bo na voljo.</Str>
+      </Value>
+      <Value>
+        <Lang>SLO</Lang>
+        <Str>Ovládač zvukovej karty je program, ktorý riadi zvukový hardvér systému. Ak ovládač zvukovej karty nebude nainštalovaný alebo ak bude nainštalovaný nekompatibilný ovládač, zvuk nemusí byť k dispozícii.</Str>
+      </Value>
+      <Value>
+        <Lang>SCR</Lang>
+        <Str>Upravljački program za zvučnu karticu program je koji upravlja hardverom za zvuk u računalu. Ako upravljački program za zvučnu karticu nije instaliran ili je instaliran nekompatibilan upravljački program, zvuk se možda neće čuti.</Str>
+      </Value>
+      <Value>
+        <Lang>SCC</Lang>
+        <Str>Upravljački program zvučne kartice je program koji upravlja hardverom za zvuk sistema. Zvuk možda neće biti dostupan ako upravljački program zvučne kartice nije instaliran ili je instaliran nekompatibilni upravljački program.</Str>
+      </Value>
+      <Value>
+        <Lang>RUS</Lang>
+        <Str>Драйвер звуковой платы – это программа, отвечающая за функционирование системного аудиоустройства. Если драйвер звуковой платы не установлен или установлен несовместимый драйвер, звук может отсутствовать.</Str>
+      </Value>
+      <Value>
+        <Lang>RUM</Lang>
+        <Str>Driverul pentru placa de sunet este un program care comandă componenta hardware audio a sistemului. Este posibil să nu fie disponibilă componenta audio dacă nu este instalat un driver pentru placa de sunet sau dacă este instalat un driver incompatibil.</Str>
+      </Value>
+      <Value>
+        <Lang>ENG</Lang>
+        <Str>Sound card driver is a program that drives the system’s sound hardware. Audio may not be available if a sound card driver is not installed or an incompatible driver is installed.</Str>
+      </Value>
+    </DDesc>
+    <SWCate2>Driver</SWCate2>
+    <Keyword1>Device&amp;Driver</Keyword1>
+    <Keyword2>Sound</Keyword2>
+    <Keyword3>Sound</Keyword3>
+    <Feature></Feature>
+    <AdURL>
+      <URL>0</URL>
+      <FromDate>0</FromDate>
+      <ToDate>0</ToDate>
+    </AdURL>
+    <Thumbnail>BASW-84381A99_thumb.png</Thumbnail>
+    <Screenshot1 />
+    <Screenshot2 />
+    <Screenshot3 />
+  </Item>
+  <Item>
+    <CISCode>BASW-84271A07</CISCode>
+    <ItemType>SOFTWARE</ItemType>
+    <DisplayName>William10.1_Wacom_Digitizer_Driver 7.1.1.19 WHQL(Win8.1)</DisplayName>
+    <Region>DNC</Region>
+    <OS>DONCR</OS>
+    <Lang>DNC</Lang>
+    <ROLString>ALL</ROLString>
+    <InstallType>PSTEXE</InstallType>
+    <InstallPath>Controlador digitalizador_7.1.1.19\</InstallPath>
+    <InstallFile>Setup.exe</InstallFile>
+    <InstallPara1>/s</InstallPara1>
+    <InstallPara2>/pbr</InstallPara2>
+    <InstallOrgFileSize>52446800</InstallOrgFileSize>
+    <InstallFileSize>18299430</InstallFileSize>
+    <ImageCate>C2P1</ImageCate>
+    <ImageType>GCP</ImageType>
+    <ImageSequence>21030</ImageSequence>
+    <MediaType>SM1</MediaType>
+    <MediaSubCate>ITMRQR</MediaSubCate>
+    <MediaSequence>130</MediaSequence>
+    <CheckType>FileVer</CheckType>
+    <CheckRoot>%ProgramFiles%\Tablet\ISD\ISD_Tablet.exe</CheckRoot>
+    <VerifyAttribute>7.1.1.19</VerifyAttribute>
+    <VerifyPara1 />
+    <VerifyPara2 />
+    <System />
+    <Selectable>N</Selectable>
+    <AND />
+    <XOR />
+    <FURL>http://orcaservice.samsungmobile.com/FileDownloader.aspx?FILENAME=BASW-84271A07.ZIP</FURL>
+    <MultiLangDisplayName>
+      <Default>ENG</Default>
+      <Value>
+        <Lang>SPA</Lang>
+        <Str>Controlador digitalizador</Str>
+      </Value>
+      <Value>
+        <Lang>ARA</Lang>
+        <Str>برنامج تشغيل جهاز الالتقاط الرقمي</Str>
+      </Value>
+      <Value>
+        <Lang>UKR</Lang>
+        <Str>Драйвер цифрового планшета</Str>
+      </Value>
+      <Value>
+        <Lang>TUR</Lang>
+        <Str>Dijitalleştirici Sürücüsü</Str>
+      </Value>
+      <Value>
+        <Lang>THA</Lang>
+        <Str>ไดรเวอร์ของดิจิไตเซอร์</Str>
+      </Value>
+      <Value>
+        <Lang>SWE</Lang>
+        <Str>Drivruting för digitaliserare</Str>
+      </Value>
+      <Value>
+        <Lang>SLO</Lang>
+        <Str>Ovládač aplikácie Digitizer</Str>
+      </Value>
+      <Value>
+        <Lang>SCR</Lang>
+        <Str>Upravljački program digitalizatora</Str>
+      </Value>
+      <Value>
+        <Lang>SCC</Lang>
+        <Str>Upravljački program za digitajzer</Str>
+      </Value>
+      <Value>
+        <Lang>RUS</Lang>
+        <Str>Драйвер Digitizer</Str>
+      </Value>
+      <Value>
+        <Lang>RUM</Lang>
+        <Str>Driver digitizor</Str>
+      </Value>
+      <Value>
+        <Lang>POR</Lang>
+        <Str>Controlador do digitalizador</Str>
+      </Value>
+      <Value>
+        <Lang>POL</Lang>
+        <Str>Sterownik tabletu</Str>
+      </Value>
+      <Value>
+        <Lang>NOR</Lang>
+        <Str>Digitizer-driver</Str>
+      </Value>
+      <Value>
+        <Lang>KOR</Lang>
+        <Str>디지타이저 드라이버</Str>
+      </Value>
+      <Value>
+        <Lang>ITA</Lang>
+        <Str>Driver Digitizer</Str>
+      </Value>
+      <Value>
+        <Lang>IND</Lang>
+        <Str>Driver Digitizer</Str>
+      </Value>
+      <Value>
+        <Lang>HUN</Lang>
+        <Str>Digitalizáló-illesztőprogram</Str>
+      </Value>
+      <Value>
+        <Lang>GRE</Lang>
+        <Str>Πρόγραμμα οδήγησης ψηφιοποίησης</Str>
+      </Value>
+      <Value>
+        <Lang>GER</Lang>
+        <Str>Digitalisierer-Treiber</Str>
+      </Value>
+      <Value>
+        <Lang>FIN</Lang>
+        <Str>Digitoijan ajuri</Str>
+      </Value>
+      <Value>
+        <Lang>DUT</Lang>
+        <Str>Stuurprogramma digitalisator</Str>
+      </Value>
+      <Value>
+        <Lang>DAN</Lang>
+        <Str>Driver til digitizer</Str>
+      </Value>
+      <Value>
+        <Lang>CZE</Lang>
+        <Str>Ovladač digitizéru</Str>
+      </Value>
+      <Value>
+        <Lang>CHT-TW</Lang>
+        <Str>數位板驅動程式</Str>
+      </Value>
+      <Value>
+        <Lang>CHT-HK</Lang>
+        <Str>數位板驅動程式</Str>
+      </Value>
+      <Value>
+        <Lang>CHS</Lang>
+        <Str>数字化器驱动程序</Str>
+      </Value>
+      <Value>
+        <Lang>BUL</Lang>
+        <Str>Драйвер за цифров преобразувател</Str>
+      </Value>
+      <Value>
+        <Lang>BRA</Lang>
+        <Str>Driver de digitalizador</Str>
+      </Value>
+      <Value>
+        <Lang>FRE</Lang>
+        <Str>Pilote de numériseur</Str>
+      </Value>
+      <Value>
+        <Lang>ENG</Lang>
+        <Str>Digitizer Driver</Str>
+      </Value>
+    </MultiLangDisplayName>
+    <Version>7.1.1.19</Version>
+    <DDesc>
+      <Default>ENG</Default>
+      <Value>
+        <Lang>SPA</Lang>
+        <Str>Instala el controlador y las utilidades del digitalizador.</Str>
+      </Value>
+      <Value>
+        <Lang>ARA</Lang>
+        <Str>تثبيت برنامج تشغيل جهاز الالتقاط الرقمي والأدوات المساعدة.</Str>
+      </Value>
+      <Value>
+        <Lang>UKR</Lang>
+        <Str>Встановлення драйвера і додаткових програм цифрового планшета.</Str>
+      </Value>
+      <Value>
+        <Lang>TUR</Lang>
+        <Str>Dijitalleştirici sürücüsünü ve yardımcı programını yükler.</Str>
+      </Value>
+      <Value>
+        <Lang>THA</Lang>
+        <Str>ติดตั้งไดรเวอร์ของดิจิไตเซอร์และยูทิลิตี</Str>
+      </Value>
+      <Value>
+        <Lang>SWE</Lang>
+        <Str>Installerar drivrutin och verktyg för digitaliserare.</Str>
+      </Value>
+      <Value>
+        <Lang>SLO</Lang>
+        <Str>Nainštaluje ovládač a pomocnú aplikáciu k programu Digitizer.</Str>
+      </Value>
+      <Value>
+        <Lang>SCR</Lang>
+        <Str>Instalira upravljački program digitalizatora i uslužni program.</Str>
+      </Value>
+      <Value>
+        <Lang>SCC</Lang>
+        <Str>Instaliranje upravljačkog programa za digitajzer i uslužnog programa.</Str>
+      </Value>
+      <Value>
+        <Lang>RUS</Lang>
+        <Str>Установка драйвера Digitizer и служебной программы.</Str>
+      </Value>
+      <Value>
+        <Lang>RUM</Lang>
+        <Str>Instalează driverul digitizorului şi utilitarul.</Str>
+      </Value>
+      <Value>
+        <Lang>POR</Lang>
+        <Str>Instala o controlador e utilitário do digitalizador.</Str>
+      </Value>
+      <Value>
+        <Lang>POL</Lang>
+        <Str>Instaluje sterownik i narzędzia tabletu.</Str>
+      </Value>
+      <Value>
+        <Lang>NOR</Lang>
+        <Str>Installerer digitizerdriveren og -verktøyet.</Str>
+      </Value>
+      <Value>
+        <Lang>KOR</Lang>
+        <Str>디지타이저 드라이버를 설치합니다.</Str>
+      </Value>
+      <Value>
+        <Lang>ITA</Lang>
+        <Str>Installa il driver Digitizer e le utility.</Str>
+      </Value>
+      <Value>
+        <Lang>IND</Lang>
+        <Str>Menginstal driver dan utilitas digitizer.</Str>
+      </Value>
+      <Value>
+        <Lang>HUN</Lang>
+        <Str>A digitalizáló-illesztőprogram és -segédprogram telepítése.</Str>
+      </Value>
+      <Value>
+        <Lang>GRE</Lang>
+        <Str>Εγκαθιστά το πρόγραμμα οδήγησης και το βοηθητικό πρόγραμμα ψηφιοποίησης.</Str>
+      </Value>
+      <Value>
+        <Lang>GER</Lang>
+        <Str>Installieren des Digitalisierer-Treibers.</Str>
+      </Value>
+      <Value>
+        <Lang>FIN</Lang>
+        <Str>Asentaa digitoijan ajurin ja apuohjelman.</Str>
+      </Value>
+      <Value>
+        <Lang>DUT</Lang>
+        <Str>Hiermee worden het stuurprogramma en hulpprogramma voor de digitalisator geïnstalleerd.</Str>
+      </Value>
+      <Value>
+        <Lang>DAN</Lang>
+        <Str>Installerer driver og værktøj til din digitizer.</Str>
+      </Value>
+      <Value>
+        <Lang>CZE</Lang>
+        <Str>Slouží k instalaci ovladače digitizéru a nástroje.</Str>
+      </Value>
+      <Value>
+        <Lang>CHT-TW</Lang>
+        <Str>安裝數位板驅動程式和應用程式。</Str>
+      </Value>
+      <Value>
+        <Lang>CHT-HK</Lang>
+        <Str>安裝數位板驅動程式和應用程式。</Str>
+      </Value>
+      <Value>
+        <Lang>CHS</Lang>
+        <Str>安装数字化器驱动程序和实用程序。</Str>
+      </Value>
+      <Value>
+        <Lang>BUL</Lang>
+        <Str>Инсталира на драйвера за цифровия преобразувател и помощните програми.</Str>
+      </Value>
+      <Value>
+        <Lang>BRA</Lang>
+        <Str>Instala o digitalizador e o utilitário.</Str>
+      </Value>
+      <Value>
+        <Lang>FRE</Lang>
+        <Str>Installe le pilote et l'utilitaire du numériseur.</Str>
+      </Value>
+      <Value>
+        <Lang>ENG</Lang>
+        <Str>Installs the digitizer driver and utility.</Str>
+      </Value>
+    </DDesc>
+    <SWCate2>Driver</SWCate2>
+    <Keyword1>Device&amp;Driver</Keyword1>
+    <Keyword2>Digitizer</Keyword2>
+    <Keyword3>Wacom</Keyword3>
+    <Feature></Feature>
+    <AdURL>
+      <URL>0</URL>
+      <FromDate>0</FromDate>
+      <ToDate>0</ToDate>
+    </AdURL>
+    <Thumbnail />
+    <Screenshot1 />
+    <Screenshot2 />
+    <Screenshot3 />
+  </Item>
+  <Item>
+    <CISCode>BASW-83359A75</CISCode>
+    <ItemType>SOFTWARE</ItemType>
+    <DisplayName>CloverTrail Graphics Driver 32bit 9.14.3.1177 (PR15.5-PV-10.1)</DisplayName>
+    <Region>DNC</Region>
+    <OS>WBPR32/WBSL32/WBST32/W8PR32/W8SL32/W8ST32</OS>
+    <Lang>DNC</Lang>
+    <ROLString>ALL</ROLString>
+    <InstallType>PSTEXE</InstallType>
+    <InstallPath>Controlador de gráficos_9.14.3.1177_32\</InstallPath>
+    <InstallFile>Setup.exe</InstallFile>
+    <InstallPara1>-s -nosc</InstallPara1>
+    <InstallPara2>/pbr</InstallPara2>
+    <InstallOrgFileSize>65705037</InstallOrgFileSize>
+    <InstallFileSize>22110621</InstallFileSize>
+    <ImageCate>C2P1</ImageCate>
+    <ImageType>GCP</ImageType>
+    <ImageSequence>21040</ImageSequence>
+    <MediaType>SM1</MediaType>
+    <MediaSubCate>ITMRQR</MediaSubCate>
+    <MediaSequence>140</MediaSequence>
+    <CheckType>DrvVer</CheckType>
+    <CheckRoot />
+    <VerifyAttribute>9.14.3.1177</VerifyAttribute>
+    <VerifyPara1 />
+    <VerifyPara2 />
+    <System>NotePC</System>
+    <Selectable>Y</Selectable>
+    <AND />
+    <XOR />
+    <FURL>http://orcaservice.samsungmobile.com/FileDownloader.aspx?FILENAME=BASW-83359A75.ZIP</FURL>
+    <MultiLangDisplayName>
+      <Default>ENG</Default>
+      <Value>
+        <Lang>ARA</Lang>
+        <Str>برنامج تشغيل الرسومات</Str>
+      </Value>
+      <Value>
+        <Lang>UKR</Lang>
+        <Str>Графічний драйвер</Str>
+      </Value>
+      <Value>
+        <Lang>TUR</Lang>
+        <Str>Ekran Kartı Sürücüsü</Str>
+      </Value>
+      <Value>
+        <Lang>THA</Lang>
+        <Str>ไดรเวอร์กราฟิก</Str>
+      </Value>
+      <Value>
+        <Lang>SWE</Lang>
+        <Str>Grafikdrivrutin</Str>
+      </Value>
+      <Value>
+        <Lang>SPA</Lang>
+        <Str>Controlador de gráficos</Str>
+      </Value>
+      <Value>
+        <Lang>SLV</Lang>
+        <Str>Grafični gonilnik</Str>
+      </Value>
+      <Value>
+        <Lang>SLO</Lang>
+        <Str>Ovládač obrazovky</Str>
+      </Value>
+      <Value>
+        <Lang>SCR</Lang>
+        <Str>Upravljački program za grafiku</Str>
+      </Value>
+      <Value>
+        <Lang>SCC</Lang>
+        <Str>Upravljački program grafičke kartice</Str>
+      </Value>
+      <Value>
+        <Lang>RUS</Lang>
+        <Str>Графический драйвер</Str>
+      </Value>
+      <Value>
+        <Lang>RUM</Lang>
+        <Str>Driver placă grafică</Str>
+      </Value>
+      <Value>
+        <Lang>POR</Lang>
+        <Str>Controlador de Gráficos</Str>
+      </Value>
+      <Value>
+        <Lang>POL</Lang>
+        <Str>Sterownik grafiki</Str>
+      </Value>
+      <Value>
+        <Lang>BRA</Lang>
+        <Str>Driver de Gráficos</Str>
+      </Value>
+      <Value>
+        <Lang>NOR</Lang>
+        <Str>Grafikkdriver</Str>
+      </Value>
+      <Value>
+        <Lang>KOR</Lang>
+        <Str>그래픽 드라이버</Str>
+      </Value>
+      <Value>
+        <Lang>JPN</Lang>
+        <Str>グラフィックス ドライバー</Str>
+      </Value>
+      <Value>
+        <Lang>ITA</Lang>
+        <Str>Driver della scheda video</Str>
+      </Value>
+      <Value>
+        <Lang>IND</Lang>
+        <Str>Driver Grafik</Str>
+      </Value>
+      <Value>
+        <Lang>HUN</Lang>
+        <Str>Videokártya-illesztőprogram</Str>
+      </Value>
+      <Value>
+        <Lang>HEB</Lang>
+        <Str>מנהל התקן גרפיקה</Str>
+      </Value>
+      <Value>
+        <Lang>GRE</Lang>
+        <Str>Πρόγραμμα οδήγησης γραφικών</Str>
+      </Value>
+      <Value>
+        <Lang>GER</Lang>
+        <Str>Grafiktreiber</Str>
+      </Value>
+      <Value>
+        <Lang>FRE</Lang>
+        <Str>Pilote de carte graphique</Str>
+      </Value>
+      <Value>
+        <Lang>FIN</Lang>
+        <Str>Grafiikkaohjain</Str>
+      </Value>
+      <Value>
+        <Lang>DUT</Lang>
+        <Str>Grafisch stuurprogramma</Str>
+      </Value>
+      <Value>
+        <Lang>DAN</Lang>
+        <Str>Grafik-driver</Str>
+      </Value>
+      <Value>
+        <Lang>CZE</Lang>
+        <Str>Ovladač grafické karty</Str>
+      </Value>
+      <Value>
+        <Lang>CHT-TW</Lang>
+        <Str>繪圖驅動程式</Str>
+      </Value>
+      <Value>
+        <Lang>CHT-HK</Lang>
+        <Str>繪圖驅動程式</Str>
+      </Value>
+      <Value>
+        <Lang>CHS</Lang>
+        <Str>图形驱动程序</Str>
+      </Value>
+      <Value>
+        <Lang>BUL</Lang>
+        <Str>Графичен драйвер</Str>
+      </Value>
+      <Value>
+        <Lang>ENG</Lang>
+        <Str>Graphics Driver</Str>
+      </Value>
+    </MultiLangDisplayName>
+    <Version>9.14.3.1177</Version>
+    <DDesc>
+      <Default>ENG</Default>
+      <Value>
+        <Lang>ARA</Lang>
+        <Str>برنامج تشغيل الرسومات عبارة عن برنامج يشغل جهاز الفيديو الخاص بالنظام. لن يتم عرض الشاشة بالشكل الصحيح في حالة عدم تثبيت برنامج تشغيل الرسومات أو تثبيت برنامج تشغيل غير متوافق.</Str>
+      </Value>
+      <Value>
+        <Lang>UKR</Lang>
+        <Str>Графічний драйвер – це програма, яка керує роботою відеообладнання системи. Якщо графічний драйвер не встановлений, або встановлений несумісний драйвер, інформація на екрані не відображатиметься належним чином.</Str>
+      </Value>
+      <Value>
+        <Lang>TUR</Lang>
+        <Str>Ekran kartı sürücüsü, sistemin video donanımını çalıştıran bir programdır. Ekran kartı sürücüsü yüklü değilse veya uyumsuz bir sürücü yüklüyse ekran doğru görüntülenmez.</Str>
+      </Value>
+      <Value>
+        <Lang>THA</Lang>
+        <Str>ไดรเวอร์กราฟิก คือโปรแกรมที่ทำให้ฮาร์ดแวร์วิดีโอของระบบทำงาน หากไม่ได้ติดตั้งไดรเวอร์กราฟิก หรือติดตั้งไดรเวอร์ที่ไม่สามารถทำงานร่วมกันได้ หน้าจอจะไม่สามารถแสดงผลได้อย่างถูกต้อง</Str>
+      </Value>
+      <Value>
+        <Lang>SWE</Lang>
+        <Str>Grafikdrivrutinen är ett program som styr datorns grafikmaskinvara. Visningen på skärmen blir felaktig om du inte installerar en grafikdrivrutin eller om du installerar en inkompatibel drivrutin.</Str>
+      </Value>
+      <Value>
+        <Lang>SPA</Lang>
+        <Str>El controlador de gráficos es un programa que regula el funcionamiento del hardware de vídeo del sistema. La visualización en pantalla no será adecuada si el controlador de gráficos no está instalado o está instalada una versión incompatible.</Str>
+      </Value>
+      <Value>
+        <Lang>SLV</Lang>
+        <Str>Grafični gonilnik je program, ki omogoča delovanje grafične strojne opreme v računalniku. Če grafični gonilnik ni nameščen ali če je nameščen nezdružljivi gonilnik, zaslon ne bo pravilno deloval.</Str>
+      </Value>
+      <Value>
+        <Lang>SLO</Lang>
+        <Str>Ovládač obrazovky je program, ktorý riadi grafický hardvér systému. Ak ovládač obrazovky nebude nainštalovaný alebo ak bude nainštalovaný nekompatibilný ovládač, obraz na obrazovke sa nebude zobrazovať správne.</Str>
+      </Value>
+      <Value>
+        <Lang>SCR</Lang>
+        <Str>Upravljački program za grafiku program je koji upravlja hardverom za video u računalu. Ako upravljački program za grafiku nije instaliran ili je instaliran nekompatibilan upravljački program, prikaz na zaslonu neće biti ispravan.</Str>
+      </Value>
+      <Value>
+        <Lang>SCC</Lang>
+        <Str>Upravljački program grafičke kartice je program koji upravlja video hardverom sistema. Ekran se neće ispravno prikazivati ako upravljački program grafičke kartice nije instaliran ili je instaliran nekompatibilni upravljački program.</Str>
+      </Value>
+      <Value>
+        <Lang>RUS</Lang>
+        <Str>Графический драйвер – это программа, отвечающая за функционирование системного видеоустройства. Если графический драйвер не установлен или установлен несовместимый драйвер, на экране не будет нормального изображения.</Str>
+      </Value>
+      <Value>
+        <Lang>RUM</Lang>
+        <Str>Driverul pentru placa grafică este un program care comandă componenta hardware video a sistemului. Ecranul nu va afișa corect dacă nu este instalat un driver pentru placă grafică sau dacă este instalat un driver incompatibil.</Str>
+      </Value>
+      <Value>
+        <Lang>POR</Lang>
+        <Str>O controlador de gráficos é um programa que controla o hardware de vídeo do sistema. A apresentação no ecrã não será correcta se não tiver um controlador de gráficos instalado ou se tiver um controlador incompatível instalado.</Str>
+      </Value>
+      <Value>
+        <Lang>POL</Lang>
+        <Str>Sterownik grafiki to program, który steruje kartą graficzną komputera. Jeśli sterownik grafiki nie jest zainstalowany lub jest niekompatybilny, ekran nie będzie wyświetlany poprawnie.</Str>
+      </Value>
+      <Value>
+        <Lang>BRA</Lang>
+        <Str>O driver de gráficos é um programa que orienta o hardware de vídeo do sistema. A tela não será exibida corretamente se um driver de gráficos não estiver instalado ou se houver um driver incompatível.</Str>
+      </Value>
+      <Value>
+        <Lang>NOR</Lang>
+        <Str>Grafikkdriver er et program som driver systemets videomaskinvare. Skjermen vises ikke riktig hvis en grafikkdriver ikke er installert eller en inkompatibel driver er installert.</Str>
+      </Value>
+      <Value>
+        <Lang>KOR</Lang>
+        <Str>PC에 장착된 그래픽장치를 구동시켜주는 프로그램입니다. 설치하지 않거나 내 그래픽장치에 맞지 않는 그래픽 드라이버를 설치할 경우 화면이 정상적으로 표시되지 않습니다.</Str>
+      </Value>
+      <Value>
+        <Lang>JPN</Lang>
+        <Str>グラフィックス ドライバーは、システムのビデオ ハードウェアを駆動するプログラムです。グラフィックス ドライバーがインストールされていないか、互換性のないドライバーがインストールされていると、画面は正しく表示されません。</Str>
+      </Value>
+      <Value>
+        <Lang>ITA</Lang>
+        <Str>I driver della scheda video gestiscono l'hardware video del sistema. Se non è installato alcun driver della scheda video o se è installato un driver non compatibile, la visualizzazione dello schermo non sarà corretta.</Str>
+      </Value>
+      <Value>
+        <Lang>IND</Lang>
+        <Str>Driver grafik adalah program yang menggerakkan perangkat keras video sistem. Layar tidak akan ditampilkan dengan benar bila driver grafik tidak terinstal atau terinstal driver yang tidak kompatibel.</Str>
+      </Value>
+      <Value>
+        <Lang>HUN</Lang>
+        <Str>A videokártya-illesztőprogram a számítógép videohardverét vezérlő program. A képernyőn hibásan jelennek meg a képek, ha nincs telepítve videokártya-illesztőprogram, vagy ha a telepített változat nem kompatibilis.</Str>
+      </Value>
+      <Value>
+        <Lang>HEB</Lang>
+        <Str>מנהל התקן גרפיקה הוא תוכנית המפעילה את חומרת הווידאו במערכת. אם לא הותקן מנהל התקן גרפיקה או אם הותקן מנהל התקנים שאינו תואם, תצוגת המסך לא תוצג כראוי.</Str>
+      </Value>
+      <Value>
+        <Lang>GRE</Lang>
+        <Str>Το πρόγραμμα οδήγησης γραφικών είναι ένα πρόγραμμα οδήγησης του υλικού του βίντεο του συστήματος. Η οθόνη δεν θα εμφανίζεται σωστά εάν δεν έχει εγκατασταθεί πρόγραμμα οδήγησης γραφικών ή έχει εγκατασταθεί μη συμβατό πρόγραμμα οδήγησης.</Str>
+      </Value>
+      <Value>
+        <Lang>GER</Lang>
+        <Str>Der Grafiktreiber steuert die Videohardware des Systems. Der Bildschirm wird nicht richtig dargestellt, wenn kein Grafiktreiber oder ein inkompatibler Treiber installiert ist.</Str>
+      </Value>
+      <Value>
+        <Lang>FRE</Lang>
+        <Str>Le Pilote de carte graphique est un programme qui pilote le matériel vidéo du système. Si aucun pilote graphique n'est installé ou si le pilote installé n'est pas compatible, l'affichage à l'écran ne fonctionnera pas correctement.</Str>
+      </Value>
+      <Value>
+        <Lang>FIN</Lang>
+        <Str>Grafiikkaohjain on ohjelma, joka ohjaa järjestelmän videolaitteiden toimintaa. Näyttö ei toimi oikein, jos grafiikkaohjainta ei ole asennettu tai järjestelmään on asennettu yhteensopimaton ohjain.</Str>
+      </Value>
+      <Value>
+        <Lang>DUT</Lang>
+        <Str>Het grafische stuurprogramma is een programma dat de videohardware van het systeem aanstuurt. Het beeld wordt niet goed weergegeven als er geen grafisch stuurprogramma of een incompatibel stuurprogramma is geїnstalleerd.</Str>
+      </Value>
+      <Value>
+        <Lang>DAN</Lang>
+        <Str>Grafik-driveren er et program, der styrer systemets videohardware. Skærmen vil ikke blive vist korrekt, hvis der ikke er installeret en grafik-driver, eller hvis der er installeret en driver, der ikke er kompatibel.</Str>
+      </Value>
+      <Value>
+        <Lang>CZE</Lang>
+        <Str>Ovladač grafické karty je program řídící grafické karty počítače. Pokud není ovladač grafické karty nainstalován nebo je nainstalována nekompatibilní verze, nebude obrazovka fungovat správně.</Str>
+      </Value>
+      <Value>
+        <Lang>CHT-TW</Lang>
+        <Str>繪圖驅動程式是驅動系統視訊硬件的程式。如果未安裝繪圖驅動程式或安裝了不相容的驅動程式，螢幕將無法正確顯示。</Str>
+      </Value>
+      <Value>
+        <Lang>CHT-HK</Lang>
+        <Str>繪圖驅動程式是驅動系統視訊硬件的程式。如果未安裝繪圖驅動程式或安裝了不相容的驅動程式，螢幕將無法正確顯示。</Str>
+      </Value>
+      <Value>
+        <Lang>CHS</Lang>
+        <Str>图形驱动程序是一款可驱动系统视频硬件的程序。如果未安装图形驱动程序或安装的驱动程序不兼容，屏幕将无法正常显示。</Str>
+      </Value>
+      <Value>
+        <Lang>BUL</Lang>
+        <Str>Графичният драйвер е програма, която управлява хардуера за видео в системата. Образът на екрана няма да се показва правилно, ако няма инсталиран графичен драйвер или е инсталиран несъвместим драйвер.</Str>
+      </Value>
+      <Value>
+        <Lang>ENG</Lang>
+        <Str>Graphics driver is a program that drives the system’s video hardware. The screen will not display correctly if a graphics driver is not installed or an incompatible driver is installed.</Str>
+      </Value>
+    </DDesc>
+    <SWCate2>Driver</SWCate2>
+    <Keyword1>Device&amp;Driver</Keyword1>
+    <Keyword2>Graphics</Keyword2>
+    <Keyword3>Graphics</Keyword3>
+    <Feature></Feature>
+    <AdURL>
+      <URL>0</URL>
+      <FromDate>0</FromDate>
+      <ToDate>0</ToDate>
+    </AdURL>
+    <Thumbnail />
+    <Screenshot1 />
+    <Screenshot2 />
+    <Screenshot3 />
+  </Item>
+  <Item>
+    <CISCode>BASW-83361A22</CISCode>
+    <ItemType>SOFTWARE</ItemType>
+    <DisplayName>(Win8.x)_GNSS_Driver 19.17.7413.6</DisplayName>
+    <Region>DNC</Region>
+    <OS>WBPR32/WBSL32/WBST32/WBPR64/WBSL64/WBST64/W8PR32/W8SL32/W8ST32/W8PR64/W8SL64/W8ST64</OS>
+    <Lang>DNC</Lang>
+    <ROLString>ALL</ROLString>
+    <InstallType>PSTEXE</InstallType>
+    <InstallPath>Controlador de GPS_19.17.7413.6\</InstallPath>
+    <InstallFile>Inst.exe</InstallFile>
+    <InstallPara1 />
+    <InstallPara2>/pbr</InstallPara2>
+    <InstallOrgFileSize>16312198</InstallOrgFileSize>
+    <InstallFileSize>11406476</InstallFileSize>
+    <ImageCate>C2P1</ImageCate>
+    <ImageType>GCP</ImageType>
+    <ImageSequence>21140</ImageSequence>
+    <MediaType>SM1</MediaType>
+    <MediaSubCate>ITMRQR</MediaSubCate>
+    <MediaSequence>160</MediaSequence>
+    <CheckType>DrvVer</CheckType>
+    <CheckRoot />
+    <VerifyAttribute>19.17.7413.6</VerifyAttribute>
+    <VerifyPara1 />
+    <VerifyPara2 />
+    <System />
+    <Selectable>N</Selectable>
+    <AND />
+    <XOR />
+    <FURL>http://orcaservice.samsungmobile.com/FileDownloader.aspx?FILENAME=BASW-83361A22.ZIP</FURL>
+    <MultiLangDisplayName>
+      <Default>ENG</Default>
+      <Value>
+        <Lang>ARA</Lang>
+        <Str>GPS Driver</Str>
+      </Value>
+      <Value>
+        <Lang>UKR</Lang>
+        <Str>GPS Driver</Str>
+      </Value>
+      <Value>
+        <Lang>TUR</Lang>
+        <Str>GPS Sürücüsü</Str>
+      </Value>
+      <Value>
+        <Lang>THA</Lang>
+        <Str>ไดรเวอร์  GPS</Str>
+      </Value>
+      <Value>
+        <Lang>SWE</Lang>
+        <Str>GPS-drivrutin</Str>
+      </Value>
+      <Value>
+        <Lang>SPA</Lang>
+        <Str>Controlador de GPS</Str>
+      </Value>
+      <Value>
+        <Lang>SCR</Lang>
+        <Str>Upravljački program za GPS</Str>
+      </Value>
+      <Value>
+        <Lang>RUS</Lang>
+        <Str>Драйвер GPS</Str>
+      </Value>
+      <Value>
+        <Lang>RUM</Lang>
+        <Str>Driver GPS</Str>
+      </Value>
+      <Value>
+        <Lang>POR</Lang>
+        <Str>Controlador GPS</Str>
+      </Value>
+      <Value>
+        <Lang>POL</Lang>
+        <Str>Sterownik interfejsu GPS dla</Str>
+      </Value>
+      <Value>
+        <Lang>NOR</Lang>
+        <Str>GPS-driver</Str>
+      </Value>
+      <Value>
+        <Lang>KOR</Lang>
+        <Str>GPS 드라이버</Str>
+      </Value>
+      <Value>
+        <Lang>ITA</Lang>
+        <Str>GPS Driver</Str>
+      </Value>
+      <Value>
+        <Lang>IND</Lang>
+        <Str>Driver GPS</Str>
+      </Value>
+      <Value>
+        <Lang>HUN</Lang>
+        <Str>GPS illesztőprogram</Str>
+      </Value>
+      <Value>
+        <Lang>GRE</Lang>
+        <Str>Πρόγραμμα οδήγησης GPS για</Str>
+      </Value>
+      <Value>
+        <Lang>GER</Lang>
+        <Str>GPS-Treiber</Str>
+      </Value>
+      <Value>
+        <Lang>FRE</Lang>
+        <Str>Pilote GPS</Str>
+      </Value>
+      <Value>
+        <Lang>FIN</Lang>
+        <Str>GPS -ajuri</Str>
+      </Value>
+      <Value>
+        <Lang>DUT</Lang>
+        <Str>GPS-stuurprogramma</Str>
+      </Value>
+      <Value>
+        <Lang>DAN</Lang>
+        <Str>GPS-driver</Str>
+      </Value>
+      <Value>
+        <Lang>CZE</Lang>
+        <Str>Ovladač GPS</Str>
+      </Value>
+      <Value>
+        <Lang>CHT-TW</Lang>
+        <Str>GPS 驅動程式</Str>
+      </Value>
+      <Value>
+        <Lang>CHS</Lang>
+        <Str>GPS 驱动程序</Str>
+      </Value>
+      <Value>
+        <Lang>BUL</Lang>
+        <Str>Драйвер на  GPS</Str>
+      </Value>
+      <Value>
+        <Lang>BRA</Lang>
+        <Str>Driver GPS</Str>
+      </Value>
+      <Value>
+        <Lang>ENG</Lang>
+        <Str>GPS Driver</Str>
+      </Value>
+    </MultiLangDisplayName>
+    <Version>19.17.7413.6</Version>
+    <DDesc>
+      <Default>ENG</Default>
+      <Value>
+        <Lang>ARA</Lang>
+        <Str>تثبيت برنامج تشغيل GPS</Str>
+      </Value>
+      <Value>
+        <Lang>UKR</Lang>
+        <Str>Installs GPS driver.</Str>
+      </Value>
+      <Value>
+        <Lang>TUR</Lang>
+        <Str>GPS (Yönetim Altyapısı Arayüzü) sürücüsünü yükler.</Str>
+      </Value>
+      <Value>
+        <Lang>THA</Lang>
+        <Str>ติดตั้งไดรเวอร์ GPS</Str>
+      </Value>
+      <Value>
+        <Lang>SWE</Lang>
+        <Str>Installerar GPS-drivrutin</Str>
+      </Value>
+      <Value>
+        <Lang>SPA</Lang>
+        <Str>Instala el controlador de un red de área local (GPS).</Str>
+      </Value>
+      <Value>
+        <Lang>SCR</Lang>
+        <Str>Instalira upravljački program za GPS</Str>
+      </Value>
+      <Value>
+        <Lang>RUS</Lang>
+        <Str>Установка GPS драйвера.</Str>
+      </Value>
+      <Value>
+        <Lang>RUM</Lang>
+        <Str>Instalează driverul GPS</Str>
+      </Value>
+      <Value>
+        <Lang>POR</Lang>
+        <Str>Instala o controlador GPS.</Str>
+      </Value>
+      <Value>
+        <Lang>POL</Lang>
+        <Str>Instaluje sterownik interfejsu GPS.</Str>
+      </Value>
+      <Value>
+        <Lang>NOR</Lang>
+        <Str>Installerer GPS-driver</Str>
+      </Value>
+      <Value>
+        <Lang>KOR</Lang>
+        <Str>GPS 드라이버를 설치합니다.</Str>
+      </Value>
+      <Value>
+        <Lang>ITA</Lang>
+        <Str>Installs GPS driver.</Str>
+      </Value>
+      <Value>
+        <Lang>IND</Lang>
+        <Str>Menginstal driver GPS</Str>
+      </Value>
+      <Value>
+        <Lang>HUN</Lang>
+        <Str>GPS illesztőprogram telepítése.</Str>
+      </Value>
+      <Value>
+        <Lang>GRE</Lang>
+        <Str>Εγκατάσταση του προγράμματος οδήγησης GPS</Str>
+      </Value>
+      <Value>
+        <Lang>GER</Lang>
+        <Str>Installiert GPS-Treiber.</Str>
+      </Value>
+      <Value>
+        <Lang>FRE</Lang>
+        <Str>Installe le pilote GPS.</Str>
+      </Value>
+      <Value>
+        <Lang>FIN</Lang>
+        <Str>Asentaa GPS-ajurin</Str>
+      </Value>
+      <Value>
+        <Lang>DUT</Lang>
+        <Str>Hiermee installeert u het stuurprogramma voor GPS.</Str>
+      </Value>
+      <Value>
+        <Lang>DAN</Lang>
+        <Str>Installerer GPS-driver</Str>
+      </Value>
+      <Value>
+        <Lang>CZE</Lang>
+        <Str>Nainstaluje ovladač GPS</Str>
+      </Value>
+      <Value>
+        <Lang>CHT-TW</Lang>
+        <Str>安裝 GPS 驅動程式。</Str>
+      </Value>
+      <Value>
+        <Lang>CHS</Lang>
+        <Str>安装 GPS 驱动程序。</Str>
+      </Value>
+      <Value>
+        <Lang>BUL</Lang>
+        <Str>Инсталира драйвер за GPS</Str>
+      </Value>
+      <Value>
+        <Lang>BRA</Lang>
+        <Str>Instala o driver de GPS</Str>
+      </Value>
+      <Value>
+        <Lang>ENG</Lang>
+        <Str>Installs GPS driver.</Str>
+      </Value>
+    </DDesc>
+    <SWCate2>Driver</SWCate2>
+    <Keyword1>Device&amp;Driver</Keyword1>
+    <Keyword2>GPS</Keyword2>
+    <Keyword3>Broadcom</Keyword3>
+    <Feature></Feature>
+    <AdURL>
+      <URL>0</URL>
+      <FromDate>0</FromDate>
+      <ToDate>0</ToDate>
+    </AdURL>
+    <Thumbnail />
+    <Screenshot1 />
+    <Screenshot2 />
+    <Screenshot3 />
+  </Item>
+  <Item>
+    <CISCode>BASW-84236A16</CISCode>
+    <ItemType>SOFTWARE</ItemType>
+    <DisplayName>QCA BT Driver (UART, Win8.1 x86) 2.2.0.18 (Win8.1, x86)</DisplayName>
+    <Region>DNC</Region>
+    <OS>WBPR32/WBSL32/WBST32</OS>
+    <Lang>DNC</Lang>
+    <ROLString>ALL</ROLString>
+    <InstallType>PSTEXE</InstallType>
+    <InstallPath>Controlador de Bluetooth_2.2.0.18_32\</InstallPath>
+    <InstallFile>SetupINF32.exe</InstallFile>
+    <InstallPara1 />
+    <InstallPara2>/pbr</InstallPara2>
+    <InstallOrgFileSize>2208037</InstallOrgFileSize>
+    <InstallFileSize>736328</InstallFileSize>
+    <ImageCate>C2P1</ImageCate>
+    <ImageType>GCP</ImageType>
+    <ImageSequence>21070</ImageSequence>
+    <MediaType>SM1</MediaType>
+    <MediaSubCate>ITMRQR</MediaSubCate>
+    <MediaSequence>170</MediaSequence>
+    <CheckType>DrvVer</CheckType>
+    <CheckRoot />
+    <VerifyAttribute>2.2.0.18</VerifyAttribute>
+    <VerifyPara1 />
+    <VerifyPara2 />
+    <System>NotePC</System>
+    <Selectable>Y</Selectable>
+    <AND />
+    <XOR />
+    <FURL>http://orcaservice.samsungmobile.com/FileDownloader.aspx?FILENAME=BASW-84236A16.ZIP</FURL>
+    <MultiLangDisplayName>
+      <Default>ENG</Default>
+      <Value>
+        <Lang>THA</Lang>
+        <Str>ไดรเวอร์บลูทูธ</Str>
+      </Value>
+      <Value>
+        <Lang>SWE</Lang>
+        <Str>Bluetooth-drivrutin</Str>
+      </Value>
+      <Value>
+        <Lang>SPA</Lang>
+        <Str>Controlador de Bluetooth</Str>
+      </Value>
+      <Value>
+        <Lang>SLO</Lang>
+        <Str>Ovládač Bluetooth</Str>
+      </Value>
+      <Value>
+        <Lang>SCR</Lang>
+        <Str>Upravljački program za Bluetooth</Str>
+      </Value>
+      <Value>
+        <Lang>SCC</Lang>
+        <Str>Upravljački program za Bluetooth</Str>
+      </Value>
+      <Value>
+        <Lang>RUS</Lang>
+        <Str>Драйвер Bluetooth</Str>
+      </Value>
+      <Value>
+        <Lang>RUM</Lang>
+        <Str>Driver Bluetooth</Str>
+      </Value>
+      <Value>
+        <Lang>POR</Lang>
+        <Str>Controlador Bluetooth</Str>
+      </Value>
+      <Value>
+        <Lang>POL</Lang>
+        <Str>Sterownik interfejsu Bluetooth</Str>
+      </Value>
+      <Value>
+        <Lang>NOR</Lang>
+        <Str>Bluetooth-driver</Str>
+      </Value>
+      <Value>
+        <Lang>KOR</Lang>
+        <Str>블루투스 드라이버</Str>
+      </Value>
+      <Value>
+        <Lang>JPN</Lang>
+        <Str>Bluetooth ドライバー</Str>
+      </Value>
+      <Value>
+        <Lang>ITA</Lang>
+        <Str>Driver Bluetooth</Str>
+      </Value>
+      <Value>
+        <Lang>IND</Lang>
+        <Str>Driver Bluetooth</Str>
+      </Value>
+      <Value>
+        <Lang>HUN</Lang>
+        <Str>Bluetooth-illesztőprogram</Str>
+      </Value>
+      <Value>
+        <Lang>GRE</Lang>
+        <Str>Πρόγραμμα οδήγησης Bluetooth</Str>
+      </Value>
+      <Value>
+        <Lang>GER</Lang>
+        <Str>Bluetooth-Treiber</Str>
+      </Value>
+      <Value>
+        <Lang>FRE</Lang>
+        <Str>Pilote Bluetooth</Str>
+      </Value>
+      <Value>
+        <Lang>FIN</Lang>
+        <Str>Bluetooth-ajuri</Str>
+      </Value>
+      <Value>
+        <Lang>ENG-UK</Lang>
+        <Str>Bluetooth Driver</Str>
+      </Value>
+      <Value>
+        <Lang>DUT</Lang>
+        <Str>Bluetooth-stuurprogramma</Str>
+      </Value>
+      <Value>
+        <Lang>DAN</Lang>
+        <Str>Bluetooth-driver</Str>
+      </Value>
+      <Value>
+        <Lang>CZE</Lang>
+        <Str>Ovladač zařízení Bluetooth</Str>
+      </Value>
+      <Value>
+        <Lang>CHT-TW</Lang>
+        <Str>藍芽驅動程式</Str>
+      </Value>
+      <Value>
+        <Lang>CHT-HK</Lang>
+        <Str>藍芽驅動程式</Str>
+      </Value>
+      <Value>
+        <Lang>CHS</Lang>
+        <Str>蓝牙驱动程序</Str>
+      </Value>
+      <Value>
+        <Lang>BUL</Lang>
+        <Str>Драйвер за Bluetooth</Str>
+      </Value>
+      <Value>
+        <Lang>BRA</Lang>
+        <Str>Driver de Bluetooth</Str>
+      </Value>
+      <Value>
+        <Lang>TUR</Lang>
+        <Str>Bluetooth Sürücüsü</Str>
+      </Value>
+      <Value>
+        <Lang>ARA</Lang>
+        <Str>Bluetooth Driver (برنامج تشغيل Bluetooth)</Str>
+      </Value>
+      <Value>
+        <Lang>UKR</Lang>
+        <Str>Драйвер Bluetooth</Str>
+      </Value>
+      <Value>
+        <Lang>ENG</Lang>
+        <Str>Bluetooth Driver</Str>
+      </Value>
+    </MultiLangDisplayName>
+    <Version>2.2.0.18</Version>
+    <DDesc>
+      <Default>ENG</Default>
+      <Value>
+        <Lang>THA</Lang>
+        <Str>ติดตั้งไดรเวอร์บลูทูธและแอปพลิเคชัน</Str>
+      </Value>
+      <Value>
+        <Lang>SWE</Lang>
+        <Str>Installerar drivrutin och program för Bluetooth.</Str>
+      </Value>
+      <Value>
+        <Lang>SPA</Lang>
+        <Str>Instala el controlador de Bluetooth y la aplicación.</Str>
+      </Value>
+      <Value>
+        <Lang>SLO</Lang>
+        <Str>Nainštaluje ovládač a aplikáciu rozhrania Bluetooth.</Str>
+      </Value>
+      <Value>
+        <Lang>SCR</Lang>
+        <Str>Instalira upravljački program i aplikaciju za Bluetooth.</Str>
+      </Value>
+      <Value>
+        <Lang>SCC</Lang>
+        <Str>Instalacija Bluetooth upravljačkog programa i aplikacije.</Str>
+      </Value>
+      <Value>
+        <Lang>RUS</Lang>
+        <Str>Установка драйвера и приложения Bluetooth.</Str>
+      </Value>
+      <Value>
+        <Lang>RUM</Lang>
+        <Str>Instalează driverul şi aplicaţia Bluetooth.</Str>
+      </Value>
+      <Value>
+        <Lang>POR</Lang>
+        <Str>Instala o controlador e a aplicação Bluetooth.</Str>
+      </Value>
+      <Value>
+        <Lang>POL</Lang>
+        <Str>Instaluje sterownik i aplikację interfejsu Bluetooth.</Str>
+      </Value>
+      <Value>
+        <Lang>NOR</Lang>
+        <Str>Installerer Bluetooth-driver og -program.</Str>
+      </Value>
+      <Value>
+        <Lang>KOR</Lang>
+        <Str>블루투스 장치를 사용하기 위한 드라이버와 소프트웨어를 설치합니다.</Str>
+      </Value>
+      <Value>
+        <Lang>JPN</Lang>
+        <Str>Bluetooth ドライバーおよびアプリケーションをインストールします。</Str>
+      </Value>
+      <Value>
+        <Lang>ITA</Lang>
+        <Str>Installa il driver e l'applicazione Bluetooth.</Str>
+      </Value>
+      <Value>
+        <Lang>IND</Lang>
+        <Str>Menginstal driver dan aplikasi Bluetooth.</Str>
+      </Value>
+      <Value>
+        <Lang>HUN</Lang>
+        <Str>A Bluetooth-illesztőprogram és alkalmazás telepítése.</Str>
+      </Value>
+      <Value>
+        <Lang>GRE</Lang>
+        <Str>Εγκατάσταση του προγράμματος οδήγησης και της εφαρμογής Bluetooth.</Str>
+      </Value>
+      <Value>
+        <Lang>GER</Lang>
+        <Str>Installiert die Bluetooth-Anwendung einschließlich der zugehörigen Treiber.</Str>
+      </Value>
+      <Value>
+        <Lang>FRE</Lang>
+        <Str>Installe le pilote et l’application bluetooth.</Str>
+      </Value>
+      <Value>
+        <Lang>FIN</Lang>
+        <Str>Asentaa Bluetooth-ajurin ja -sovelluksen.</Str>
+      </Value>
+      <Value>
+        <Lang>ENG-UK</Lang>
+        <Str>Installs bluetooth driver and application.</Str>
+      </Value>
+      <Value>
+        <Lang>DUT</Lang>
+        <Str>Hiermee installeert u het stuurprogramma en de toepassing voor Bluetooth.</Str>
+      </Value>
+      <Value>
+        <Lang>DAN</Lang>
+        <Str>Installerer Bluetooth-driver og program.</Str>
+      </Value>
+      <Value>
+        <Lang>CZE</Lang>
+        <Str>Nainstaluje ovladač a aplikaci pro zařízení Bluetooth.</Str>
+      </Value>
+      <Value>
+        <Lang>CHT-TW</Lang>
+        <Str>安裝藍芽驅動程式和應用程式。</Str>
+      </Value>
+      <Value>
+        <Lang>CHT-HK</Lang>
+        <Str>安裝藍芽驅動程式和應用程式。</Str>
+      </Value>
+      <Value>
+        <Lang>CHS</Lang>
+        <Str>安装蓝牙驱动程序和应用程序。</Str>
+      </Value>
+      <Value>
+        <Lang>BUL</Lang>
+        <Str>Инсталира драйвер и приложение за Bluetooth.</Str>
+      </Value>
+      <Value>
+        <Lang>BRA</Lang>
+        <Str>Instala o driver e aplicativo de Bluetooth.</Str>
+      </Value>
+      <Value>
+        <Lang>TUR</Lang>
+        <Str>Bluetooth sürücüsünü ve uygulamasını yükler.</Str>
+      </Value>
+      <Value>
+        <Lang>ARA</Lang>
+        <Str>تثبيت برنامج تشغيل Bluetooth والتطبيق.</Str>
+      </Value>
+      <Value>
+        <Lang>UKR</Lang>
+        <Str>Встановлює драйвер та програму Bluetooth.</Str>
+      </Value>
+      <Value>
+        <Lang>ENG</Lang>
+        <Str>Installs bluetooth driver and application.</Str>
+      </Value>
+    </DDesc>
+    <SWCate2>Driver</SWCate2>
+    <Keyword1>Device&amp;Driver</Keyword1>
+    <Keyword2>Bluetooth</Keyword2>
+    <Keyword3>Bluetooth</Keyword3>
+    <Feature></Feature>
+    <AdURL>
+      <URL>0</URL>
+      <FromDate>0</FromDate>
+      <ToDate>0</ToDate>
+    </AdURL>
+    <Thumbnail />
+    <Screenshot1 />
+    <Screenshot2 />
+    <Screenshot3 />
+  </Item>
+  <Item>
+    <CISCode>BASW-83847A07</CISCode>
+    <ItemType>SOFTWARE</ItemType>
+    <DisplayName>ATMEL FW Update Driver 15.16.38.615_WHQL</DisplayName>
+    <Region>DNC</Region>
+    <OS>DONCR</OS>
+    <Lang>DNC</Lang>
+    <ROLString>ALL</ROLString>
+    <InstallType>PSTEXE</InstallType>
+    <InstallPath>Controlador de la pantalla táctil_15.16.38.615\</InstallPath>
+    <InstallFile>SetupINF.exe</InstallFile>
+    <InstallPara1 />
+    <InstallPara2>/pbr</InstallPara2>
+    <InstallOrgFileSize>2032340</InstallOrgFileSize>
+    <InstallFileSize>1771789</InstallFileSize>
+    <ImageCate>C2P1</ImageCate>
+    <ImageType>GCP</ImageType>
+    <ImageSequence>21560</ImageSequence>
+    <MediaType>SM1</MediaType>
+    <MediaSubCate>ITMRQR</MediaSubCate>
+    <MediaSequence>317</MediaSequence>
+    <CheckType>DrvVer</CheckType>
+    <CheckRoot />
+    <VerifyAttribute>15.16.38.615</VerifyAttribute>
+    <VerifyPara1 />
+    <VerifyPara2 />
+    <System />
+    <Selectable>Y</Selectable>
+    <AND />
+    <XOR />
+    <FURL>http://orcaservice.samsungmobile.com/FileDownloader.aspx?FILENAME=BASW-83847A06.ZIP</FURL>
+    <MultiLangDisplayName>
+      <Default>ENG</Default>
+      <Value>
+        <Lang>ARA</Lang>
+        <Str>برنامج تشغيل الشاشة التي تعمل باللمس</Str>
+      </Value>
+      <Value>
+        <Lang>UKR</Lang>
+        <Str>Драйвер Touchscreen</Str>
+      </Value>
+      <Value>
+        <Lang>TUR</Lang>
+        <Str>Dokunmatik Ekran Sürücüsü</Str>
+      </Value>
+      <Value>
+        <Lang>THA</Lang>
+        <Str>ไดรเวอร์หน้าจอสัมผัส</Str>
+      </Value>
+      <Value>
+        <Lang>SWE</Lang>
+        <Str>Drivrutin för pekskärm</Str>
+      </Value>
+      <Value>
+        <Lang>SPA</Lang>
+        <Str>Controlador de la pantalla táctil</Str>
+      </Value>
+      <Value>
+        <Lang>SLO</Lang>
+        <Str>Ovládač dotykovej obrazovky</Str>
+      </Value>
+      <Value>
+        <Lang>SCR</Lang>
+        <Str>Upravljački program dodirnog zaslona</Str>
+      </Value>
+      <Value>
+        <Lang>SCC</Lang>
+        <Str>Upravljački program za ekran osetljiv na dodir</Str>
+      </Value>
+      <Value>
+        <Lang>RUS</Lang>
+        <Str>Драйвер сенсорного экрана</Str>
+      </Value>
+      <Value>
+        <Lang>RUM</Lang>
+        <Str>Driver ecran tactil</Str>
+      </Value>
+      <Value>
+        <Lang>POR</Lang>
+        <Str>Controlador do ecrã táctil</Str>
+      </Value>
+      <Value>
+        <Lang>POL</Lang>
+        <Str>Sterownik ekranu dotykowego</Str>
+      </Value>
+      <Value>
+        <Lang>NOR</Lang>
+        <Str>Berøringsskjermdriver</Str>
+      </Value>
+      <Value>
+        <Lang>KOR</Lang>
+        <Str>터치스크린 드라이버</Str>
+      </Value>
+      <Value>
+        <Lang>ITA</Lang>
+        <Str>Driver Touchscreen</Str>
+      </Value>
+      <Value>
+        <Lang>IND</Lang>
+        <Str>Driver Layar  Sentuh</Str>
+      </Value>
+      <Value>
+        <Lang>HUN</Lang>
+        <Str>Érintőképernyő-illesztőprogram</Str>
+      </Value>
+      <Value>
+        <Lang>GRE</Lang>
+        <Str>Πρόγραμμα οδήγησης οθόνης αφής</Str>
+      </Value>
+      <Value>
+        <Lang>GER</Lang>
+        <Str>Touchscreen-Treiber</Str>
+      </Value>
+      <Value>
+        <Lang>FRE</Lang>
+        <Str>Pilote d'écran tactile</Str>
+      </Value>
+      <Value>
+        <Lang>FIN</Lang>
+        <Str>Kosketusnäytön ajuri</Str>
+      </Value>
+      <Value>
+        <Lang>DUT</Lang>
+        <Str>Stuurprogramma voor touchscreen</Str>
+      </Value>
+      <Value>
+        <Lang>DAN</Lang>
+        <Str>Driver til berøringsskærm</Str>
+      </Value>
+      <Value>
+        <Lang>CZE</Lang>
+        <Str>Ovladač dotykové obrazovky</Str>
+      </Value>
+      <Value>
+        <Lang>CHT-TW</Lang>
+        <Str>觸控式螢幕驅動程式</Str>
+      </Value>
+      <Value>
+        <Lang>CHT-HK</Lang>
+        <Str>觸控式螢幕驅動程式</Str>
+      </Value>
+      <Value>
+        <Lang>CHS</Lang>
+        <Str>触摸屏驱动程序</Str>
+      </Value>
+      <Value>
+        <Lang>BUL</Lang>
+        <Str>Драйвер за сензорен екран</Str>
+      </Value>
+      <Value>
+        <Lang>BRA</Lang>
+        <Str>Driver de touchscreen</Str>
+      </Value>
+      <Value>
+        <Lang>ENG</Lang>
+        <Str>Touchscreen Driver</Str>
+      </Value>
+    </MultiLangDisplayName>
+    <Version>15.16.38.615</Version>
+    <DDesc>
+      <Default>ENG</Default>
+      <Value>
+        <Lang>ARA</Lang>
+        <Str>تثبيت برنامج تشغيل الشاشة التي تعمل باللمس والأدوات المساعدة.</Str>
+      </Value>
+      <Value>
+        <Lang>UKR</Lang>
+        <Str>Встановлення драйвера і додаткових програм Touchscreen.</Str>
+      </Value>
+      <Value>
+        <Lang>TUR</Lang>
+        <Str>Dokunmatik ekran sürücüsünü ve yardımcı programını yükler.</Str>
+      </Value>
+      <Value>
+        <Lang>THA</Lang>
+        <Str>ติดตั้งไดรเวอร์หน้าจอสัมผัสและยูทิลิตี</Str>
+      </Value>
+      <Value>
+        <Lang>SWE</Lang>
+        <Str>Installerar drivrutin och verktyg för pekskärmen.</Str>
+      </Value>
+      <Value>
+        <Lang>SPA</Lang>
+        <Str>Instala el controlador y las utilidades de la pantalla táctil.</Str>
+      </Value>
+      <Value>
+        <Lang>SLO</Lang>
+        <Str>Nainštaluje ovládač a pomocnú aplikáciu k dotykovej obrazovke.</Str>
+      </Value>
+      <Value>
+        <Lang>SCR</Lang>
+        <Str>Instalira upravljački program dodirnog zaslona i uslužni program.</Str>
+      </Value>
+      <Value>
+        <Lang>SCC</Lang>
+        <Str>Instaliranje upravljačkog programa za ekran osetljiv na dodir i uslužnog programa.</Str>
+      </Value>
+      <Value>
+        <Lang>RUS</Lang>
+        <Str>Установка драйвера сенсорного экрана и служебной программы.</Str>
+      </Value>
+      <Value>
+        <Lang>RUM</Lang>
+        <Str>Instalează driverul ecranului tactil şi utilitarul.</Str>
+      </Value>
+      <Value>
+        <Lang>POR</Lang>
+        <Str>Instala o controlador e utilitário do ecrã táctil.</Str>
+      </Value>
+      <Value>
+        <Lang>POL</Lang>
+        <Str>Instaluje sterownik i narzędzia ekranu dotykowego.</Str>
+      </Value>
+      <Value>
+        <Lang>NOR</Lang>
+        <Str>Installerer berøringsskjermdriveren og -verktøyet.</Str>
+      </Value>
+      <Value>
+        <Lang>KOR</Lang>
+        <Str>터치스크린 드라이버와 유틸리티를 설치합니다.</Str>
+      </Value>
+      <Value>
+        <Lang>ITA</Lang>
+        <Str>Installa il driver Touchscreen e le utility.</Str>
+      </Value>
+      <Value>
+        <Lang>IND</Lang>
+        <Str>Menginstal driver dan utilitas Layar Sentuh.</Str>
+      </Value>
+      <Value>
+        <Lang>HUN</Lang>
+        <Str>Az érintőképernyő-illesztőprogram és -segédprogram telepítése.</Str>
+      </Value>
+      <Value>
+        <Lang>GRE</Lang>
+        <Str>Εγκαθιστά το πρόγραμμα οδήγησης και το βοηθητικό πρόγραμμα οθόνης αφής.</Str>
+      </Value>
+      <Value>
+        <Lang>GER</Lang>
+        <Str>Installieren des Touchscreen-Treibers und der Dienstprogramme.</Str>
+      </Value>
+      <Value>
+        <Lang>FRE</Lang>
+        <Str>Installe le pilote et l'utilitaire de l’écran tactile.</Str>
+      </Value>
+      <Value>
+        <Lang>FIN</Lang>
+        <Str>Asentaa kosketusnäytön ajurin ja apuohjelman.</Str>
+      </Value>
+      <Value>
+        <Lang>DUT</Lang>
+        <Str>Hiermee worden het stuurprogramma en hulpprogramma voor het touchscreen geïnstalleerd.</Str>
+      </Value>
+      <Value>
+        <Lang>DAN</Lang>
+        <Str>Installerer driver og værktøj til berøringsskærmen.</Str>
+      </Value>
+      <Value>
+        <Lang>CZE</Lang>
+        <Str>Slouží k instalaci ovladače dotykové obrazovky a nástroje.</Str>
+      </Value>
+      <Value>
+        <Lang>CHT-TW</Lang>
+        <Str>安裝觸控式螢幕驅動程式和應用程式。</Str>
+      </Value>
+      <Value>
+        <Lang>CHT-HK</Lang>
+        <Str>安裝觸控式螢幕驅動程式和應用程式。</Str>
+      </Value>
+      <Value>
+        <Lang>CHS</Lang>
+        <Str>安装触摸屏驱动程序和实用程序。</Str>
+      </Value>
+      <Value>
+        <Lang>BUL</Lang>
+        <Str>Инсталира на драйвера за сензорния екран и помощните програми.</Str>
+      </Value>
+      <Value>
+        <Lang>BRA</Lang>
+        <Str>Instala o driver de touchscreen e o utilitário.</Str>
+      </Value>
+      <Value>
+        <Lang>ENG</Lang>
+        <Str>Installs the Touchscreen driver and utility.</Str>
+      </Value>
+    </DDesc>
+    <SWCate2>Driver</SWCate2>
+    <Keyword1>Device&amp;Driver</Keyword1>
+    <Keyword2>TSP</Keyword2>
+    <Keyword3>Atmel</Keyword3>
+    <AdURL>
+      <URL>0</URL>
+      <FromDate>0</FromDate>
+      <ToDate>0</ToDate>
+    </AdURL>
+    <Thumbnail />
+    <Screenshot1 />
+    <Screenshot2 />
+    <Screenshot3 />
+  </Item>
+  <Item>
+    <CISCode>BASW-84383A01</CISCode>
+    <ItemType>SOFTWARE</ItemType>
+    <DisplayName>QCA WLAN SDIO WIn8.1 Driver(32bit) 3.7.2.34246</DisplayName>
+    <Region>DNC</Region>
+    <OS>WBPR32/WBSL32/WBST32</OS>
+    <Lang>DNC</Lang>
+    <ROLString>ALL</ROLString>
+    <InstallType>PSTEXE</InstallType>
+    <InstallPath>Controlador de LAN inalámbrica_3.7.2.34246_32\</InstallPath>
+    <InstallFile>Inst.exe</InstallFile>
+    <InstallPara1 />
+    <InstallPara2>/pbr</InstallPara2>
+    <InstallOrgFileSize>5587232</InstallOrgFileSize>
+    <InstallFileSize>2586789</InstallFileSize>
+    <ImageCate>C2P1</ImageCate>
+    <ImageType>GCP</ImageType>
+    <ImageSequence>21065</ImageSequence>
+    <MediaType>SM1</MediaType>
+    <MediaSubCate>ITMRQR</MediaSubCate>
+    <MediaSequence>20000</MediaSequence>
+    <CheckType>DrvVer</CheckType>
+    <CheckRoot />
+    <VerifyAttribute>3.7.2.34246</VerifyAttribute>
+    <VerifyPara1 />
+    <VerifyPara2 />
+    <System />
+    <Selectable>Y</Selectable>
+    <AND />
+    <XOR />
+    <FURL>http://orcaservice.samsungmobile.com/FileDownloader.aspx?FILENAME=BASW-84383A01.ZIP</FURL>
+    <MultiLangDisplayName>
+      <Default>ENG</Default>
+      <Value>
+        <Lang>POL</Lang>
+        <Str>Sterownik Wireless LAN</Str>
+      </Value>
+      <Value>
+        <Lang>NOR</Lang>
+        <Str>Trådløs LAN-driver</Str>
+      </Value>
+      <Value>
+        <Lang>KOR</Lang>
+        <Str>무선 랜 드라이버</Str>
+      </Value>
+      <Value>
+        <Lang>JPN</Lang>
+        <Str>ワイヤレス LAN ドライバー</Str>
+      </Value>
+      <Value>
+        <Lang>ITA</Lang>
+        <Str>Driver LAN wireless</Str>
+      </Value>
+      <Value>
+        <Lang>IND</Lang>
+        <Str>Driver LAN Nirkabel</Str>
+      </Value>
+      <Value>
+        <Lang>HUN</Lang>
+        <Str>Vezeték nélküli LAN illesztőprogramja</Str>
+      </Value>
+      <Value>
+        <Lang>HEB</Lang>
+        <Str>מנהל התקן LAN אלחוטי</Str>
+      </Value>
+      <Value>
+        <Lang>GRE</Lang>
+        <Str>Πρόγραμμα οδήγησης ασύρματου LAN</Str>
+      </Value>
+      <Value>
+        <Lang>GER</Lang>
+        <Str>WLAN-Treiber</Str>
+      </Value>
+      <Value>
+        <Lang>FRE</Lang>
+        <Str>Pilote de réseau local sans fil</Str>
+      </Value>
+      <Value>
+        <Lang>FIN</Lang>
+        <Str>WLAN-ohjain</Str>
+      </Value>
+      <Value>
+        <Lang>DUT</Lang>
+        <Str>Draadloos LAN-stuurprogramma</Str>
+      </Value>
+      <Value>
+        <Lang>DAN</Lang>
+        <Str>Trådløst netværk-driver</Str>
+      </Value>
+      <Value>
+        <Lang>CZE</Lang>
+        <Str>Ovladač bezdrátové sítě LAN</Str>
+      </Value>
+      <Value>
+        <Lang>CHT-TW</Lang>
+        <Str>無線區域網絡驅動程式</Str>
+      </Value>
+      <Value>
+        <Lang>CHT-HK</Lang>
+        <Str>無線區域網絡驅動程式</Str>
+      </Value>
+      <Value>
+        <Lang>CHS</Lang>
+        <Str>无线 LAN 驱动程序</Str>
+      </Value>
+      <Value>
+        <Lang>BUL</Lang>
+        <Str>Драйвер за безжична LAN</Str>
+      </Value>
+      <Value>
+        <Lang>BRA</Lang>
+        <Str>Driver de LAN Sem Fio</Str>
+      </Value>
+      <Value>
+        <Lang>RUS</Lang>
+        <Str>Драйвер беспроводной локальной сети</Str>
+      </Value>
+      <Value>
+        <Lang>RUM</Lang>
+        <Str>Driver LAN fără fir</Str>
+      </Value>
+      <Value>
+        <Lang>POR</Lang>
+        <Str>Controlador LAN Sem Fios</Str>
+      </Value>
+      <Value>
+        <Lang>ARA</Lang>
+        <Str>برنامج تشغيل شبكة LAN اللاسلكية</Str>
+      </Value>
+      <Value>
+        <Lang>UKR</Lang>
+        <Str>Драйвер бездротової локальної мережі (LAN)</Str>
+      </Value>
+      <Value>
+        <Lang>TUR</Lang>
+        <Str>Kablosuz LAN Sürücüsü</Str>
+      </Value>
+      <Value>
+        <Lang>THA</Lang>
+        <Str>ไดรเวอร์ LAN ไร้สาย</Str>
+      </Value>
+      <Value>
+        <Lang>SWE</Lang>
+        <Str>Trådlös LAN-drivrutin</Str>
+      </Value>
+      <Value>
+        <Lang>SPA</Lang>
+        <Str>Controlador de LAN inalámbrica</Str>
+      </Value>
+      <Value>
+        <Lang>SLV</Lang>
+        <Str>Gonilnik brezžičnega lokalnega omrežja</Str>
+      </Value>
+      <Value>
+        <Lang>SLO</Lang>
+        <Str>Ovládač bezdrôtovej siete LAN</Str>
+      </Value>
+      <Value>
+        <Lang>SCR</Lang>
+        <Str>Upravljački program za bežičnu mrežu</Str>
+      </Value>
+      <Value>
+        <Lang>SCC</Lang>
+        <Str>Bežični LAN upravljački program</Str>
+      </Value>
+      <Value>
+        <Lang>ENG</Lang>
+        <Str>Wireless LAN Driver</Str>
+      </Value>
+    </MultiLangDisplayName>
+    <Version>3.7.2.34246</Version>
+    <DDesc>
+      <Default>ENG</Default>
+      <Value>
+        <Lang>POL</Lang>
+        <Str>Sterownik Wireless LAN to program, który steruje kartą sieci bezprzewodowej komputera. Jeśli sterownik Wireless LAN nie jest zainstalowany lub jest niekompatybilny, bezprzewodowa sieć LAN będzie niedostępna.</Str>
+      </Value>
+      <Value>
+        <Lang>NOR</Lang>
+        <Str>Trådløs LAN-driver er et program som driver systemets trådløse LAN-maskinvare. Trådløse LAN-nettverk er ikke tilgjengelig hvis en trådløs LAN-driver ikke er installert eller en inkompatibel driver er installert.</Str>
+      </Value>
+      <Value>
+        <Lang>KOR</Lang>
+        <Str>PC에 장착된 무선 랜장치를 구동시켜주는 프로그램입니다. 설치하지 않거나 내 무선 랜 장치에 맞지 않는 드라이버를 설치할 경우 무선 네트워크가 동작하지 않습니다.</Str>
+      </Value>
+      <Value>
+        <Lang>JPN</Lang>
+        <Str>ワイヤレス LAN ドライバーは、システムのワイヤレス LAN ハードウェアを駆動するプログラムです。ワイヤレス LAN ドライバーがインストールされていないか、互換性のないドライバーがインストールされていると、ワイヤレス LAN ネットワークを利用できません。</Str>
+      </Value>
+      <Value>
+        <Lang>ITA</Lang>
+        <Str>I driver LAN wireless gestiscono l'hardware LAN wireless del sistema. Se non è installato alcun driver LAN wireless o se è installato un driver non compatibile, la connettività LAN wireless non sarà disponibile.</Str>
+      </Value>
+      <Value>
+        <Lang>IND</Lang>
+        <Str>Driver LAN Nirkabel adalah program yang menggerakkan perangkat keras LAN nirkabel. Jaringan nirkabel LAN tidak akan tersedia bila driver LAN nirkabel tidak terinstal atau terinstal driver yang tidak kompatibel.</Str>
+      </Value>
+      <Value>
+        <Lang>HUN</Lang>
+        <Str>A vezeték nélküli helyi hálózat illesztőprogramja a rendszer vezeték nélküli LAN-hardverét vezérlő program. A vezeték nélküli helyi hálózat nem érhető el, ha nincs telepítve a vezeték nélküli LAN illesztőprogramja, vagy ha a telepített változat nem kompatibilis.</Str>
+      </Value>
+      <Value>
+        <Lang>HEB</Lang>
+        <Str>מנהל התקן LAN אלחוטי הוא תוכנית המפעילה את חומרת ה-LAN האלחוטי במערכת. אם לא הותקן מנהל התקן LAN אלחוטי או אם הותקן מנהל התקנים שאינו תואם, לא אפשר יהיה להתחבר לרשתות LAN אלחוטיות.</Str>
+      </Value>
+      <Value>
+        <Lang>GRE</Lang>
+        <Str>Το πρόγραμμα οδήγησης ασύρματου LAN είναι ένα πρόγραμμα οδήγησης του υλικού του ασύρματου LAN του συστήματος. Το ασύρματο δίκτυο LAN δεν θα είναι διαθέσιμο εάν δεν έχει εγκατασταθεί πρόγραμμα οδήγησης ασύρματου LAN ή έχει εγκατασταθεί μη συμβατό πρόγραμμα οδήγησης.</Str>
+      </Value>
+      <Value>
+        <Lang>GER</Lang>
+        <Str>Der WLAN-Treiber steuert die WLAN-Hardware des Systems. WLAN-Netzwerke sind nicht verfügbar, wenn kein WLAN-Treiber oder ein inkompatibler Treiber installiert ist.</Str>
+      </Value>
+      <Value>
+        <Lang>FRE</Lang>
+        <Str>Le Pilote de réseau local sans fil est un programme qui pilote le matériel de réseau local sans fil du système. Si aucun Pilote de réseau local sans fil n'est installé ou si le pilote installé n'est pas compatible, la mise en réseau local sans fil ne sera pas disponible.</Str>
+      </Value>
+      <Value>
+        <Lang>FIN</Lang>
+        <Str>WLAN-ohjain on ohjelma, joka ohjaa järjestelmän WLAN-laitteiden toimintaa. Langatonta lähiverkkoa ei voi käyttää, jos WLAN-ohjainta ei ole asennettu tai järjestelmään on asennettu yhteensopimaton ohjain.</Str>
+      </Value>
+      <Value>
+        <Lang>DUT</Lang>
+        <Str>Het draadloos LAN-stuurprogramma is een programma dat de draadloos LAN-hardware van het systeem aanstuurt. Draadloos LAN-netwerken is niet beschikbaar als er geen draadloos LAN-stuurprogramma of een incompatibel stuurprogramma is geїnstalleerd.</Str>
+      </Value>
+      <Value>
+        <Lang>DAN</Lang>
+        <Str>Trådløst netværk-driveren er et program, der styrer systemets trådløse netværkshardware. Trådløst netværk vil ikke være tilgængeligt, hvis der ikke er installeret en trådløst netværk-driver, eller hvis der er installeret en driver, der ikke er kompatibel.</Str>
+      </Value>
+      <Value>
+        <Lang>CZE</Lang>
+        <Str>Ovladač bezdrátové sítě LAN je program řídící hardware pro připojení k bezdrátové síti LAN. Pokud není ovladač bezdrátové sítě LAN nainstalován nebo je nainstalována nekompatibilní verze, nebude připojení k bezdrátové síti LAN fungovat.</Str>
+      </Value>
+      <Value>
+        <Lang>CHT-TW</Lang>
+        <Str>無線區域網絡驅動程式是驅動系統無線區域網絡硬件的程式。如果未安裝無線區域網絡驅動程式或安裝了不相容的驅動程式，無線區域網絡的網絡功能將無法使用。</Str>
+      </Value>
+      <Value>
+        <Lang>CHT-HK</Lang>
+        <Str>無線區域網絡驅動程式是驅動系統無線區域網絡硬件的程式。如果未安裝無線區域網絡驅動程式或安裝了不相容的驅動程式，無線區域網絡的網絡功能將無法使用。</Str>
+      </Value>
+      <Value>
+        <Lang>CHS</Lang>
+        <Str>无线 LAN 驱动程序是一款可驱动系统无线 LAN 硬件的程序。如果未安装无线 LAN 驱动程序或安装的驱动程序不兼容，将无法使用无线 LAN 网络。</Str>
+      </Value>
+      <Value>
+        <Lang>BUL</Lang>
+        <Str>Драйверът за безжична LAN е програма, която управлява хардуера за безжична локална мрежа на системата. Няма да има безжична LAN мрежа, ако няма инсталиран драйвер за безжична LAN или е инсталиран несъвместим драйвер.</Str>
+      </Value>
+      <Value>
+        <Lang>BRA</Lang>
+        <Str>O driver de LAN sem fio é um programa que orienta o hardware de LAN sem fio do sistema. A rede de LAN sem fio não estará disponível se um driver de LAN sem fio não estiver instalado ou se houver um driver incompatível.</Str>
+      </Value>
+      <Value>
+        <Lang>RUS</Lang>
+        <Str>Драйвер беспроводной локальной сети – это программа, отвечающая за функционирование системного оборудования беспроводной локальной сети. Если драйвер беспроводной локальной сети не установлен или установлен несовместимый драйвер, возможности беспроводной локальной сети будут недоступны.</Str>
+      </Value>
+      <Value>
+        <Lang>RUM</Lang>
+        <Str>Driverul LAN fără fir este un program care comandă componenta hardware LAN fără fir a sistemului. Lucrul în rețea LAN fără fir nu va fi disponibil dacă nu este instalat un driver LAN fără fir sau dacă este instalat un driver incompatibil.</Str>
+      </Value>
+      <Value>
+        <Lang>POR</Lang>
+        <Str>O controlador LAN sem fios é um programa que controla o hardware da LAN sem fios do sistema. A rede LAN sem fios não ficará disponível se não tiver um controlador de LAN sem fios instalado ou se tiver um controlador incompatível instalado.</Str>
+      </Value>
+      <Value>
+        <Lang>ARA</Lang>
+        <Str>برنامج تشغيل شبكة LAN اللاسلكية عبارة عن برنامج يشغل جهاز شبكة LAN اللاسلكية الخاص بالنظام. لن تتوفر شبكة LAN اللاسلكية في حالة عدم تثبيت برنامج تشغيل شبكة LAN اللاسلكية أو تثبيت برنامج تشغيل غير متوافق.</Str>
+      </Value>
+      <Value>
+        <Lang>UKR</Lang>
+        <Str>Драйвер бездротової локальної мережі (LAN) – це програма, яка керує роботою бездротового обладнання локальної мережі системи. Якщо драйвер бездротової локальної мережі не встановлений, або встановлений несумісний драйвер, бездротова мережа LAN буде недоступна.</Str>
+      </Value>
+      <Value>
+        <Lang>TUR</Lang>
+        <Str>Kablosuz LAN sürücüsü, sistemin kablosuz ağ donanımını çalıştıran bir sürücüdür. Kablosuz LAN sürücüsü yüklü değilse veya uyumsuz bir sürücü yüklenmişse Kablosuz LAN ağ iletişimi kullanılamaz.</Str>
+      </Value>
+      <Value>
+        <Lang>THA</Lang>
+        <Str>ไดรเวอร์ LAN ไร้สาย คือโปรแกรมที่ทำให้ฮาร์ดแวร์ LAN ไร้สายของระบบทำงาน หากไม่ได้ติดตั้งไดรเวอร์ LAN ไร้สาย หรือติดตั้งไดรเวอร์ที่ไม่สามารถทำงานร่วมกันได้ เครือข่าย LAN ไร้สายจะไม่สามารถใช้งานได้</Str>
+      </Value>
+      <Value>
+        <Lang>SWE</Lang>
+        <Str>Drivrutinen för trådlöst LAN är ett program som styr datorns maskinvara för trådlöst LAN. Du kan inte ansluta till ett trådlöst LAN-nätverk om du inte installerar en drivrutin för trådlöst LAN eller om du installerar en inkompatibel drivrutin.</Str>
+      </Value>
+      <Value>
+        <Lang>SPA</Lang>
+        <Str>El controlador de LAN inalámbrica es un programa que regula el funcionamiento del hardware de la LAN inalámbrica del sistema. No habrá ninguna red LAN inalámbrica disponible si el controlador de LAN inalámbrica no está instalado o está instalada una versión incompatible.</Str>
+      </Value>
+      <Value>
+        <Lang>SLV</Lang>
+        <Str>Gonilnik brezžičnega lokalnega omrežja je, ki omogoča delovanje brezžičnega lokalnega omrežja v računalniku. Če gonilnik brezžičnega lokalnega omrežja ni nameščen ali če je nameščen nezdružljivi gonilnik, brezžično lokalno omrežje ne bo na voljo.</Str>
+      </Value>
+      <Value>
+        <Lang>SLO</Lang>
+        <Str>Ovládač bezdrôtovej siete LAN je program, ktorý riadi hardvér bezdrôtovej siete LAN systému. Ak ovládač bezdrôtovej siete LAN nebude nainštalovaný alebo ak bude nainštalovaný nekompatibilný ovládač, pripojenie k bezdrôtovej sieti LAN nebude možné.</Str>
+      </Value>
+      <Value>
+        <Lang>SCR</Lang>
+        <Str>Upravljački program za bežičnu mrežu program je koji upravlja hardverom za bežičnu mrežu u računalu. Ako upravljački program za bežičnu mrežu nije instaliran ili je instaliran nekompatibilan upravljački program, bežična mreža neće biti dostupna.</Str>
+      </Value>
+      <Value>
+        <Lang>SCC</Lang>
+        <Str>Bežični LAN upravljački program je program koji upravlja hardverom za bežični LAN sistema. Bežično LAN umrežavanje neće biti dostupno ako bežični LAN upravljački program nije instaliran ili je instaliran nekompatibilni upravljački program.</Str>
+      </Value>
+      <Value>
+        <Lang>ENG</Lang>
+        <Str>Wireless LAN driver is a program that drives the system’s wireless LAN hardware. Wireless LAN networking will not be available if a wireless LAN driver is not installed or an incompatible driver is installed.</Str>
+      </Value>
+    </DDesc>
+    <SWCate2>Driver</SWCate2>
+    <Keyword1>Device&amp;Driver</Keyword1>
+    <Keyword2>WLAN</Keyword2>
+    <Keyword3>WLAN</Keyword3>
+    <Feature></Feature>
+    <AdURL>
+      <URL>0</URL>
+      <FromDate>0</FromDate>
+      <ToDate>0</ToDate>
+    </AdURL>
+    <Thumbnail />
+    <Screenshot1 />
+    <Screenshot2 />
+    <Screenshot3 />
+  </Item>
+  <Item>
+    <CISCode>1205-0043960A</CISCode>
+    <ItemType>HARDWARE</ItemType>
+    <DisplayName>GPS(BCM47511)_H/W - (William) 1</DisplayName>
+    <Region>DNC</Region>
+    <OS>DONCR</OS>
+    <Lang>DNC</Lang>
+    <ROLString>ALL</ROLString>
+    <InstallType />
+    <InstallPath />
+    <InstallFile />
+    <InstallPara1 />
+    <InstallPara2 />
+    <InstallOrgFileSize>0</InstallOrgFileSize>
+    <InstallFileSize>0</InstallFileSize>
+    <ImageCate>C2P1</ImageCate>
+    <ImageType>GCP</ImageType>
+    <ImageSequence>20000</ImageSequence>
+    <MediaType>SM1</MediaType>
+    <MediaSubCate>ITMRQR</MediaSubCate>
+    <MediaSequence>20000</MediaSequence>
+    <CheckType>HWExist</CheckType>
+    <CheckRoot>ACPI\VEN_BCM&amp;DEV_4751;ACPI\BCM4751;*BCM4751</CheckRoot>
+    <VerifyAttribute />
+    <VerifyPara1 />
+    <VerifyPara2 />
+    <System>NotePC</System>
+    <Selectable>Y</Selectable>
+    <AND>BASW-83361A</AND>
+    <XOR />
+    <Version />
+    <SWCate2>Driver</SWCate2>
+    <Keyword1>Device&amp;Driver</Keyword1>
+    <Keyword2>GPS</Keyword2>
+    <Keyword3>Broadcom</Keyword3>
+    <Feature></Feature>
+    <AdURL>
+      <URL>0</URL>
+      <FromDate>0</FromDate>
+      <ToDate>0</ToDate>
+    </AdURL>
+    <Thumbnail />
+    <Screenshot1 />
+    <Screenshot2 />
+    <Screenshot3 />
+  </Item>
+  <Item>
+    <CISCode>BA09-00033A03</CISCode>
+    <ItemType>HARDWARE</ItemType>
+    <DisplayName>Nuvoton_SBP_driver 1.0</DisplayName>
+    <Region>DNC</Region>
+    <OS>DONCR</OS>
+    <Lang>DNC</Lang>
+    <ROLString>ALL</ROLString>
+    <InstallType />
+    <InstallPath />
+    <InstallFile />
+    <InstallPara1 />
+    <InstallPara2 />
+    <InstallOrgFileSize>0</InstallOrgFileSize>
+    <InstallFileSize>0</InstallFileSize>
+    <ImageCate>C2P1</ImageCate>
+    <ImageType>GCP</ImageType>
+    <ImageSequence>20000</ImageSequence>
+    <MediaType>SM1</MediaType>
+    <MediaSubCate>ITMRQR</MediaSubCate>
+    <MediaSequence>20000</MediaSequence>
+    <CheckType>HWExist</CheckType>
+    <CheckRoot>ACPI\VEN_NTN&amp;DEV_1050;ACPI\NTN1050;*NTN1050;always</CheckRoot>
+    <VerifyAttribute />
+    <VerifyPara1 />
+    <VerifyPara2 />
+    <System>NotePC</System>
+    <Selectable>Y</Selectable>
+    <AND>BASW-83846A</AND>
+    <XOR />
+    <Version />
+    <SWCate2>Driver</SWCate2>
+    <Keyword1>Device&amp;Driver</Keyword1>
+    <Keyword2>Chipset</Keyword2>
+    <Keyword3>Intel</Keyword3>
+    <Feature></Feature>
+    <AdURL>
+      <URL>0</URL>
+      <FromDate>0</FromDate>
+      <ToDate>0</ToDate>
+    </AdURL>
+    <Thumbnail />
+    <Screenshot1 />
+    <Screenshot2 />
+    <Screenshot3 />
+  </Item>
+  <Item>
+    <CISCode>BAIN-00711A01</CISCode>
+    <ItemType>INFORMATION</ItemType>
+    <DisplayName>None 1.0</DisplayName>
+    <Region>DNC</Region>
+    <OS>DONCR</OS>
+    <Lang>DNC</Lang>
+    <ROLString>ALL</ROLString>
+    <InstallType />
+    <InstallPath />
+    <InstallFile />
+    <InstallPara1 />
+    <InstallPara2 />
+    <InstallOrgFileSize>0</InstallOrgFileSize>
+    <InstallFileSize>0</InstallFileSize>
+    <ImageCate>C2P1</ImageCate>
+    <ImageType>GCP</ImageType>
+    <ImageSequence>20000</ImageSequence>
+    <MediaType>SM1</MediaType>
+    <MediaSubCate>ITMOPT</MediaSubCate>
+    <MediaSequence>20000</MediaSequence>
+    <CheckType>HWExist</CheckType>
+    <CheckRoot>Always</CheckRoot>
+    <VerifyAttribute />
+    <VerifyPara1 />
+    <VerifyPara2 />
+    <System />
+    <Selectable>Y</Selectable>
+    <AND />
+    <XOR />
+    <Version />
+    <RemoveFilePath />
+    <RemovePara1 />
+    <RemovePara2 />
+    <SWCate2>Miscellaneous</SWCate2>
+    <Keyword1>PRT Only</Keyword1>
+    <Keyword2>MDIAS Tools</Keyword2>
+    <Keyword3>MIDAS Tools</Keyword3>
+    <AdURL>
+      <URL>0</URL>
+      <FromDate>0</FromDate>
+      <ToDate>0</ToDate>
+    </AdURL>
+    <Thumbnail />
+    <Screenshot1 />
+    <Screenshot2 />
+    <Screenshot3 />
+  </Item>
+  <Item>
+    <CISCode>BAIN-00799A07</CISCode>
+    <ItemType>INFORMATION</ItemType>
+    <DisplayName>Office 2013 - Information 1.0</DisplayName>
+    <Region>DNC</Region>
+    <OS>DONCR</OS>
+    <Lang>DNC</Lang>
+    <ROLString>ALL</ROLString>
+    <InstallType />
+    <InstallPath />
+    <InstallFile />
+    <InstallPara1 />
+    <InstallPara2 />
+    <InstallOrgFileSize>0</InstallOrgFileSize>
+    <InstallFileSize>0</InstallFileSize>
+    <ImageCate>C2P1</ImageCate>
+    <ImageType>GCP</ImageType>
+    <ImageSequence>20000</ImageSequence>
+    <MediaType>SM1</MediaType>
+    <MediaSubCate>ITMOPT</MediaSubCate>
+    <MediaSequence>20000</MediaSequence>
+    <CheckType />
+    <CheckRoot />
+    <VerifyAttribute />
+    <VerifyPara1 />
+    <VerifyPara2 />
+    <System />
+    <Selectable>Y</Selectable>
+    <AND />
+    <XOR />
+    <Version />
+    <RemoveFilePath />
+    <RemovePara1 />
+    <RemovePara2 />
+    <SWCate2>Microsoft Apps</SWCate2>
+    <Keyword1>Basic Item</Keyword1>
+    <Keyword2>Microsoft Apps</Keyword2>
+    <Keyword3>Microsoft Office</Keyword3>
+    <Feature>RECOMMEND</Feature>
+    <Feature>TBRQR</Feature>
+    <SubItemInfo>
+      <Path>%ProgramFiles%\Microsoft Office 15\root\office15\MSACCESS.exe</Path>
+      <Name>Microsoft Access 2013</Name>
+      <Title>
+        <Default>ENG</Default>
+        <Value>
+          <Lang>ENG</Lang>
+          <Str>Microsoft Access 2013</Str>
+        </Value>
+      </Title>
+    </SubItemInfo>
+    <SubItemInfo>
+      <Path>%ProgramFiles%\Microsoft Office 15\root\office15\EXCEL.exe</Path>
+      <Name>Microsoft Excel 2013</Name>
+      <Title>
+        <Default>ENG</Default>
+        <Value>
+          <Lang>ENG</Lang>
+          <Str>Microsoft Excel 2013</Str>
+        </Value>
+      </Title>
+    </SubItemInfo>
+    <SubItemInfo>
+      <Path>%ProgramFiles%\Microsoft Office\office15\FIRSTRUN.exe</Path>
+      <Name>Microsoft Office </Name>
+      <Title>
+        <Default>ENG</Default>
+        <Value>
+          <Lang>ENG</Lang>
+          <Str>Microsoft Office </Str>
+        </Value>
+      </Title>
+    </SubItemInfo>
+    <SubItemInfo>
+      <Path>%ProgramFiles%\Microsoft Office 15\root\office15\ONENOTE.EXE</Path>
+      <Name>Microsoft OneNote 2013</Name>
+      <Title>
+        <Default>ENG</Default>
+        <Value>
+          <Lang>ENG</Lang>
+          <Str>Microsoft OneNote 2013</Str>
+        </Value>
+      </Title>
+    </SubItemInfo>
+    <SubItemInfo>
+      <Path>%ProgramFiles%\Microsoft Office 15\root\office15\OUTLOOK.exe</Path>
+      <Name>Microsoft Outlook 2013</Name>
+      <Title>
+        <Default>ENG</Default>
+        <Value>
+          <Lang>ENG</Lang>
+          <Str>Microsoft Outlook 2013</Str>
+        </Value>
+      </Title>
+    </SubItemInfo>
+    <SubItemInfo>
+      <Path>%ProgramFiles%\Microsoft Office 15\root\office15\POWERPNT.exe</Path>
+      <Name>Microsoft PowerPoint 2013</Name>
+      <Title>
+        <Default>ENG</Default>
+        <Value>
+          <Lang>ENG</Lang>
+          <Str>Microsoft PowerPoint 2013</Str>
+        </Value>
+      </Title>
+    </SubItemInfo>
+    <SubItemInfo>
+      <Path>%ProgramFiles%\Microsoft Office 15\root\office15\MSPUB.EXE</Path>
+      <Name>Microsoft Publisher 2013</Name>
+      <Title>
+        <Default>ENG</Default>
+        <Value>
+          <Lang>ENG</Lang>
+          <Str>Microsoft Publisher 2013</Str>
+        </Value>
+      </Title>
+    </SubItemInfo>
+    <SubItemInfo>
+      <Path>%ProgramFiles%\Microsoft Office 15\root\office15\WINWORD.EXE</Path>
+      <Name>Microsoft Word 2013</Name>
+      <Title>
+        <Default>ENG</Default>
+        <Value>
+          <Lang>ENG</Lang>
+          <Str>Microsoft Word 2013</Str>
+        </Value>
+      </Title>
+    </SubItemInfo>
+    <AdURL>
+      <URL>0</URL>
+      <FromDate>0</FromDate>
+      <ToDate>0</ToDate>
+    </AdURL>
+    <Thumbnail />
+    <Screenshot1 />
+    <Screenshot2 />
+    <Screenshot3 />
+  </Item>
+  <Item>
+    <CISCode>BAIN-03478A01</CISCode>
+    <ItemType>INFORMATION</ItemType>
+    <DisplayName>QCA6234_WLAN_HW info 1.0</DisplayName>
+    <Region>DNC</Region>
+    <OS>DONCR</OS>
+    <Lang>DNC</Lang>
+    <ROLString>ALL</ROLString>
+    <InstallType />
+    <InstallPath />
+    <InstallFile />
+    <InstallPara1 />
+    <InstallPara2 />
+    <InstallOrgFileSize>0</InstallOrgFileSize>
+    <InstallFileSize>0</InstallFileSize>
+    <ImageCate>C2P1</ImageCate>
+    <ImageType>GCP</ImageType>
+    <ImageSequence>20000</ImageSequence>
+    <MediaType>SM1</MediaType>
+    <MediaSubCate>ITMOPT</MediaSubCate>
+    <MediaSequence>20000</MediaSequence>
+    <CheckType />
+    <CheckRoot>SD\VID_0271&amp;PID_0411;always</CheckRoot>
+    <VerifyAttribute />
+    <VerifyPara1 />
+    <VerifyPara2 />
+    <System />
+    <Selectable>Y</Selectable>
+    <AND>BASW-84383A</AND>
+    <XOR />
+    <Version />
+    <RemoveFilePath />
+    <RemovePara1 />
+    <RemovePara2 />
+    <SWCate2>Driver</SWCate2>
+    <Keyword1>Device&amp;Driver</Keyword1>
+    <Keyword2>WLAN</Keyword2>
+    <Keyword3>WLAN</Keyword3>
+    <Feature></Feature>
+    <AdURL>
+      <URL>0</URL>
+      <FromDate>0</FromDate>
+      <ToDate>0</ToDate>
+    </AdURL>
+    <Thumbnail />
+    <Screenshot1 />
+    <Screenshot2 />
+    <Screenshot3 />
+  </Item>
+  <Item>
+    <CISCode>BAIN-03479A02</CISCode>
+    <ItemType>INFORMATION</ItemType>
+    <DisplayName>William10.1_Wacom_Digitizer_HW_Info C-Type</DisplayName>
+    <Region>DNC</Region>
+    <OS>DONCR</OS>
+    <Lang>DNC</Lang>
+    <ROLString>ALL</ROLString>
+    <InstallType />
+    <InstallPath />
+    <InstallFile />
+    <InstallPara1 />
+    <InstallPara2 />
+    <InstallOrgFileSize>0</InstallOrgFileSize>
+    <InstallFileSize>0</InstallFileSize>
+    <ImageCate>C2P1</ImageCate>
+    <ImageType>GCP</ImageType>
+    <ImageSequence>20000</ImageSequence>
+    <MediaType>SM1</MediaType>
+    <MediaSubCate>ITMOPT</MediaSubCate>
+    <MediaSequence>20000</MediaSequence>
+    <CheckType>HWExist</CheckType>
+    <CheckRoot>ACPI\VEN_WACM&amp;DEV_0002;always</CheckRoot>
+    <VerifyAttribute />
+    <VerifyPara1 />
+    <VerifyPara2 />
+    <System>NotePC</System>
+    <Selectable>Y</Selectable>
+    <AND>BASW-84271A</AND>
+    <XOR />
+    <Version />
+    <RemoveFilePath />
+    <RemovePara1 />
+    <RemovePara2 />
+    <SWCate2>Driver</SWCate2>
+    <Keyword1>Device&amp;Driver</Keyword1>
+    <Keyword2>Digitizer</Keyword2>
+    <Keyword3>Wacom</Keyword3>
+    <Feature></Feature>
+    <AdURL>
+      <URL>0</URL>
+      <FromDate>0</FromDate>
+      <ToDate>0</ToDate>
+    </AdURL>
+    <Thumbnail />
+    <Screenshot1 />
+    <Screenshot2 />
+    <Screenshot3 />
+  </Item>
+  <Item>
+    <CISCode>BAIN-03487A09</CISCode>
+    <ItemType>INFORMATION</ItemType>
+    <DisplayName>William10.1 TSP/Digitizer FW Update Tool 1C85/0175 (WHCK)</DisplayName>
+    <Region>DNC</Region>
+    <OS>DONCR</OS>
+    <Lang>DNC</Lang>
+    <ROLString>ALL</ROLString>
+    <InstallType>PREINF</InstallType>
+    <InstallPath>BAIN-03487A\BAIN-03487A09.ZIP</InstallPath>
+    <InstallFile>TSP_Dig_Update.bat</InstallFile>
+    <InstallPara1>TSPFW</InstallPara1>
+    <InstallPara2 />
+    <InstallOrgFileSize>4804772</InstallOrgFileSize>
+    <InstallFileSize>2026413</InstallFileSize>
+    <ImageCate>C2P1</ImageCate>
+    <ImageType>GCP</ImageType>
+    <ImageSequence>20000</ImageSequence>
+    <MediaType>SM1</MediaType>
+    <MediaSubCate>ITMOPT</MediaSubCate>
+    <MediaSequence>20000</MediaSequence>
+    <CheckType>HWExist</CheckType>
+    <CheckRoot />
+    <VerifyAttribute />
+    <VerifyPara1 />
+    <VerifyPara2 />
+    <System />
+    <Selectable>Y</Selectable>
+    <AND />
+    <XOR />
+    <FURL>http://orcaservice.samsungmobile.com/FileDownloader.aspx?FILENAME=BAIN-03487A09.ZIP</FURL>
+    <Version />
+    <RemoveFilePath />
+    <RemovePara1 />
+    <RemovePara2 />
+    <SWCate2>Miscellaneous</SWCate2>
+    <Keyword1>PRT Only</Keyword1>
+    <Keyword2>Win8</Keyword2>
+    <Keyword3>OOBE Settings</Keyword3>
+    <Feature></Feature>
+    <AdURL>
+      <URL>0</URL>
+      <FromDate>0</FromDate>
+      <ToDate>0</ToDate>
+    </AdURL>
+    <Thumbnail />
+    <Screenshot1 />
+    <Screenshot2 />
+    <Screenshot3 />
+  </Item>
+  <Item>
+    <CISCode>BAIN-03508A01</CISCode>
+    <ItemType>INFORMATION</ItemType>
+    <DisplayName>QCA6234_BT_HW info 1.0</DisplayName>
+    <Region>DNC</Region>
+    <OS>DONCR</OS>
+    <Lang>DNC</Lang>
+    <ROLString>ALL</ROLString>
+    <InstallType />
+    <InstallPath />
+    <InstallFile />
+    <InstallPara1 />
+    <InstallPara2 />
+    <InstallOrgFileSize>0</InstallOrgFileSize>
+    <InstallFileSize>0</InstallFileSize>
+    <ImageCate>C2P1</ImageCate>
+    <ImageType>GCP</ImageType>
+    <ImageSequence>20000</ImageSequence>
+    <MediaType>SM1</MediaType>
+    <MediaSubCate>ITMOPT</MediaSubCate>
+    <MediaSequence>20000</MediaSequence>
+    <CheckType />
+    <CheckRoot>ACPI\VEN_DLAC&amp;DEV_3002;ACPI\DLAC3002;ACPI\SSAD3002;always</CheckRoot>
+    <VerifyAttribute />
+    <VerifyPara1 />
+    <VerifyPara2 />
+    <System />
+    <Selectable>Y</Selectable>
+    <AND>BASW-84236A</AND>
+    <XOR />
+    <Version />
+    <RemoveFilePath />
+    <RemovePara1 />
+    <RemovePara2 />
+    <SWCate2>Miscellaneous</SWCate2>
+    <Keyword1>MISC</Keyword1>
+    <Keyword2>MISC</Keyword2>
+    <Keyword3>MISC</Keyword3>
+    <Feature></Feature>
+    <AdURL>
+      <URL>0</URL>
+      <FromDate>0</FromDate>
+      <ToDate>0</ToDate>
+    </AdURL>
+    <Thumbnail />
+    <Screenshot1 />
+    <Screenshot2 />
+    <Screenshot3 />
+  </Item>
+  <Item>
+    <CISCode>BAIN-03385A01</CISCode>
+    <ItemType>INFORMATION</ItemType>
+    <DisplayName>Windows Reader Metro Pinning 0.1</DisplayName>
+    <Region>DNC</Region>
+    <OS>DONCR</OS>
+    <Lang>DNC</Lang>
+    <ROLString>ALL</ROLString>
+    <InstallType />
+    <InstallPath />
+    <InstallFile />
+    <InstallPara1 />
+    <InstallPara2 />
+    <InstallOrgFileSize>0</InstallOrgFileSize>
+    <InstallFileSize>0</InstallFileSize>
+    <ImageCate>C2P1</ImageCate>
+    <ImageType>GCP</ImageType>
+    <ImageSequence>20000</ImageSequence>
+    <MediaType>SM1</MediaType>
+    <MediaSubCate>ITMOPT</MediaSubCate>
+    <MediaSequence>20000</MediaSequence>
+    <CheckType />
+    <CheckRoot />
+    <VerifyAttribute />
+    <VerifyPara1 />
+    <VerifyPara2 />
+    <System />
+    <Selectable>Y</Selectable>
+    <AND />
+    <XOR />
+    <Version />
+    <RemoveFilePath />
+    <RemovePara1 />
+    <RemovePara2 />
+    <SWCate2>Miscellaneous</SWCate2>
+    <Keyword1>MISC</Keyword1>
+    <Keyword2>Metro</Keyword2>
+    <Keyword3>Metro</Keyword3>
+    <Feature></Feature>
+    <AdURL>
+      <URL>0</URL>
+      <FromDate>0</FromDate>
+      <ToDate>0</ToDate>
+    </AdURL>
+    <Thumbnail />
+    <Screenshot1 />
+    <Screenshot2 />
+    <Screenshot3 />
+  </Item>
+  <Item>
+    <CISCode>BAIN-03401A01</CISCode>
+    <ItemType>INFORMATION</ItemType>
+    <DisplayName>Cloverview_GFX_driver 1.0</DisplayName>
+    <Region>DNC</Region>
+    <OS>DONCR</OS>
+    <Lang>DNC</Lang>
+    <ROLString>ALL</ROLString>
+    <InstallType />
+    <InstallPath />
+    <InstallFile />
+    <InstallPara1 />
+    <InstallPara2 />
+    <InstallOrgFileSize>0</InstallOrgFileSize>
+    <InstallFileSize>0</InstallFileSize>
+    <ImageCate>C2P1</ImageCate>
+    <ImageType>GCP</ImageType>
+    <ImageSequence>20000</ImageSequence>
+    <MediaType>SM1</MediaType>
+    <MediaSubCate>ITMRQR</MediaSubCate>
+    <MediaSequence>20000</MediaSequence>
+    <CheckType />
+    <CheckRoot>PCI\VEN_8086&amp;DEV_08CF&amp;SUBSYS_08CF8086&amp;REV_05;PCI\VEN_8086&amp;DEV_08CF&amp;SUBSYS_08CF8086;PCI\VEN_8086&amp;DEV_08CF&amp;CC_030000;PCI\VEN_8086&amp;DEV_08CF&amp;CC_0300</CheckRoot>
+    <VerifyAttribute />
+    <VerifyPara1 />
+    <VerifyPara2 />
+    <System>NotePC</System>
+    <Selectable>Y</Selectable>
+    <AND>BASW-83359A</AND>
+    <XOR />
+    <Version />
+    <SWCate2>Driver</SWCate2>
+    <Keyword1>Device&amp;Driver</Keyword1>
+    <Keyword2>Graphics</Keyword2>
+    <Keyword3>Graphics</Keyword3>
+    <Feature></Feature>
+    <AdURL>
+      <URL>0</URL>
+      <FromDate>0</FromDate>
+      <ToDate>0</ToDate>
+    </AdURL>
+    <Thumbnail />
+    <Screenshot1 />
+    <Screenshot2 />
+    <Screenshot3 />
+  </Item>
+  <Item>
+    <CISCode>BAIN-03403A05</CISCode>
+    <ItemType>INFORMATION</ItemType>
+    <DisplayName>ATMEL FW Update Device ATML2000</DisplayName>
+    <Region>DNC</Region>
+    <OS>DONCR</OS>
+    <Lang>DNC</Lang>
+    <ROLString>ALL</ROLString>
+    <InstallType />
+    <InstallPath />
+    <InstallFile />
+    <InstallPara1 />
+    <InstallPara2 />
+    <InstallOrgFileSize>0</InstallOrgFileSize>
+    <InstallFileSize>0</InstallFileSize>
+    <ImageCate>C2P1</ImageCate>
+    <ImageType>GCP</ImageType>
+    <ImageSequence>20000</ImageSequence>
+    <MediaType>SM1</MediaType>
+    <MediaSubCate>ITMRQR</MediaSubCate>
+    <MediaSequence>20000</MediaSequence>
+    <CheckType>HWExist</CheckType>
+    <CheckRoot>ACPI\VEN_ATML&amp;DEV_2000;ACPI\ATML2000;*ATML2000;always</CheckRoot>
+    <VerifyAttribute />
+    <VerifyPara1 />
+    <VerifyPara2 />
+    <System />
+    <Selectable>Y</Selectable>
+    <AND>BASW-83847A</AND>
+    <XOR />
+    <Version />
+    <SWCate2>Driver</SWCate2>
+    <Keyword1>Device&amp;Driver</Keyword1>
+    <Keyword2>TSP</Keyword2>
+    <Keyword3>Atmel</Keyword3>
+    <Feature></Feature>
+    <AdURL>
+      <URL>0</URL>
+      <FromDate>0</FromDate>
+      <ToDate>0</ToDate>
+    </AdURL>
+    <Thumbnail />
+    <Screenshot1 />
+    <Screenshot2 />
+    <Screenshot3 />
+  </Item>
+  <Item>
+    <CISCode>BAIN-03404A02</CISCode>
+    <ItemType>INFORMATION</ItemType>
+    <DisplayName>Clverview_chipset_driver 1.0</DisplayName>
+    <Region>DNC</Region>
+    <OS>DONCR</OS>
+    <Lang>DNC</Lang>
+    <ROLString>ALL</ROLString>
+    <InstallType />
+    <InstallPath />
+    <InstallFile />
+    <InstallPara1 />
+    <InstallPara2 />
+    <InstallOrgFileSize>0</InstallOrgFileSize>
+    <InstallFileSize>0</InstallFileSize>
+    <ImageCate>C2P1</ImageCate>
+    <ImageType>GCP</ImageType>
+    <ImageSequence>20000</ImageSequence>
+    <MediaType>SM1</MediaType>
+    <MediaSubCate>ITMRQR</MediaSubCate>
+    <MediaSequence>20000</MediaSequence>
+    <CheckType />
+    <CheckRoot>ACPI\VEN_INT&amp;DEV_33BD;ACPI\INT33BD;*INT33BD</CheckRoot>
+    <VerifyAttribute />
+    <VerifyPara1 />
+    <VerifyPara2 />
+    <System />
+    <Selectable>Y</Selectable>
+    <AND>BASW-84261A</AND>
+    <XOR />
+    <Version />
+    <SWCate2>Driver</SWCate2>
+    <Keyword1>Device&amp;Driver</Keyword1>
+    <Keyword2>Chipset</Keyword2>
+    <Keyword3>Chipset</Keyword3>
+    <Feature></Feature>
+    <AdURL>
+      <URL>0</URL>
+      <FromDate>0</FromDate>
+      <ToDate>0</ToDate>
+    </AdURL>
+    <Thumbnail />
+    <Screenshot1 />
+    <Screenshot2 />
+    <Screenshot3 />
+  </Item>
+  <Item>
+    <CISCode>BAIN-03416A03</CISCode>
+    <ItemType>INFORMATION</ItemType>
+    <DisplayName>Intel Clover Trail Audio H/W Information 1.0</DisplayName>
+    <Region>DNC</Region>
+    <OS>DONCR</OS>
+    <Lang>DNC</Lang>
+    <ROLString>ALL</ROLString>
+    <InstallType />
+    <InstallPath />
+    <InstallFile />
+    <InstallPara1 />
+    <InstallPara2 />
+    <InstallOrgFileSize>0</InstallOrgFileSize>
+    <InstallFileSize>0</InstallFileSize>
+    <ImageCate>C2P1</ImageCate>
+    <ImageType>GCP</ImageType>
+    <ImageSequence>20000</ImageSequence>
+    <MediaType>SM1</MediaType>
+    <MediaSubCate>ITMRQR</MediaSubCate>
+    <MediaSequence>20000</MediaSequence>
+    <CheckType />
+    <CheckRoot>ACPI\VEN_INTC&amp;DEV_33B3;ACPI\INTC33B3;*INTC33B3;always</CheckRoot>
+    <VerifyAttribute />
+    <VerifyPara1 />
+    <VerifyPara2 />
+    <System>NotePC</System>
+    <Selectable>Y</Selectable>
+    <AND>BASW-84381A</AND>
+    <XOR />
+    <Version />
+    <SWCate2>Driver</SWCate2>
+    <Keyword1>Device&amp;Driver</Keyword1>
+    <Keyword2>Sound</Keyword2>
+    <Keyword3>Sound</Keyword3>
+    <Feature></Feature>
+    <AdURL>
+      <URL>0</URL>
+      <FromDate>0</FromDate>
+      <ToDate>0</ToDate>
+    </AdURL>
+    <Thumbnail />
+    <Screenshot1 />
+    <Screenshot2 />
+    <Screenshot3 />
+  </Item>
+  <Item>
+    <CISCode>BAIN-03477A02</CISCode>
+    <ItemType>INFORMATION</ItemType>
+    <DisplayName>QCA6234_BT_HW info 01</DisplayName>
+    <Region>DNC</Region>
+    <OS>DONCR</OS>
+    <Lang>DNC</Lang>
+    <ROLString>ALL</ROLString>
+    <InstallType />
+    <InstallPath />
+    <InstallFile />
+    <InstallPara1 />
+    <InstallPara2 />
+    <InstallOrgFileSize>0</InstallOrgFileSize>
+    <InstallFileSize>0</InstallFileSize>
+    <ImageCate>C2P1</ImageCate>
+    <ImageType>GCP</ImageType>
+    <ImageSequence>20000</ImageSequence>
+    <MediaType>SM1</MediaType>
+    <MediaSubCate>ITMOPT</MediaSubCate>
+    <MediaSequence>20000</MediaSequence>
+    <CheckType />
+    <CheckRoot>ACPI\VEN_DLAC&amp;DEV_3002;ACPI\DLAC3002;ACPI\SSAD3002</CheckRoot>
+    <VerifyAttribute />
+    <VerifyPara1 />
+    <VerifyPara2 />
+    <System />
+    <Selectable>Y</Selectable>
+    <AND />
+    <XOR />
+    <Version />
+    <RemoveFilePath />
+    <RemovePara1 />
+    <RemovePara2 />
+    <SWCate2>Driver</SWCate2>
+    <Keyword1>Device&amp;Driver</Keyword1>
+    <Keyword2>Bluetooth</Keyword2>
+    <Keyword3>Bluetooth</Keyword3>
+    <Feature></Feature>
+    <AdURL>
+      <URL>0</URL>
+      <FromDate>0</FromDate>
+      <ToDate>0</ToDate>
+    </AdURL>
+    <Thumbnail />
+    <Screenshot1 />
+    <Screenshot2 />
+    <Screenshot3 />
+  </Item>
+</MaxList>

@@ -1,0 +1,190 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<!--Created With CreateMup.exe Version 01.03.2013.1445-->
+<MUPDefinition xmlns="http://schemas.dell.com/openmanage/cm/2/0/mupdefinition.xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://schemas.dell.com/openmanage/cm/2/0/mupdefinition.xsd mupdefinition.xsd">
+  <packageinformation>
+    <installertype>installshield installscript</installertype>
+    <packagegrouping>single_package</packagegrouping>
+    <packagingtype>zip</packagingtype>
+    <releasetype>DRVR</releasetype>
+    <mupspecificationversion>2.3.0</mupspecificationversion>
+    <version>9.14.3.1177</version>
+    <name>Graphics </name>
+    <supportedoperatingsystems />
+  </packageinformation>
+  <executable>
+    <executablename>setup.exe</executablename>
+  </executable>
+  <behaviors>
+    <!--Not Supported By the Installer.... Conditional
+    <behavior name="freshinstall">
+    <vendoroption>
+        <optionvalue switch="/" requiresvalue="false"/>
+      </vendoroption>
+    </behavior>
+    -->
+    <!--Driver Only Package, Installer Doesn't need to support
+    <behavior name="driveronly">
+      <vendoroption>
+         <optionvalue switch="/" requiresvalue="false"></optionvalue>
+      </vendoroption>
+    </behavior>
+      <behavior name="applicationonly">
+      <vendoroption>
+         <optionvalue switch="/" requiresvalue="false"></optionvalue>
+      </vendoroption>
+    </behavior>
+    -->
+    <behavior name="extractdrivers">
+      <vendoroption>
+        <container>
+          <containervalue switch="/" requiresvalue="false" valuedelimiter=" " enclose="&quot;">v</containervalue>
+          <optionvalue switch="" requiresvalue="true" valuedelimiter="=" enclose="\&quot;">ExtractDrivers</optionvalue>
+        </container>
+      </vendoroption>
+    </behavior>
+    <behavior name="attended" />
+    <behavior name="help">
+      <vendoroption>
+        <optionvalue switch="/" requiresvalue="false">?</optionvalue>
+      </vendoroption>
+    </behavior>
+    <behavior name="unattended">
+      <vendoroption>
+        <optionvalue switch="/" requiresvalue="false">s</optionvalue>
+      </vendoroption>
+      <!-- The DUP will Restart the system
+      <vendoroption>
+        <optionvalue switch="/" requiresvalue="false">b</optionvalue>
+      </vendoroption>
+      -->
+    </behavior>
+  </behaviors>
+  <parameters>
+    <parametermapping name="force">
+      <vendoroption>
+        <optionvalue switch="/" requiresvalue="false">overwrite</optionvalue>
+      </vendoroption>
+    </parametermapping>
+    <parametermapping name="logfile">
+      <vendoroption>
+        <optionvalue switch="/" requiresvalue="true" valuedelimiter=" " enclose="&quot;">report</optionvalue>
+      </vendoroption>
+    </parametermapping>
+  </parameters>
+  <returncodes>
+    <returncodemapping name="REBOOTING_SYSTEM">
+      <vendorreturncode>15</vendorreturncode>
+    </returncodemapping>
+    <returncodemapping name="PASSWORD_REQUIRED">
+      <vendorreturncode>2</vendorreturncode>
+    </returncodemapping>
+    <returncodemapping name="NO_DOWNGRADE">
+      <!--Always able to DownGrade, Installer Doesn't need to support-->
+      <vendorreturncode>9999</vendorreturncode>
+    </returncodemapping>
+    <returncodemapping name="REBOOT_UPDATE_PENDING">
+      <!--Installer only Reboots Once, Installer Doesn't need to support-->
+      <vendorreturncode>9999</vendorreturncode>
+    </returncodemapping>
+    <returncodemapping name="DEP_SOFT_ERROR">
+      <vendorreturncode>7</vendorreturncode>
+    </returncodemapping>
+    <returncodemapping name="DEP_HARD_ERROR">
+      <vendorreturncode>5</vendorreturncode>
+    </returncodemapping>
+    <returncodemapping name="SUCCESS">
+      <vendorreturncode>0</vendorreturncode>
+    </returncodemapping>
+    <returncodemapping name="ERROR">
+      <vendorreturncode>10</vendorreturncode>
+    </returncodemapping>
+    <returncodemapping name="REBOOT_REQUIRED">
+      <vendorreturncode>14</vendorreturncode>
+    </returncodemapping>
+    <returncodemapping name="ERROR_INSTALL_PLATFORM_UNSUPPORTED">
+      <vendorreturncode>3</vendorreturncode>
+    </returncodemapping>
+    <returncodemapping name="UNKNOWN_OPTION">
+      <vendorreturncode>1</vendorreturncode>
+    </returncodemapping>
+    <returncodemapping name="ERROR">
+      <vendorreturncode>9</vendorreturncode>
+    </returncodemapping>
+    <returncodemapping name="ERROR">
+      <vendorreturncode>6</vendorreturncode>
+    </returncodemapping>
+    <returncodemapping name="ERROR">
+      <vendorreturncode>4</vendorreturncode>
+    </returncodemapping>
+  </returncodes>
+  <inventorymetadata>
+    <extractdriversidentifier>
+      <softwareidentityinstances>
+        <!--filename: \Setup.exe-->
+        <softwareidentity>
+          <elementname>Intel(R) Graphics Media Accelerator installer</elementname>
+          <versionstring>1.5.8.0</versionstring>
+        </softwareidentity>
+        <!--filename: \Graphics\hkcmd.exe-->
+        <softwareidentity>
+          <elementname>hkcmd Module</elementname>
+          <versionstring>9.14.3.1177</versionstring>
+        </softwareidentity>
+        <!--filename: \Graphics\IgfxExt.exe-->
+        <softwareidentity>
+          <elementname>igfxext Module</elementname>
+          <versionstring>9.14.3.1177</versionstring>
+        </softwareidentity>
+        <!--filename: \Graphics\igfxpers.exe-->
+        <softwareidentity>
+          <elementname>persistence Module</elementname>
+          <versionstring>9.14.3.1177</versionstring>
+        </softwareidentity>
+        <!--filename: \Graphics\igfxsrvc.exe-->
+        <softwareidentity>
+          <elementname>igfxsrvc Module</elementname>
+          <versionstring>9.14.3.1177</versionstring>
+        </softwareidentity>
+        <!--filename: \Graphics\igfxtray.exe-->
+        <softwareidentity>
+          <elementname>igfxTray Module</elementname>
+          <versionstring>9.14.3.1177</versionstring>
+        </softwareidentity>
+        <!--filename: \Graphics\igxpun.exe-->
+        <softwareidentity>
+          <elementname>Intel(R) Graphics Media Accelerator installer</elementname>
+          <versionstring>1.5.8.0</versionstring>
+        </softwareidentity>
+        <!--filename: \Graphics\IntelInvokePanel.exe-->
+        <softwareidentity>
+          <elementname>IntelInvokePanel</elementname>
+          <versionstring>9.14.3.1177</versionstring>
+        </softwareidentity>
+      </softwareidentityinstances>
+      <pnpids>
+        <pnpdevice>
+          <!--filename: \Graphics\igd_gfx32_clv.inf-->
+          <driverversion>9.14.3.1177</driverversion>
+          <pnpidstring>PCI\VEN_8086&amp;DEV_08C7</pnpidstring>
+          <pnpidstring>PCI\VEN_8086&amp;DEV_08C8</pnpidstring>
+          <pnpidstring>PCI\VEN_8086&amp;DEV_08C9</pnpidstring>
+          <pnpidstring>PCI\VEN_8086&amp;DEV_08CA</pnpidstring>
+          <pnpidstring>PCI\VEN_8086&amp;DEV_08CB</pnpidstring>
+          <pnpidstring>PCI\VEN_8086&amp;DEV_08CC</pnpidstring>
+          <pnpidstring>PCI\VEN_8086&amp;DEV_08CD</pnpidstring>
+          <pnpidstring>PCI\VEN_8086&amp;DEV_08CE</pnpidstring>
+          <pnpidstring>PCI\VEN_8086&amp;DEV_08CF</pnpidstring>
+        </pnpdevice>
+      </pnpids>
+    </extractdriversidentifier>
+    <fullpackageidentifier>
+      <msis>
+        <msi>
+          <identifyingnumber>{4D36E968-E325-11CE-BFC1-08002BE10318}</identifyingnumber>
+          <version>9.14.3.1177</version>
+          <upgradecode>{4D36E968-E325-11CE-BFC1-08002BE10318}</upgradecode>
+        </msi>
+      </msis>
+    </fullpackageidentifier>
+  </inventorymetadata>
+</MUPDefinition>

@@ -1,0 +1,4 @@
+[ISDOemPreInstall]
+DeleteAllPrefs
+SetFlag;SKIP_PEN_CPL;1
+DONE

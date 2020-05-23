@@ -1,0 +1,373 @@
+;/* 
+;Copyright (c) 2013 Qualcomm Atheros, Inc.
+;All Rights Reserved. 
+;Qualcomm Atheros Confidential and Proprietary. 
+;*/
+
+[Version]
+Signature          = "$Windows NT$"
+Class              = System
+ClassGuid          = {4D36E97D-E325-11CE-BFC1-08002BE10318}
+Provider           = %QCA%
+DriverVer          = 02/10/2014,2.2.0.18
+CatalogFile.NT     = qcbtuart.cat
+
+[DestinationDirs]
+BTUART.Files       = 12
+RadioSupport.Files = 11
+
+[SourceDisksNames]
+1=%SourceDisk%,,1
+
+[SourceDisksFiles]
+qcbtuart.sys = 1,,
+AthrBT_0x01020201.pst = 1,,
+ramps_0x01020201_26.pst = 1,,
+ramps_0x01020201_26_DLAB.pst = 1,,
+ramps_0x01020201_26_DLAC.pst = 1,,
+ramps_0x01020201_26_SSAD.pst = 1,,
+ramps_0x01020201_26_IAAE.pst = 1,,
+ramps_0x01020201_26_DLAB_gpio.pst = 1,,
+ramps_0x01020201_26_DLAC_gpio.pst = 1,,
+ramps_0x01020201_26_SSAD_gpio.pst = 1,,
+ramps_0x01020201_26_IAAE_gpio.pst = 1,,
+qcbtctrl.dll = 1,,
+
+[ControlFlags]
+ExcludeFromSelect=*
+
+[Manufacturer]
+%QCA% = QCABT,NTx86.6.2,NTx86.6.3
+
+[QCABT.NTx86.6.2]
+%UartBtHPAA%     = QCABTUART_HPAA_WIN8, ACPI\QCA_BTH_AR3002
+%UartBtDLAB%     = QCABTUART_DLAB_WIN8, ACPI\DLAB3002
+%UartBtDLAC%     = QCABTUART_DLAC_WIN8, ACPI\DLAC3002
+%UartBtSSAD%     = QCABTUART_SSAD_WIN8, ACPI\SSAD3002
+%UartBtIAAE%     = QCABTUART_IAAE_WIN8, ACPI\IAAE3002
+
+[QCABT.NTx86.6.3]
+%UartBtHPAA%     = QCABTUART_HPAA, ACPI\QCA_BTH_AR3002
+%UartBtDLAB%     = QCABTUART_DLAB, ACPI\DLAB3002
+%UartBtDLAC%     = QCABTUART_DLAC, ACPI\DLAC3002
+%UartBtSSAD%     = QCABTUART_SSAD, ACPI\SSAD3002
+%UartBtIAAE%     = QCABTUART_IAAE, ACPI\IAAE3002
+
+[QCABTUART_HPAA_WIN8.NT]
+CopyFiles = BTUART.Files, RadioSupport.Files
+
+[QCABTUART_DLAB_WIN8.NT]
+CopyFiles = BTUART.Files, RadioSupport.Files
+
+[QCABTUART_DLAC_WIN8.NT]
+CopyFiles = BTUART.Files, RadioSupport.Files
+
+[QCABTUART_SSAD_WIN8.NT]
+CopyFiles = BTUART.Files, RadioSupport.Files
+
+[QCABTUART_IAAE_WIN8.NT]
+CopyFiles = BTUART.Files, RadioSupport.Files
+
+[QCABTUART_HPAA.NT]
+CopyFiles = BTUART.Files
+
+[QCABTUART_DLAB.NT]
+CopyFiles = BTUART.Files
+
+[QCABTUART_DLAC.NT]
+CopyFiles = BTUART.Files
+
+[QCABTUART_SSAD.NT]
+CopyFiles = BTUART.Files
+
+[QCABTUART_IAAE.NT]
+CopyFiles = BTUART.Files
+
+[BTUART.Files]
+qcbtuart.sys
+AthrBT_0x01020201.pst
+ramps_0x01020201_26.pst
+ramps_0x01020201_26_DLAB.pst
+ramps_0x01020201_26_DLAC.pst
+ramps_0x01020201_26_SSAD.pst
+ramps_0x01020201_26_IAAE.pst
+ramps_0x01020201_26_DLAB_gpio.pst
+ramps_0x01020201_26_DLAC_gpio.pst
+ramps_0x01020201_26_SSAD_gpio.pst
+ramps_0x01020201_26_IAAE_gpio.pst
+
+[RadioSupport.Files]
+qcbtctrl.dll,,,0x00004000
+
+[QCABTUART_HPAA_WIN8.NT.HW]
+AddReg = BTUART.HW.AddReg
+AddReg = RadioSupport.AddReg
+
+[QCABTUART_DLAB_WIN8.NT.HW]
+AddReg = BTUART.HW.AddReg
+AddReg = RadioSupport.AddReg
+
+[QCABTUART_DLAC_WIN8.NT.HW]
+AddReg = BTUART.HW.AddReg
+AddReg = RadioSupport.AddReg
+
+[QCABTUART_SSAD_WIN8.NT.HW]
+AddReg = BTUART.HW.AddReg
+AddReg = RadioSupport.AddReg
+
+[QCABTUART_IAAE_WIN8.NT.HW]
+AddReg = BTUART.HW.AddReg
+AddReg = RadioSupport.AddReg
+
+[QCABTUART_HPAA.NT.HW]
+AddReg = BTUART.HW.AddReg
+
+[QCABTUART_DLAB.NT.HW]
+AddReg = BTUART.HW.AddReg
+
+[QCABTUART_DLAC.NT.HW]
+AddReg = BTUART.HW.AddReg
+
+[QCABTUART_SSAD.NT.HW]
+AddReg = BTUART.HW.AddReg
+
+[QCABTUART_IAAE.NT.HW]
+AddReg = BTUART.HW.AddReg
+
+[BTUART.HW.AddReg]
+HKR,,DeviceCharacteristics,0x10001,0x0100                  ; Use same security checks on relative opens
+HKR,,Security,,"D:P(A;;GA;;;BA)(A;;GA;;;SY)(A;;GA;;;LS)"   ; Allow generic-all access to Built-in administrators and Local system 
+
+[RadioSupport.AddReg]
+HKLM,%Bthport.Parameters%\Radio Support,SupportDLL,0x20000,%11%\qcbtctrl.dll
+
+[QCABTUART_HPAA_WIN8.NT.Services]
+AddService = qcbtuart,0x00000002,BTUART_HPAA_Service
+
+[QCABTUART_DLAB_WIN8.NT.Services]
+AddService = qcbtuart,0x00000002,BTUART_DLAB_Service
+
+[QCABTUART_DLAC_WIN8.NT.Services]
+AddService = qcbtuart,0x00000002,BTUART_DLAC_Service
+
+[QCABTUART_SSAD_WIN8.NT.Services]
+AddService = qcbtuart,0x00000002,BTUART_SSAD_Service
+
+[QCABTUART_IAAE_WIN8.NT.Services]
+AddService = qcbtuart,0x00000002,BTUART_IAAE_Service
+
+[QCABTUART_HPAA.NT.Services]
+AddService = qcbtuart,0x00000002,BTUART_HPAA_Service
+
+[QCABTUART_DLAB.NT.Services]
+AddService = qcbtuart,0x00000002,BTUART_DLAB_Service
+
+[QCABTUART_DLAC.NT.Services]
+AddService = qcbtuart,0x00000002,BTUART_DLAC_Service
+
+[QCABTUART_SSAD.NT.Services]
+AddService = qcbtuart,0x00000002,BTUART_SSAD_Service
+
+[QCABTUART_IAAE.NT.Services]
+AddService = qcbtuart,0x00000002,BTUART_IAAE_Service
+
+[BTUART_HPAA_Service]
+DisplayName    = %SvcDispName%
+ServiceType    = 1  ; SERVICE_KERNEL_DRIVER
+StartType      = 3  ; SERVICE_DEMAND_START 
+ErrorControl   = 1  ; SERVICE_ERROR_NORMAL
+ServiceBinary  = %12%\qcbtuart.sys
+AddReg	       = BTUART_HPAA_Service.AddReg
+
+[BTUART_DLAB_Service]
+DisplayName    = %SvcDispName%
+ServiceType    = 1  ; SERVICE_KERNEL_DRIVER
+StartType      = 3  ; SERVICE_DEMAND_START 
+ErrorControl   = 1  ; SERVICE_ERROR_NORMAL
+ServiceBinary  = %12%\qcbtuart.sys
+AddReg	       = BTUART_DLAB_Service.AddReg
+
+[BTUART_DLAC_Service]
+DisplayName    = %SvcDispName%
+ServiceType    = 1  ; SERVICE_KERNEL_DRIVER
+StartType      = 3  ; SERVICE_DEMAND_START 
+ErrorControl   = 1  ; SERVICE_ERROR_NORMAL
+ServiceBinary  = %12%\qcbtuart.sys
+AddReg	       = BTUART_DLAC_Service.AddReg
+
+[BTUART_SSAD_Service]
+DisplayName    = %SvcDispName%
+ServiceType    = 1  ; SERVICE_KERNEL_DRIVER
+StartType      = 3  ; SERVICE_DEMAND_START 
+ErrorControl   = 1  ; SERVICE_ERROR_NORMAL
+ServiceBinary  = %12%\qcbtuart.sys
+AddReg	       = BTUART_SSAD_Service.AddReg
+
+[BTUART_IAAE_Service]
+DisplayName    = %SvcDispName%
+ServiceType    = 1  ; SERVICE_KERNEL_DRIVER
+StartType      = 3  ; SERVICE_DEMAND_START 
+ErrorControl   = 1  ; SERVICE_ERROR_NORMAL
+ServiceBinary  = %12%\qcbtuart.sys
+AddReg	       = BTUART_IAAE_Service.AddReg
+
+[BTUART_HPAA_Service.AddReg]
+HKR,Parameters,BinFilePath,0x00000,"\DosDevices\%12%\"
+HKR,Parameters,DebugFlags,0x10001,0xC000C000
+HKR,Parameters,DebugLevel,0x10001,0x0000FFFF
+HKR,Parameters,BtLogEnabled,0x10001,0
+HKR,Parameters,HCIDumpEnabled,0x10001,0
+HKR,Parameters,HciDumpRawDataForEventsNotDecoded,0x10001,1
+HKR,Parameters,AclDumpRawData,0x10001,1
+HKR,Parameters,HciDumpTruncateSize,0x10001,0
+HKR,Parameters,RamPatchDumpEnabled,0x10001,0
+HKR,Parameters,RamPsDumpEnabled,0x10001,0
+HKR,Parameters,RamPsOveride,0x10001,0
+HKR,Parameters,UART_TO_READ,0x10001,40
+HKR,Parameters,UART_TO_WRITE,0x10001,1500
+HKR,Parameters,BaudRate,0x10001,3686400
+HKR,Parameters,DefaultBaudRate,0x10001,3686400
+HKR,Parameters,ExplicitRtsWakeup,0x10001,0
+HKR,Parameters,CmdAclOutUseUnifiedQ,0x10001,0
+HKR,Parameters,EvtAclInUseUnifiedQ,0x10001,1
+HKR,Parameters,EvtAclInGoThroughIoWorker,0x10001,0
+HKR,Parameters,EvtInPrioritized,0x10001,1
+HKR,Parameters,AclPassupDelay,0x10001,10
+HKR,Parameters,RadioRtD2Enabled,0x10001,1
+HKR,Parameters,RadioGPIOControled,0x10001,0
+HKR,Parameters,WriteRetryEnabled,0x10001,1
+HKR,Parameters,DynamicSwitch,0x10001,0
+HKR,Parameters,WlanCoexEnabled,0x10001,1
+HKR,Parameters,LTECoexEnabled,0x10001,0
+HKR,Parameters,SSREnabled,0x10001,1
+
+[BTUART_DLAB_Service.AddReg]
+HKR,Parameters,BinFilePath,0x00000,"\DosDevices\%12%\"
+HKR,Parameters,DebugFlags,0x10001,0xC000C000
+HKR,Parameters,DebugLevel,0x10001,0x0000FFFF
+HKR,Parameters,BtLogEnabled,0x10001,0
+HKR,Parameters,HCIDumpEnabled,0x10001,0
+HKR,Parameters,HciDumpRawDataForEventsNotDecoded,0x10001,1
+HKR,Parameters,AclDumpRawData,0x10001,1
+HKR,Parameters,HciDumpTruncateSize,0x10001,0
+HKR,Parameters,RamPatchDumpEnabled,0x10001,0
+HKR,Parameters,RamPsDumpEnabled,0x10001,0
+HKR,Parameters,RamPsOveride,0x10001,0
+HKR,Parameters,UART_TO_READ,0x10001,40
+HKR,Parameters,UART_TO_WRITE,0x10001,1500
+HKR,Parameters,BaudRate,0x10001,3686400
+HKR,Parameters,DefaultBaudRate,0x10001,3686400
+HKR,Parameters,ExplicitRtsWakeup,0x10001,0
+HKR,Parameters,CmdAclOutUseUnifiedQ,0x10001,0
+HKR,Parameters,EvtAclInUseUnifiedQ,0x10001,1
+HKR,Parameters,EvtAclInGoThroughIoWorker,0x10001,0
+HKR,Parameters,EvtInPrioritized,0x10001,1
+HKR,Parameters,AclPassupDelay,0x10001,10
+HKR,Parameters,RadioRtD2Enabled,0x10001,1
+HKR,Parameters,RadioGPIOControled,0x10001,1
+HKR,Parameters,WriteRetryEnabled,0x10001,1
+HKR,Parameters,DynamicSwitch,0x10001,0
+HKR,Parameters,WlanCoexEnabled,0x10001,1
+HKR,Parameters,LTECoexEnabled,0x10001,0
+HKR,Parameters,SSREnabled,0x10001,1
+
+[BTUART_DLAC_Service.AddReg]
+HKR,Parameters,BinFilePath,0x00000,"\DosDevices\%12%\"
+HKR,Parameters,DebugFlags,0x10001,0xC000C000
+HKR,Parameters,DebugLevel,0x10001,0x0000FFFF
+HKR,Parameters,BtLogEnabled,0x10001,0
+HKR,Parameters,HCIDumpEnabled,0x10001,0
+HKR,Parameters,HciDumpRawDataForEventsNotDecoded,0x10001,1
+HKR,Parameters,AclDumpRawData,0x10001,1
+HKR,Parameters,HciDumpTruncateSize,0x10001,0
+HKR,Parameters,RamPatchDumpEnabled,0x10001,0
+HKR,Parameters,RamPsDumpEnabled,0x10001,0
+HKR,Parameters,RamPsOveride,0x10001,0
+HKR,Parameters,UART_TO_READ,0x10001,40
+HKR,Parameters,UART_TO_WRITE,0x10001,1500
+HKR,Parameters,BaudRate,0x10001,3686400
+HKR,Parameters,DefaultBaudRate,0x10001,115200
+HKR,Parameters,ExplicitRtsWakeup,0x10001,1
+HKR,Parameters,CmdAclOutUseUnifiedQ,0x10001,0
+HKR,Parameters,EvtAclInUseUnifiedQ,0x10001,1
+HKR,Parameters,EvtAclInGoThroughIoWorker,0x10001,0
+HKR,Parameters,EvtInPrioritized,0x10001,1
+HKR,Parameters,AclPassupDelay,0x10001,10
+HKR,Parameters,RadioRtD2Enabled,0x10001,1
+HKR,Parameters,RadioGPIOControled,0x10001,1
+HKR,Parameters,WriteRetryEnabled,0x10001,1
+HKR,Parameters,DynamicSwitch,0x10001,0
+HKR,Parameters,WlanCoexEnabled,0x10001,1
+HKR,Parameters,LTECoexEnabled,0x10001,0
+HKR,Parameters,SSREnabled,0x10001,1
+
+[BTUART_SSAD_Service.AddReg]
+HKR,Parameters,BinFilePath,0x00000,"\DosDevices\%12%\"
+HKR,Parameters,DebugFlags,0x10001,0xC000C000
+HKR,Parameters,DebugLevel,0x10001,0x0000FFFF
+HKR,Parameters,BtLogEnabled,0x10001,0
+HKR,Parameters,HCIDumpEnabled,0x10001,0
+HKR,Parameters,HciDumpRawDataForEventsNotDecoded,0x10001,1
+HKR,Parameters,AclDumpRawData,0x10001,1
+HKR,Parameters,HciDumpTruncateSize,0x10001,0
+HKR,Parameters,RamPatchDumpEnabled,0x10001,0
+HKR,Parameters,RamPsDumpEnabled,0x10001,0
+HKR,Parameters,RamPsOveride,0x10001,0
+HKR,Parameters,UART_TO_READ,0x10001,40
+HKR,Parameters,UART_TO_WRITE,0x10001,1500
+HKR,Parameters,BaudRate,0x10001,3686400
+HKR,Parameters,DefaultBaudRate,0x10001,115200
+HKR,Parameters,ExplicitRtsWakeup,0x10001,1
+HKR,Parameters,CmdAclOutUseUnifiedQ,0x10001,0
+HKR,Parameters,EvtAclInUseUnifiedQ,0x10001,1
+HKR,Parameters,EvtAclInGoThroughIoWorker,0x10001,0
+HKR,Parameters,EvtInPrioritized,0x10001,1
+HKR,Parameters,AclPassupDelay,0x10001,10
+HKR,Parameters,RadioRtD2Enabled,0x10001,1
+HKR,Parameters,RadioGPIOControled,0x10001,1
+HKR,Parameters,WriteRetryEnabled,0x10001,1
+HKR,Parameters,DynamicSwitch,0x10001,0
+HKR,Parameters,WlanCoexEnabled,0x10001,1
+HKR,Parameters,LTECoexEnabled,0x10001,0
+HKR,Parameters,SSREnabled,0x10001,1
+
+[BTUART_IAAE_Service.AddReg]
+HKR,Parameters,BinFilePath,0x00000,"\DosDevices\%12%\"
+HKR,Parameters,DebugFlags,0x10001,0xC000C000
+HKR,Parameters,DebugLevel,0x10001,0x0000FFFF
+HKR,Parameters,BtLogEnabled,0x10001,1
+HKR,Parameters,HCIDumpEnabled,0x10001,0
+HKR,Parameters,HciDumpRawDataForEventsNotDecoded,0x10001,1
+HKR,Parameters,AclDumpRawData,0x10001,1
+HKR,Parameters,HciDumpTruncateSize,0x10001,0
+HKR,Parameters,RamPatchDumpEnabled,0x10001,0
+HKR,Parameters,RamPsDumpEnabled,0x10001,0
+HKR,Parameters,RamPsOveride,0x10001,0
+HKR,Parameters,UART_TO_READ,0x10001,40
+HKR,Parameters,UART_TO_WRITE,0x10001,1500
+HKR,Parameters,BaudRate,0x10001,3686400
+HKR,Parameters,DefaultBaudRate,0x10001,115200
+HKR,Parameters,ExplicitRtsWakeup,0x10001,1
+HKR,Parameters,CmdAclOutUseUnifiedQ,0x10001,0
+HKR,Parameters,EvtAclInUseUnifiedQ,0x10001,1
+HKR,Parameters,EvtAclInGoThroughIoWorker,0x10001,0
+HKR,Parameters,EvtInPrioritized,0x10001,1
+HKR,Parameters,AclPassupDelay,0x10001,10
+HKR,Parameters,RadioRtD2Enabled,0x10001,1
+HKR,Parameters,RadioGPIOControled,0x10001,1
+HKR,Parameters,WriteRetryEnabled,0x10001,1
+HKR,Parameters,DynamicSwitch,0x10001,0
+HKR,Parameters,WlanCoexEnabled,0x10001,1
+HKR,Parameters,LTECoexEnabled,0x10001,0
+HKR,Parameters,SSREnabled,0x10001,1
+
+[Strings]
+QCA                = "Qualcomm Atheros, Inc."
+SourceDisk         = "Qualcomm Atheros Bluetooth Extensibility Transport Driver Installation Disk"
+SvcDispName        = "Bluetooth UART Transport Driver"
+Bthport.Parameters = "SYSTEM\CurrentControlSet\Services\BTHPORT\Parameters"
+UartBtHPAA         = "Qualcomm Atheros Bluetooth UART Transport Driver"
+UartBtDLAB         = "Qualcomm Atheros Bluetooth UART Transport Driver "
+UartBtDLAC         = "Qualcomm Atheros Bluetooth UART Transport Driver  "
+UartBtSSAD         = "Qualcomm Atheros Bluetooth UART Transport Driver   "
+UartBtIAAE         = "Qualcomm Atheros Bluetooth UART Transport Driver    "

@@ -1,0 +1,221 @@
+; wachidrouter.INF
+; Copyright (c) 2011 Wacom Technology
+
+[version]
+signature="$WINDOWS NT$"
+Class=HIDClass
+ClassGuid={745a17a0-74d3-11d0-b6fe-00a0c90f57da}
+Provider=%WAC%
+CatalogFile.NT=wachidrouter_isd.cat
+DriverVer=08/02/2013, 3.0.0.1
+
+[SourceDisksNames]
+3426=%DiskName%
+
+[SourceDisksFiles]
+wachidrouter.sys 								= 3426
+hidkmdf.sys            						= 3426
+wdfcoinstaller01009.dll						= 3426
+
+[ControlFlags]
+ExcludeFromSelect=*
+
+[DestinationDirs]
+DefaultDestDir              				= 11     ;LDID_SYS
+WacHidRouterInst_CoInstaller_Copy	 	= 11     ;LDID_SYS
+WacHIDRouterInst.NT.Copy        			= 12     ;LDID_DRIVERS
+
+; Drivers
+;----------------------------------------------------------
+[Manufacturer]
+%WAC%=Wacom, NTamd64
+
+[Wacom]
+
+%WacDev.DeviceDesc% = WacHIDRouterInst_USB, USB\VID_056A&PID_0090
+%WacDev.DeviceDesc% = WacHIDRouterInst_USB, USB\VID_056A&PID_0093
+%WacDev.DeviceDesc% = WacHIDRouterInst_USB, USB\VID_056A&PID_00E2
+%WacDev.DeviceDesc% = WacHIDRouterInst_USB, USB\VID_056A&PID_00E3
+%WacDev.DeviceDesc% = WacHIDRouterInst_USB, USB\VID_056A&PID_00E5
+%WacDev.DeviceDesc% = WacHIDRouterInst_USB, USB\VID_056A&PID_00E6
+%WacDev.DeviceDesc% = WacHIDRouterInst_USB, USB\VID_056A&PID_00EC
+%WacDev.DeviceDesc% = WacHIDRouterInst_USB, USB\VID_056A&PID_00ED
+%WacDev.DeviceDesc% = WacHIDRouterInst_USB, USB\VID_056A&PID_00EF
+%WacDev.DeviceDesc% = WacHIDRouterInst_USB, USB\VID_056A&PID_0100
+%WacDev.DeviceDesc% = WacHIDRouterInst_USB, USB\VID_056A&PID_0101
+%WacDev.DeviceDesc% = WacHIDRouterInst_USB, USB\VID_056A&PID_010D
+%WacDev.DeviceDesc% = WacHIDRouterInst_USB, USB\VID_056A&PID_010E
+%WacDev.DeviceDesc% = WacHIDRouterInst_USB, USB\VID_056A&PID_010F
+%WacDev.DeviceDesc% = WacHIDRouterInst_USB, USB\VID_056A&PID_0110
+%WacDev.DeviceDesc% = WacHIDRouterInst_USB, USB\VID_056A&PID_0116
+%WacDev.DeviceDesc% = WacHIDRouterInst_USB, USB\VID_056A&PID_0120
+%WacDev.DeviceDesc% = WacHIDRouterInst_USB, USB\VID_056A&PID_0123
+%WacDev.DeviceDesc% = WacHIDRouterInst_Serial, ACPI\WACF004
+%WacDev.DeviceDesc% = WacHIDRouterInst_Serial, ACPI\FUJ02E5
+%WacDev.DeviceDesc% = WacHIDRouterInst_Serial, ACPI\WCOM4000
+%WacDev.DeviceDesc% = WacHIDRouterInst_Serial, ACPI\WACF005
+%WacDev.DeviceDesc% = WacHIDRouterInst_Serial, ACPI\WACF006
+%WacDev.DeviceDesc% = WacHIDRouterInst_Serial, ACPI\WACF007
+%WacDev.DeviceDesc% = WacHIDRouterInst_Serial, ACPI\WACF008
+%WacDev.DeviceDesc% = WacHIDRouterInst_Serial, ACPI\WACF009
+%WacDev.DeviceDesc% = WacHIDRouterInst_Serial, ACPI\WACF00A
+%WacDev.DeviceDesc% = WacHIDRouterInst_Serial, ACPI\FUJ02E9
+%WacDev.DeviceDesc% = WacHIDRouterInst_Serial, ACPI\WACF00C
+%WacDev.DeviceDesc% = WacHIDRouterInst_Serial, ACPI\FUJ02E7
+%WacDev.DeviceDesc% = WacHIDRouterInst_Serial, ACPI\WACF00E
+%WacDev.DeviceDesc% = WacHIDRouterInst_Serial, ACPI\WACF010
+%WacDev.DeviceDesc% = WacHIDRouterInst_USB, USB\VID_056A&PID_5000
+%WacDev.DeviceDesc% = WacHIDRouterInst_USB, USB\VID_056A&PID_5002
+%WacDev.DeviceDesc% = WacHIDRouterInst_USB, USB\VID_0B05&PID_179F
+%WacDev.DeviceDesc% = WacHIDRouterInst_USB, USB\VID_17EF&PID_6004
+
+
+[Wacom.NTamd64]
+%WacDev.DeviceDesc% = WacHIDRouterInst_USB, USB\VID_056A&PID_0090
+%WacDev.DeviceDesc% = WacHIDRouterInst_USB, USB\VID_056A&PID_0093
+%WacDev.DeviceDesc% = WacHIDRouterInst_USB, USB\VID_056A&PID_00E2
+%WacDev.DeviceDesc% = WacHIDRouterInst_USB, USB\VID_056A&PID_00E3
+%WacDev.DeviceDesc% = WacHIDRouterInst_USB, USB\VID_056A&PID_00E5
+%WacDev.DeviceDesc% = WacHIDRouterInst_USB, USB\VID_056A&PID_00E6
+%WacDev.DeviceDesc% = WacHIDRouterInst_USB, USB\VID_056A&PID_00EC
+%WacDev.DeviceDesc% = WacHIDRouterInst_USB, USB\VID_056A&PID_00ED
+%WacDev.DeviceDesc% = WacHIDRouterInst_USB, USB\VID_056A&PID_00EF
+%WacDev.DeviceDesc% = WacHIDRouterInst_USB, USB\VID_056A&PID_0100
+%WacDev.DeviceDesc% = WacHIDRouterInst_USB, USB\VID_056A&PID_0101
+%WacDev.DeviceDesc% = WacHIDRouterInst_USB, USB\VID_056A&PID_010D
+%WacDev.DeviceDesc% = WacHIDRouterInst_USB, USB\VID_056A&PID_010E
+%WacDev.DeviceDesc% = WacHIDRouterInst_USB, USB\VID_056A&PID_010F
+%WacDev.DeviceDesc% = WacHIDRouterInst_USB, USB\VID_056A&PID_0110
+%WacDev.DeviceDesc% = WacHIDRouterInst_USB, USB\VID_056A&PID_0116
+%WacDev.DeviceDesc% = WacHIDRouterInst_USB, USB\VID_056A&PID_0120
+%WacDev.DeviceDesc% = WacHIDRouterInst_USB, USB\VID_056A&PID_0123
+%WacDev.DeviceDesc% = WacHIDRouterInst_Serial, ACPI\WACF004
+%WacDev.DeviceDesc% = WacHIDRouterInst_Serial, ACPI\FUJ02E5
+%WacDev.DeviceDesc% = WacHIDRouterInst_Serial, ACPI\WCOM4000
+%WacDev.DeviceDesc% = WacHIDRouterInst_Serial, ACPI\WACF005
+%WacDev.DeviceDesc% = WacHIDRouterInst_Serial, ACPI\WACF006
+%WacDev.DeviceDesc% = WacHIDRouterInst_Serial, ACPI\WACF007
+%WacDev.DeviceDesc% = WacHIDRouterInst_Serial, ACPI\WACF008
+%WacDev.DeviceDesc% = WacHIDRouterInst_Serial, ACPI\WACF009
+%WacDev.DeviceDesc% = WacHIDRouterInst_Serial, ACPI\WACF00A
+%WacDev.DeviceDesc% = WacHIDRouterInst_Serial, ACPI\FUJ02E9
+%WacDev.DeviceDesc% = WacHIDRouterInst_Serial, ACPI\WACF00C
+%WacDev.DeviceDesc% = WacHIDRouterInst_Serial, ACPI\FUJ02E7
+%WacDev.DeviceDesc% = WacHIDRouterInst_Serial, ACPI\WACF00E
+%WacDev.DeviceDesc% = WacHIDRouterInst_Serial, ACPI\WACF010
+%WacDev.DeviceDesc% = WacHIDRouterInst_USB, USB\VID_056A&PID_5000
+%WacDev.DeviceDesc% = WacHIDRouterInst_USB, USB\VID_056A&PID_5002
+%WacDev.DeviceDesc% = WacHIDRouterInst_USB, USB\VID_0B05&PID_179F
+%WacDev.DeviceDesc% = WacHIDRouterInst_USB, USB\VID_17EF&PID_6004
+
+
+[WacHIDRouterInst_Serial.NT]
+CopyFiles                  				= WacHIDRouterInst.NT.Copy
+
+[WacHIDRouterInst_USB.NT]
+CopyFiles                   				= WacHIDRouterInst.NT.Copy
+
+[WacHidRouterInst_Serial.NT.CoInstallers]
+AddReg											= WacHidRouterInst_CoInstaller_AddReg
+CopyFiles										= WacHidRouterInst_CoInstaller_Copy
+
+[WacHidRouterInst_USB.NT.CoInstallers]
+AddReg											= WacHidRouterInst_CoInstaller_AddReg
+CopyFiles										= WacHidRouterInst_CoInstaller_Copy
+
+[WacHIDRouterInst_Serial.NT.HW]
+AddReg                      				= WacHIDRouterInst_Serial.NT.HW.AddReg
+
+[WacHIDRouterInst_USB.NT.HW]
+AddReg                      				= WacHIDRouterInst_USB.NT.HW.AddReg
+
+[WacHIDRouterInst.NT.Copy]
+wachidrouter.sys,,,
+hidkmdf.sys,,,
+
+[WacHIDRouterInst_Serial.NT.HW.AddReg]
+HKR,,"UpperFilters",0x00010000,"hidkmdf"
+HKR,,"LowerFilters",0x00010000,"serial"
+HKR,,"MultiportDevice",0x00010001,0
+HKR,,"SerialRelinquishPowerPolicy",0x00010001,1
+HKR,,Dev_Interface,0x00010001,0
+
+[WacHIDRouterInst_USB.NT.HW.AddReg]
+HKR,,"UpperFilters",0x00010000,"hidkmdf"
+HKR,,Dev_Interface,0x00010001,1
+HKR,,Branded_Device,0x00010001,0
+HKR,,"SelectiveSuspendEnabled",0x00000001,0x1
+
+[WacHIDRouterInst_Serial.NT.Services]
+AddService                  				= WacHidRouter,0x00000002,WacHIDRouterInst_ServiceInst,WacomEventLogInst
+AddService                  				= Serial,,SerialServiceInst, SerialEventLogInst
+AddService                  				= hidkmdf,, hidkmdf_Service_Inst
+
+[WacHIDRouterInst_USB.NT.Services]
+AddService                  				= WacHidRouter,0x00000002,WacHIDRouterInst_ServiceInst,WacomEventLogInst
+AddService                  				= hidkmdf,, hidkmdf_Service_Inst
+
+; -------------- Wacom Pen Driver install section
+[WacHIDRouterInst_ServiceInst]
+DisplayName    								= %WacHidRouter.SVCDESC%
+ServiceType    								= 1               ; SERVICE_KERNEL_DRIVER
+StartType      								= 3               ;
+ErrorControl   								= 1               ; SERVICE_ERROR_NORMAL
+ServiceBinary  								= %12%\wachidrouter.sys
+LoadOrderGroup 								= Extended Base
+
+[SerialEventLogInst]
+AddReg        									= SerialEventLogAddReg
+
+[SerialEventLogAddReg]
+HKR,,EventMessageFile,0x00020000,"%%SystemRoot%%\System32\IoLogMsg.dll;%%SystemRoot%%\System32\drivers\serial.sys"
+HKR,,TypesSupported,0x00010001,7
+
+; -------------- Serial Port Driver install sections
+[SerialServiceInst]
+DisplayName    								= %Serial.SVCDESC%
+ServiceType    								= 1               ; SERVICE_KERNEL_DRIVER
+StartType      								= 3               ; SERVICE_DEMAND_START
+ErrorControl   								= 0               ; SERVICE_ERROR_IGNORE
+ServiceBinary  								= %12%\serial.sys
+LoadOrderGroup 								= Extended base
+
+[hidkmdf_Service_Inst]
+DisplayName    								= %hidkmdf.SVCDESC%
+ServiceType    								= 1               ; SERVICE_KERNEL_DRIVER
+StartType      								= 3               ; SERVICE_DEMAND_START 
+ErrorControl   								= 1               ; SERVICE_ERROR_NORMAL
+ServiceBinary  								= %12%\hidkmdf.sys
+LoadOrderGroup 								= PNP Filter
+
+[WacomEventLogInst]
+AddReg                      				= WacomEventLogAddReg
+
+[WacomEventLogAddReg]
+HKR,,EventMessageFile,0x00020000,"%%SystemRoot%%\System32\IoLogMsg.dll;%%SystemRoot%%\System32\drivers\wachidrouter.sys"
+HKR,,TypesSupported,0x00010001,7
+
+
+[WacHidRouterInst_CoInstaller_AddReg]
+HKR,,CoInstallers32,0x00010000, "wdfcoinstaller01009.dll,WdfCoInstaller"
+
+[WacHidRouterInst_CoInstaller_Copy]
+wdfcoinstaller01009.dll
+
+[WacHidRouterInst_Serial.NT.Wdf]
+KmdfService = WacHidRouter, WacHidRouter_wdfsect
+
+[WacHidRouterInst_USB.NT.Wdf]
+KmdfService = WacHidRouter, WacHidRouter_wdfsect
+
+[WacHidRouter_wdfsect]
+KmdfLibraryVersion 							= 1.9
+
+
+[Strings]
+WAC												= "Wacom Technology Corporation"
+WacDev.DeviceDesc								= "Wacom Device"
+WacHidRouter.SVCDESC							= "Wacom Hid Router"
+Serial.SVCDESC									= "Serial Port Driver"
+hidkmdf.SVCDESC								= "KMDF Driver"
+DiskName											= "Wacom Installer"

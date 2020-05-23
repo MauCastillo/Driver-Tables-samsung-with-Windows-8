@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<root>
+  <ControlPanelName useDll="1">211</ControlPanelName>
+  <CplGuid>{90040C7A-6350-428E-BDE9-3CE3936C2C9C}</CplGuid>
+  <CplCanonicalName>Wacom.ISDTablet</CplCanonicalName>
+  <CplValueName>^ISDTabCPLName^</CplValueName>
+  <CplLocation>!PROGFILES!\Tablet\ISD\ISD_PenCPL.exe</CplLocation>
+  <HelperSuffix>ISD</HelperSuffix>
+
+  <CplLink id="cpl">
+    <Name useDll="1">101</Name>
+    <Command>!PROGFILES!\Tablet\ISD\ISD_PenCPL.exe</Command>
+  </CplLink>
+
+  <CplLink id="prefutil">
+    <Name useDll="1">102</Name>
+    <Command>"!PROGFILES!\Tablet\ISD\Setup\PrefUtil.exe"</Command>
+  </CplLink>
+
+  <CplLink id="driverupdate">
+    <Name useDll="1">103</Name>
+    <Command>"!PROGFILES!\Tablet\ISD\Setup\PrefUtil.exe" /localized-shell-execute "!PROGFILES!\Tablet\ISD\Setup\WacomI18N.dll" 104</Command>
+  </CplLink>
+
+  <CplCategory id="0">cpl,prefutil,driverupdate</CplCategory>
+  <CplCategory id="2">cpl,prefutil,driverupdate</CplCategory>
+</root>

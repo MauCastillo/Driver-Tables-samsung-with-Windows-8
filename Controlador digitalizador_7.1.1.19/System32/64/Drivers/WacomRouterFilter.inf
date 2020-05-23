@@ -1,0 +1,475 @@
+; wacomrouterfilter.inf
+; Installation inf for wacomrouterfilter.sys
+; (c) Copyright 2005 - 2011 Wacom Technology
+
+[Version]
+Signature="$Windows NT$"
+Class=Mouse
+ClassGUID={4D36E96F-E325-11CE-BFC1-08002BE10318}
+Provider=%WACOM%
+CatalogFile=wacomrouterfilter.cat
+DriverVer=08/02/2013, 3.0.0.1
+
+[SourceDisksNames]
+1=%Diskname%
+
+[SourceDisksFiles]
+wacomrouterfilter.sys 		= 1
+wdfcoinstaller01009.dll		= 1
+
+[DestinationDirs]
+wacomrouterfilter.CopyFiles = 12
+
+[Manufacturer]
+%WACOM% = WACOM,NTamd64
+
+[WACOM]
+%WacFilter% = wacomrouterfilter, HID\VID_045E&PID_0799&MI_01&Col01
+%WacFilter% = wacomrouterfilter, HID\VID_045E&PID_079A&MI_01&Col01
+%WacFilter% = wacomrouterfilter, HID\VID_045E&PID_079B&MI_01&Col01
+%WacFilter% = wacomrouterfilter, HID\VID_045E&PID_079C&MI_01&Col01
+%WacFilter% = wacomrouterfilter, HID\VID_045E&PID_079D&MI_01&Col01
+%WacFilter% = wacomrouterfilter, HID\VID_045E&PID_079E&MI_01&Col01
+%WacFilter% = wacomrouterfilter, HID\VID_045E&PID_079F&MI_01&Col01
+%WacFilter% = wacomrouterfilter, HID\VID_045E&PID_07A0&MI_01&Col01
+%WacFilter% = wacomrouterfilter, HID\VID_045E&PID_07A1&MI_01&Col01
+%WacFilter% = wacomrouterfilter, HID\VID_045E&PID_07A2&MI_01&Col01
+%WacFilter% = wacomrouterfilter, HID\VID_045E&PID_07A3&MI_01&Col01
+%WacFilter% = wacomrouterfilter, HID\VID_045E&PID_07A5&MI_01&Col01
+%WacFilter% = wacomrouterfilter, HID\VID_045E&PID_07A6&MI_01&Col01
+%WacFilter% = wacomrouterfilter, HID\VID_045E&PID_07A7&MI_01&Col01
+%WacFilter% = wacomrouterfilter, HID\VID_045E&PID_07A8&MI_01&Col01
+%WacFilter% = wacomrouterfilter, HID\VID_045E&PID_07A9&MI_01&Col01
+%WacFilter% = wacomrouterfilter, HID\VID_045E&PID_07AA&MI_01&Col01
+%WacFilter% = wacomrouterfilter, HID\VID_045E&PID_07AB&MI_01&Col01
+%WacFilter% = wacomrouterfilter, HID\VID_045E&PID_07AC&MI_01&Col01
+%WacFilter% = wacomrouterfilter, HID\VID_045E&PID_07AD&MI_01&Col01
+%WacFilter% = wacomrouterfilter, HID\VID_045E&PID_07AE&MI_01&Col01
+%WacFilter% = wacomrouterfilter, HID\VID_045E&PID_07AF&MI_01&Col01
+%WacFilter% = wacomrouterfilter, HID\VID_045E&PID_07B0&MI_01&Col01
+%WacFilter% = wacomrouterfilter, HID\VID_045E&PID_07B1&MI_01&Col01
+%WacFilter% = wacomrouterfilter, HID\VID_045E&PID_07B2&MI_01&Col01
+%WacFilter% = wacomrouterfilter, HID\VID_045E&PID_07D0&MI_01&Col01
+%WacFilter% = wacomrouterfilter, HID\VID_045E&PID_07D1&MI_01&Col01
+%WacFilter% = wacomrouterfilter, HID\VID_045E&PID_07D2&MI_01&Col01
+%WacFilter% = wacomrouterfilter, HID\VID_045E&PID_07D3&MI_01&Col01
+%WacFilter% = wacomrouterfilter, HID\VID_045E&PID_07D4&MI_01&Col01
+%WacFilter% = wacomrouterfilter, HID\VID_045E&PID_07D5&MI_01&Col01
+%WacFilter% = wacomrouterfilter, HID\VID_045E&PID_07D6&MI_01&Col01
+%WacFilter% = wacomrouterfilter, HID\VID_045E&PID_07D7&MI_01&Col01
+%WacFilter% = wacomrouterfilter, HID\VID_045E&PID_07D8&MI_01&Col01
+%WacFilter% = wacomrouterfilter, HID\VID_045E&PID_07D9&MI_01&Col01
+%WacFilter% = wacomrouterfilter, HID\VID_045E&PID_07DA&MI_01&Col01
+%WacFilter% = wacomrouterfilter, HID\VID_045E&PID_07DB&MI_01&Col01
+%WacFilter% = wacomrouterfilter, HID\VID_045E&PID_07DC&MI_01&Col01
+%WacFilter% = wacomrouterfilter, HID\VID_045E&PID_07DD&MI_01&Col01
+%WacFilter% = wacomrouterfilter, HID\VID_045E&PID_07DE&MI_01&Col01
+%WacFilter% = wacomrouterfilter, HID\VID_045E&PID_07DF&MI_01&Col01
+%WacFilter% = wacomrouterfilter, HID\VID_045E&PID_07E0&MI_01&Col01
+%WacFilter% = wacomrouterfilter, HID\VID_045E&PID_07E1&MI_01&Col01
+%WacFilter% = wacomrouterfilter, HID\VID_045E&PID_07E2&MI_01&Col01
+%WacFilter% = wacomrouterfilter, HID\VID_045E&PID_07E3&MI_01&Col01
+%WacFilter% = wacomrouterfilter, HID\VID_045E&PID_07E4&MI_01&Col01
+%WacFilter% = wacomrouterfilter, HID\VID_045E&PID_07E5&MI_01&Col01
+%WacFilter% = wacomrouterfilter, HID\VID_045E&PID_07E6&MI_01&Col01
+%WacFilter% = wacomrouterfilter, HID\VID_045E&PID_07E7&MI_01&Col01
+%WacFilter% = wacomrouterfilter, HID\VID_045E&PID_07E8&MI_01&Col01
+%WacFilter% = wacomrouterfilter, HID\VID_045E&PID_07E9&MI_01&Col01
+%WacFilter% = wacomrouterfilter, HID\VID_045E&PID_07EA&MI_01&Col01
+%WacFilter% = wacomrouterfilter, HID\VID_045E&PID_07EB&MI_01&Col01
+%WacFilter% = wacomrouterfilter, HID\VID_045E&PID_07EC&MI_01&Col01
+%WacFilter% = wacomrouterfilter, HID\VID_045E&PID_07ED&MI_01&Col01
+%WacFilter% = wacomrouterfilter, HID\VID_045E&PID_07EE&MI_01&Col01
+%WacFilter% = wacomrouterfilter, HID\VID_045E&PID_07EF&MI_01&Col01
+%WacFilter% = wacomrouterfilter, HID\VID_056A&PID_0017&Col01
+%WacFilter% = wacomrouterfilter, HID\VID_056A&PID_0018&Col01
+%WacFilter% = wacomrouterfilter, HID\VID_056A&PID_0019&Col01
+%WacFilter% = wacomrouterfilter, HID\VID_056A&PID_0026&Col01
+%WacFilter% = wacomrouterfilter, HID\VID_056A&PID_0027&Col01
+%WacFilter% = wacomrouterfilter, HID\VID_056A&PID_0028&Col01
+%WacFilter% = wacomrouterfilter, HID\VID_056A&PID_0029&Col01
+%WacFilter% = wacomrouterfilter, HID\VID_056A&PID_002A&Col01
+%WacFilter% = wacomrouterfilter, HID\VID_056A&PID_0032&Col01
+%WacFilter% = wacomrouterfilter, HID\VID_056A&PID_0033&Col01
+%WacFilter% = wacomrouterfilter, HID\VID_056A&PID_0037&Col01
+%WacFilter% = wacomrouterfilter, HID\VID_056A&PID_0038&Col01
+%WacFilter% = wacomrouterfilter, HID\VID_056A&PID_0039&Col01
+%WacFilter% = wacomrouterfilter, HID\VID_056A&PID_003A&Col01
+%WacFilter% = wacomrouterfilter, HID\VID_056A&PID_003F&Col01
+%WacFilter% = wacomrouterfilter, HID\VID_056A&PID_0057&Col01
+%WacFilter% = wacomrouterfilter, HID\VID_056A&PID_0059&Col01
+%WacFilter% = wacomrouterfilter, HID\VID_056A&PID_005B&Col01
+%WacFilter% = wacomrouterfilter, HID\VID_056A&PID_0061&Col01
+%WacFilter% = wacomrouterfilter, HID\VID_056A&PID_0062&Col01
+%WacFilter% = wacomrouterfilter, HID\VID_056A&PID_0063&Col01
+%WacFilter% = wacomrouterfilter, HID\VID_056A&PID_0064&Col01
+%WacFilter% = wacomrouterfilter, HID\VID_056A&PID_0065&Col01
+%WacFilter% = wacomrouterfilter, HID\VID_056A&PID_0069&Col01
+%WacFilter% = wacomrouterfilter, HID\VID_056A&PID_006A&Col01
+%WacFilter% = wacomrouterfilter, HID\VID_056A&PID_006B&Col01
+%WacFilter% = wacomrouterfilter, HID\VID_056A&PID_0084&Col01
+%WacFilter% = wacomrouterfilter, HID\VID_056A&PID_0090&Col01
+%WacFilter% = wacomrouterfilter, HID\VID_056A&PID_0093&Col01
+%WacFilter% = wacomrouterfilter, HID\VID_056A&PID_00B0&Col01
+%WacFilter% = wacomrouterfilter, HID\VID_056A&PID_00B1&Col01
+%WacFilter% = wacomrouterfilter, HID\VID_056A&PID_00B2&Col01
+%WacFilter% = wacomrouterfilter, HID\VID_056A&PID_00B3&Col01
+%WacFilter% = wacomrouterfilter, HID\VID_056A&PID_00B4&Col01
+%WacFilter% = wacomrouterfilter, HID\VID_056A&PID_00B5&Col01
+%WacFilter% = wacomrouterfilter, HID\VID_056A&PID_00B7&Col01
+%WacFilter% = wacomrouterfilter, HID\VID_056A&PID_00B8&Col01
+%WacFilter% = wacomrouterfilter, HID\VID_056A&PID_00B9&Col01
+%WacFilter% = wacomrouterfilter, HID\VID_056A&PID_00BA&Col01
+%WacFilter% = wacomrouterfilter, HID\VID_056A&PID_00BB&Col01
+%WacFilter% = wacomrouterfilter, HID\VID_056A&PID_00BC&Col01
+%WacFilter% = wacomrouterfilter, HID\VID_056A&PID_00C0&Col01
+%WacFilter% = wacomrouterfilter, HID\VID_056A&PID_00C2&Col01
+%WacFilter% = wacomrouterfilter, HID\VID_056A&PID_00C4&Col01
+%WacFilter% = wacomrouterfilter, HID\VID_056A&PID_00C5&Col01
+%WacFilter% = wacomrouterfilter, HID\VID_056A&PID_00C6&Col01
+%WacFilter% = wacomrouterfilter, HID\VID_056A&PID_00C7&Col01
+%WacFilter% = wacomrouterfilter, HID\VID_056A&PID_00CC&Col01
+%WacFilter% = wacomrouterfilter, HID\VID_056A&PID_00CE&Col01
+%WacFilter% = wacomrouterfilter, HID\VID_056A&PID_00D0&Col01
+%WacFilter% = wacomrouterfilter, HID\VID_056A&PID_00D1&Col01
+%WacFilter% = wacomrouterfilter, HID\VID_056A&PID_00D2&Col01
+%WacFilter% = wacomrouterfilter, HID\VID_056A&PID_00D3&Col01
+%WacFilter% = wacomrouterfilter, HID\VID_056A&PID_00D4&Col01
+%WacFilter% = wacomrouterfilter, HID\VID_056A&PID_00D5&Col01
+%WacFilter% = wacomrouterfilter, HID\VID_056A&PID_00D6&Col01
+%WacFilter% = wacomrouterfilter, HID\VID_056A&PID_00D7&Col01
+%WacFilter% = wacomrouterfilter, HID\VID_056A&PID_00D8&Col01
+%WacFilter% = wacomrouterfilter, HID\VID_056A&PID_00D9&Col01
+%WacFilter% = wacomrouterfilter, HID\VID_056A&PID_00DA&Col01
+%WacFilter% = wacomrouterfilter, HID\VID_056A&PID_00DB&Col01
+%WacFilter% = wacomrouterfilter, HID\VID_056A&PID_00DC&Col01
+%WacFilter% = wacomrouterfilter, HID\VID_056A&PID_00DD&Col01
+%WacFilter% = wacomrouterfilter, HID\VID_056A&PID_00DE&Col01
+%WacFilter% = wacomrouterfilter, HID\VID_056A&PID_00DF&Col01
+%WacFilter% = wacomrouterfilter, HID\VID_056A&PID_00E2&Col01
+%WacFilter% = wacomrouterfilter, HID\VID_056A&PID_00E3&Col01
+%WacFilter% = wacomrouterfilter, HID\VID_056A&PID_00E5&Col01
+%WacFilter% = wacomrouterfilter, HID\VID_056A&PID_00E6&Col01
+%WacFilter% = wacomrouterfilter, HID\VID_056A&PID_00EC&Col01
+%WacFilter% = wacomrouterfilter, HID\VID_056A&PID_00ED&Col01
+%WacFilter% = wacomrouterfilter, HID\VID_056A&PID_00EF&Col01
+%WacFilter% = wacomrouterfilter, HID\VID_056A&PID_00F0&Col01
+%WacFilter% = wacomrouterfilter, HID\VID_056A&PID_00F4&Col01
+%WacFilter% = wacomrouterfilter, HID\VID_056A&PID_00F8&Col01
+%WacFilter% = wacomrouterfilter, HID\VID_056A&PID_00FA&Col01
+%WacFilter% = wacomrouterfilter, HID\VID_056A&PID_00FB&Col01
+%WacFilter% = wacomrouterfilter, HID\VID_056A&PID_0100&Col01
+%WacFilter% = wacomrouterfilter, HID\VID_056A&PID_0101&Col01
+%WacFilter% = wacomrouterfilter, HID\VID_056A&PID_0101&MI_00&Col01
+%WacFilter% = wacomrouterfilter, HID\WACM0001&Col01
+%WacFilter% = wacomrouterfilter, HID\VEN_WACO&DEV_M&Col01
+%WacFilter% = wacomrouterfilter, HID\WCOM0004&Col01
+%WacFilter% = wacomrouterfilter, HID\WACOM&Col01
+%WacFilter% = wacomrouterfilter, HID\VID_056A&PID_010D&Col01
+%WacFilter% = wacomrouterfilter, HID\VID_056A&PID_010D&MI_00&Col01
+%WacFilter% = wacomrouterfilter, HID\VID_056A&PID_010E&Col01
+%WacFilter% = wacomrouterfilter, HID\VID_056A&PID_010E&MI_00&Col01
+%WacFilter% = wacomrouterfilter, HID\VID_056A&PID_010F&Col01
+%WacFilter% = wacomrouterfilter, HID\VID_056A&PID_010F&MI_00&Col01
+%WacFilter% = wacomrouterfilter, HID\VID_056A&PID_0110&Col01
+%WacFilter% = wacomrouterfilter, HID\WACM0002&Col01
+%WacFilter% = wacomrouterfilter, HID\VID_056A&PID_0116&Col01
+%WacFilter% = wacomrouterfilter, HID\VID_056A&PID_0120&Col01
+%WacFilter% = wacomrouterfilter, HID\VID_056A&PID_0123&Col01
+%WacFilter% = wacomrouterfilter, HID\VID_056A&PID_0123&MI_01&Col01
+%WacFilter% = wacomrouterfilter, HID\WCOM0007&Col01
+%WacFilter% = wacomrouterfilter, HID\VID_056A&PID_0300&Col01
+%WacFilter% = wacomrouterfilter, HID\VID_056A&PID_0301&Col01
+%WacFilter% = wacomrouterfilter, HID\VID_056A&PID_0302&Col01
+%WacFilter% = wacomrouterfilter, HID\VID_056A&PID_0303&Col01
+%WacFilter% = wacomrouterfilter, HID\VID_056A&PID_0304&Col01
+%WacFilter% = wacomrouterfilter, HID\VID_056A&PID_0307&Col01
+%WacFilter% = wacomrouterfilter, HID\VID_056A&PID_030A&Col01
+%WacFilter% = wacomrouterfilter, HID\VID_056A&PID_030E&Col01
+%WacFilter% = wacomrouterfilter, HID\VID_056A&PID_0314&Col01
+%WacFilter% = wacomrouterfilter, HID\VID_056A&PID_0315&Col01
+%WacFilter% = wacomrouterfilter, HID\VID_056A&PID_0317&Col01
+%WacFilter% = wacomrouterfilter, HID\WACF004&Col01
+%WacFilter% = wacomrouterfilter, HID\FUJ02E5&Col01
+%WacFilter% = wacomrouterfilter, HID\WCOM4000&Col01
+%WacFilter% = wacomrouterfilter, HID\WACF005&Col01
+%WacFilter% = wacomrouterfilter, HID\WACF006&Col01
+%WacFilter% = wacomrouterfilter, HID\WACF007&Col01
+%WacFilter% = wacomrouterfilter, HID\WACF008&Col01
+%WacFilter% = wacomrouterfilter, HID\WACF009&Col01
+%WacFilter% = wacomrouterfilter, HID\WACF00A&Col01
+%WacFilter% = wacomrouterfilter, HID\FUJ02E9&Col01
+%WacFilter% = wacomrouterfilter, HID\WACF00C&Col01
+%WacFilter% = wacomrouterfilter, HID\FUJ02E7&Col01
+%WacFilter% = wacomrouterfilter, HID\WACF00E&Col01
+%WacFilter% = wacomrouterfilter, HID\WACF010&Col01
+%WacFilter% = wacomrouterfilter, HID\VID_056A&PID_5000&Col01
+%WacFilter% = wacomrouterfilter, HID\VID_056A&PID_5000&MI_01&Col01
+%WacFilter% = wacomrouterfilter, HID\VID_056A&PID_5002&Col01
+%WacFilter% = wacomrouterfilter, HID\VID_056A&PID_5002&MI_01&Col01
+%WacFilter% = wacomrouterfilter, HID\VID_0B05&PID_179F&Col01
+%WacFilter% = wacomrouterfilter, HID\VID_17EF&PID_6004&Col01
+%WacFilter% = wacomrouterfilter, HID\WACOMVIRTUALROUTER&Col01
+
+
+[WACOM.NTamd64]
+%WacFilter% = wacomrouterfilter, HID\VID_045E&PID_0799&MI_01&Col01
+%WacFilter% = wacomrouterfilter, HID\VID_045E&PID_079A&MI_01&Col01
+%WacFilter% = wacomrouterfilter, HID\VID_045E&PID_079B&MI_01&Col01
+%WacFilter% = wacomrouterfilter, HID\VID_045E&PID_079C&MI_01&Col01
+%WacFilter% = wacomrouterfilter, HID\VID_045E&PID_079D&MI_01&Col01
+%WacFilter% = wacomrouterfilter, HID\VID_045E&PID_079E&MI_01&Col01
+%WacFilter% = wacomrouterfilter, HID\VID_045E&PID_079F&MI_01&Col01
+%WacFilter% = wacomrouterfilter, HID\VID_045E&PID_07A0&MI_01&Col01
+%WacFilter% = wacomrouterfilter, HID\VID_045E&PID_07A1&MI_01&Col01
+%WacFilter% = wacomrouterfilter, HID\VID_045E&PID_07A2&MI_01&Col01
+%WacFilter% = wacomrouterfilter, HID\VID_045E&PID_07A3&MI_01&Col01
+%WacFilter% = wacomrouterfilter, HID\VID_045E&PID_07A5&MI_01&Col01
+%WacFilter% = wacomrouterfilter, HID\VID_045E&PID_07A6&MI_01&Col01
+%WacFilter% = wacomrouterfilter, HID\VID_045E&PID_07A7&MI_01&Col01
+%WacFilter% = wacomrouterfilter, HID\VID_045E&PID_07A8&MI_01&Col01
+%WacFilter% = wacomrouterfilter, HID\VID_045E&PID_07A9&MI_01&Col01
+%WacFilter% = wacomrouterfilter, HID\VID_045E&PID_07AA&MI_01&Col01
+%WacFilter% = wacomrouterfilter, HID\VID_045E&PID_07AB&MI_01&Col01
+%WacFilter% = wacomrouterfilter, HID\VID_045E&PID_07AC&MI_01&Col01
+%WacFilter% = wacomrouterfilter, HID\VID_045E&PID_07AD&MI_01&Col01
+%WacFilter% = wacomrouterfilter, HID\VID_045E&PID_07AE&MI_01&Col01
+%WacFilter% = wacomrouterfilter, HID\VID_045E&PID_07AF&MI_01&Col01
+%WacFilter% = wacomrouterfilter, HID\VID_045E&PID_07B0&MI_01&Col01
+%WacFilter% = wacomrouterfilter, HID\VID_045E&PID_07B1&MI_01&Col01
+%WacFilter% = wacomrouterfilter, HID\VID_045E&PID_07B2&MI_01&Col01
+%WacFilter% = wacomrouterfilter, HID\VID_045E&PID_07D0&MI_01&Col01
+%WacFilter% = wacomrouterfilter, HID\VID_045E&PID_07D1&MI_01&Col01
+%WacFilter% = wacomrouterfilter, HID\VID_045E&PID_07D2&MI_01&Col01
+%WacFilter% = wacomrouterfilter, HID\VID_045E&PID_07D3&MI_01&Col01
+%WacFilter% = wacomrouterfilter, HID\VID_045E&PID_07D4&MI_01&Col01
+%WacFilter% = wacomrouterfilter, HID\VID_045E&PID_07D5&MI_01&Col01
+%WacFilter% = wacomrouterfilter, HID\VID_045E&PID_07D6&MI_01&Col01
+%WacFilter% = wacomrouterfilter, HID\VID_045E&PID_07D7&MI_01&Col01
+%WacFilter% = wacomrouterfilter, HID\VID_045E&PID_07D8&MI_01&Col01
+%WacFilter% = wacomrouterfilter, HID\VID_045E&PID_07D9&MI_01&Col01
+%WacFilter% = wacomrouterfilter, HID\VID_045E&PID_07DA&MI_01&Col01
+%WacFilter% = wacomrouterfilter, HID\VID_045E&PID_07DB&MI_01&Col01
+%WacFilter% = wacomrouterfilter, HID\VID_045E&PID_07DC&MI_01&Col01
+%WacFilter% = wacomrouterfilter, HID\VID_045E&PID_07DD&MI_01&Col01
+%WacFilter% = wacomrouterfilter, HID\VID_045E&PID_07DE&MI_01&Col01
+%WacFilter% = wacomrouterfilter, HID\VID_045E&PID_07DF&MI_01&Col01
+%WacFilter% = wacomrouterfilter, HID\VID_045E&PID_07E0&MI_01&Col01
+%WacFilter% = wacomrouterfilter, HID\VID_045E&PID_07E1&MI_01&Col01
+%WacFilter% = wacomrouterfilter, HID\VID_045E&PID_07E2&MI_01&Col01
+%WacFilter% = wacomrouterfilter, HID\VID_045E&PID_07E3&MI_01&Col01
+%WacFilter% = wacomrouterfilter, HID\VID_045E&PID_07E4&MI_01&Col01
+%WacFilter% = wacomrouterfilter, HID\VID_045E&PID_07E5&MI_01&Col01
+%WacFilter% = wacomrouterfilter, HID\VID_045E&PID_07E6&MI_01&Col01
+%WacFilter% = wacomrouterfilter, HID\VID_045E&PID_07E7&MI_01&Col01
+%WacFilter% = wacomrouterfilter, HID\VID_045E&PID_07E8&MI_01&Col01
+%WacFilter% = wacomrouterfilter, HID\VID_045E&PID_07E9&MI_01&Col01
+%WacFilter% = wacomrouterfilter, HID\VID_045E&PID_07EA&MI_01&Col01
+%WacFilter% = wacomrouterfilter, HID\VID_045E&PID_07EB&MI_01&Col01
+%WacFilter% = wacomrouterfilter, HID\VID_045E&PID_07EC&MI_01&Col01
+%WacFilter% = wacomrouterfilter, HID\VID_045E&PID_07ED&MI_01&Col01
+%WacFilter% = wacomrouterfilter, HID\VID_045E&PID_07EE&MI_01&Col01
+%WacFilter% = wacomrouterfilter, HID\VID_045E&PID_07EF&MI_01&Col01
+%WacFilter% = wacomrouterfilter, HID\VID_056A&PID_0017&Col01
+%WacFilter% = wacomrouterfilter, HID\VID_056A&PID_0018&Col01
+%WacFilter% = wacomrouterfilter, HID\VID_056A&PID_0019&Col01
+%WacFilter% = wacomrouterfilter, HID\VID_056A&PID_0026&Col01
+%WacFilter% = wacomrouterfilter, HID\VID_056A&PID_0027&Col01
+%WacFilter% = wacomrouterfilter, HID\VID_056A&PID_0028&Col01
+%WacFilter% = wacomrouterfilter, HID\VID_056A&PID_0029&Col01
+%WacFilter% = wacomrouterfilter, HID\VID_056A&PID_002A&Col01
+%WacFilter% = wacomrouterfilter, HID\VID_056A&PID_0032&Col01
+%WacFilter% = wacomrouterfilter, HID\VID_056A&PID_0033&Col01
+%WacFilter% = wacomrouterfilter, HID\VID_056A&PID_0037&Col01
+%WacFilter% = wacomrouterfilter, HID\VID_056A&PID_0038&Col01
+%WacFilter% = wacomrouterfilter, HID\VID_056A&PID_0039&Col01
+%WacFilter% = wacomrouterfilter, HID\VID_056A&PID_003A&Col01
+%WacFilter% = wacomrouterfilter, HID\VID_056A&PID_003F&Col01
+%WacFilter% = wacomrouterfilter, HID\VID_056A&PID_0057&Col01
+%WacFilter% = wacomrouterfilter, HID\VID_056A&PID_0059&Col01
+%WacFilter% = wacomrouterfilter, HID\VID_056A&PID_005B&Col01
+%WacFilter% = wacomrouterfilter, HID\VID_056A&PID_0061&Col01
+%WacFilter% = wacomrouterfilter, HID\VID_056A&PID_0062&Col01
+%WacFilter% = wacomrouterfilter, HID\VID_056A&PID_0063&Col01
+%WacFilter% = wacomrouterfilter, HID\VID_056A&PID_0064&Col01
+%WacFilter% = wacomrouterfilter, HID\VID_056A&PID_0065&Col01
+%WacFilter% = wacomrouterfilter, HID\VID_056A&PID_0069&Col01
+%WacFilter% = wacomrouterfilter, HID\VID_056A&PID_006A&Col01
+%WacFilter% = wacomrouterfilter, HID\VID_056A&PID_006B&Col01
+%WacFilter% = wacomrouterfilter, HID\VID_056A&PID_0084&Col01
+%WacFilter% = wacomrouterfilter, HID\VID_056A&PID_0090&Col01
+%WacFilter% = wacomrouterfilter, HID\VID_056A&PID_0093&Col01
+%WacFilter% = wacomrouterfilter, HID\VID_056A&PID_00B0&Col01
+%WacFilter% = wacomrouterfilter, HID\VID_056A&PID_00B1&Col01
+%WacFilter% = wacomrouterfilter, HID\VID_056A&PID_00B2&Col01
+%WacFilter% = wacomrouterfilter, HID\VID_056A&PID_00B3&Col01
+%WacFilter% = wacomrouterfilter, HID\VID_056A&PID_00B4&Col01
+%WacFilter% = wacomrouterfilter, HID\VID_056A&PID_00B5&Col01
+%WacFilter% = wacomrouterfilter, HID\VID_056A&PID_00B7&Col01
+%WacFilter% = wacomrouterfilter, HID\VID_056A&PID_00B8&Col01
+%WacFilter% = wacomrouterfilter, HID\VID_056A&PID_00B9&Col01
+%WacFilter% = wacomrouterfilter, HID\VID_056A&PID_00BA&Col01
+%WacFilter% = wacomrouterfilter, HID\VID_056A&PID_00BB&Col01
+%WacFilter% = wacomrouterfilter, HID\VID_056A&PID_00BC&Col01
+%WacFilter% = wacomrouterfilter, HID\VID_056A&PID_00C0&Col01
+%WacFilter% = wacomrouterfilter, HID\VID_056A&PID_00C2&Col01
+%WacFilter% = wacomrouterfilter, HID\VID_056A&PID_00C4&Col01
+%WacFilter% = wacomrouterfilter, HID\VID_056A&PID_00C5&Col01
+%WacFilter% = wacomrouterfilter, HID\VID_056A&PID_00C6&Col01
+%WacFilter% = wacomrouterfilter, HID\VID_056A&PID_00C7&Col01
+%WacFilter% = wacomrouterfilter, HID\VID_056A&PID_00CC&Col01
+%WacFilter% = wacomrouterfilter, HID\VID_056A&PID_00CE&Col01
+%WacFilter% = wacomrouterfilter, HID\VID_056A&PID_00D0&Col01
+%WacFilter% = wacomrouterfilter, HID\VID_056A&PID_00D1&Col01
+%WacFilter% = wacomrouterfilter, HID\VID_056A&PID_00D2&Col01
+%WacFilter% = wacomrouterfilter, HID\VID_056A&PID_00D3&Col01
+%WacFilter% = wacomrouterfilter, HID\VID_056A&PID_00D4&Col01
+%WacFilter% = wacomrouterfilter, HID\VID_056A&PID_00D5&Col01
+%WacFilter% = wacomrouterfilter, HID\VID_056A&PID_00D6&Col01
+%WacFilter% = wacomrouterfilter, HID\VID_056A&PID_00D7&Col01
+%WacFilter% = wacomrouterfilter, HID\VID_056A&PID_00D8&Col01
+%WacFilter% = wacomrouterfilter, HID\VID_056A&PID_00D9&Col01
+%WacFilter% = wacomrouterfilter, HID\VID_056A&PID_00DA&Col01
+%WacFilter% = wacomrouterfilter, HID\VID_056A&PID_00DB&Col01
+%WacFilter% = wacomrouterfilter, HID\VID_056A&PID_00DC&Col01
+%WacFilter% = wacomrouterfilter, HID\VID_056A&PID_00DD&Col01
+%WacFilter% = wacomrouterfilter, HID\VID_056A&PID_00DE&Col01
+%WacFilter% = wacomrouterfilter, HID\VID_056A&PID_00DF&Col01
+%WacFilter% = wacomrouterfilter, HID\VID_056A&PID_00E2&Col01
+%WacFilter% = wacomrouterfilter, HID\VID_056A&PID_00E3&Col01
+%WacFilter% = wacomrouterfilter, HID\VID_056A&PID_00E5&Col01
+%WacFilter% = wacomrouterfilter, HID\VID_056A&PID_00E6&Col01
+%WacFilter% = wacomrouterfilter, HID\VID_056A&PID_00EC&Col01
+%WacFilter% = wacomrouterfilter, HID\VID_056A&PID_00ED&Col01
+%WacFilter% = wacomrouterfilter, HID\VID_056A&PID_00EF&Col01
+%WacFilter% = wacomrouterfilter, HID\VID_056A&PID_00F0&Col01
+%WacFilter% = wacomrouterfilter, HID\VID_056A&PID_00F4&Col01
+%WacFilter% = wacomrouterfilter, HID\VID_056A&PID_00F8&Col01
+%WacFilter% = wacomrouterfilter, HID\VID_056A&PID_00FA&Col01
+%WacFilter% = wacomrouterfilter, HID\VID_056A&PID_00FB&Col01
+%WacFilter% = wacomrouterfilter, HID\VID_056A&PID_0100&Col01
+%WacFilter% = wacomrouterfilter, HID\VID_056A&PID_0101&Col01
+%WacFilter% = wacomrouterfilter, HID\VID_056A&PID_0101&MI_00&Col01
+%WacFilter% = wacomrouterfilter, HID\WACM0001&Col01
+%WacFilter% = wacomrouterfilter, HID\VEN_WACO&DEV_M&Col01
+%WacFilter% = wacomrouterfilter, HID\WCOM0004&Col01
+%WacFilter% = wacomrouterfilter, HID\WACOM&Col01
+%WacFilter% = wacomrouterfilter, HID\VID_056A&PID_010D&Col01
+%WacFilter% = wacomrouterfilter, HID\VID_056A&PID_010D&MI_00&Col01
+%WacFilter% = wacomrouterfilter, HID\VID_056A&PID_010E&Col01
+%WacFilter% = wacomrouterfilter, HID\VID_056A&PID_010E&MI_00&Col01
+%WacFilter% = wacomrouterfilter, HID\VID_056A&PID_010F&Col01
+%WacFilter% = wacomrouterfilter, HID\VID_056A&PID_010F&MI_00&Col01
+%WacFilter% = wacomrouterfilter, HID\VID_056A&PID_0110&Col01
+%WacFilter% = wacomrouterfilter, HID\WACM0002&Col01
+%WacFilter% = wacomrouterfilter, HID\VID_056A&PID_0116&Col01
+%WacFilter% = wacomrouterfilter, HID\VID_056A&PID_0120&Col01
+%WacFilter% = wacomrouterfilter, HID\VID_056A&PID_0123&Col01
+%WacFilter% = wacomrouterfilter, HID\VID_056A&PID_0123&MI_01&Col01
+%WacFilter% = wacomrouterfilter, HID\WCOM0007&Col01
+%WacFilter% = wacomrouterfilter, HID\VID_056A&PID_0300&Col01
+%WacFilter% = wacomrouterfilter, HID\VID_056A&PID_0301&Col01
+%WacFilter% = wacomrouterfilter, HID\VID_056A&PID_0302&Col01
+%WacFilter% = wacomrouterfilter, HID\VID_056A&PID_0303&Col01
+%WacFilter% = wacomrouterfilter, HID\VID_056A&PID_0304&Col01
+%WacFilter% = wacomrouterfilter, HID\VID_056A&PID_0307&Col01
+%WacFilter% = wacomrouterfilter, HID\VID_056A&PID_030A&Col01
+%WacFilter% = wacomrouterfilter, HID\VID_056A&PID_030E&Col01
+%WacFilter% = wacomrouterfilter, HID\VID_056A&PID_0314&Col01
+%WacFilter% = wacomrouterfilter, HID\VID_056A&PID_0315&Col01
+%WacFilter% = wacomrouterfilter, HID\VID_056A&PID_0317&Col01
+%WacFilter% = wacomrouterfilter, HID\WACF004&Col01
+%WacFilter% = wacomrouterfilter, HID\FUJ02E5&Col01
+%WacFilter% = wacomrouterfilter, HID\WCOM4000&Col01
+%WacFilter% = wacomrouterfilter, HID\WACF005&Col01
+%WacFilter% = wacomrouterfilter, HID\WACF006&Col01
+%WacFilter% = wacomrouterfilter, HID\WACF007&Col01
+%WacFilter% = wacomrouterfilter, HID\WACF008&Col01
+%WacFilter% = wacomrouterfilter, HID\WACF009&Col01
+%WacFilter% = wacomrouterfilter, HID\WACF00A&Col01
+%WacFilter% = wacomrouterfilter, HID\FUJ02E9&Col01
+%WacFilter% = wacomrouterfilter, HID\WACF00C&Col01
+%WacFilter% = wacomrouterfilter, HID\FUJ02E7&Col01
+%WacFilter% = wacomrouterfilter, HID\WACF00E&Col01
+%WacFilter% = wacomrouterfilter, HID\WACF010&Col01
+%WacFilter% = wacomrouterfilter, HID\VID_056A&PID_5000&Col01
+%WacFilter% = wacomrouterfilter, HID\VID_056A&PID_5000&MI_01&Col01
+%WacFilter% = wacomrouterfilter, HID\VID_056A&PID_5002&Col01
+%WacFilter% = wacomrouterfilter, HID\VID_056A&PID_5002&MI_01&Col01
+%WacFilter% = wacomrouterfilter, HID\VID_0B05&PID_179F&Col01
+%WacFilter% = wacomrouterfilter, HID\VID_17EF&PID_6004&Col01
+%WacFilter% = wacomrouterfilter, HID\WACOMVIRTUALROUTER&Col01
+
+
+[wacomrouterfilter.NT]
+Include = msmouse.inf
+Needs = HID_Mouse_Inst.NT
+CopyFiles = wacomrouterfilter.CopyFiles
+
+[wacomrouterfilter.NT.CoInstallers]
+AddReg											= wacomrouterfilter_CoInstaller_AddReg
+CopyFiles										= wacomrouterfilter_CoInstaller_Copy
+
+[wacomrouterfilter.NT.Services]
+Include = msmouse.inf
+Needs = HID_Mouse_Inst.NT.Services
+AddService = wacomrouterfilter, ,wacomrouterfilter_Service_Inst
+
+[wacomrouterfilter.NT.HW]
+Include = msmouse.inf
+Needs = HID_Mouse_Inst.NT.HW
+AddReg = wacomrouterfilter.AddReg
+
+[wacomrouterfilter.CopyFiles]
+wacomrouterfilter.sys
+
+
+[wacomrouterfilter_CoInstaller_AddReg]
+HKR,,CoInstallers32,0x00010000, "wdfcoinstaller01009.dll,WdfCoInstaller"
+
+[wacomrouterfilter_CoInstaller_Copy]
+wdfcoinstaller01009.dll
+
+[wacomrouterfilter_Service_Inst]
+DisplayName		= %WacFilter.Desc%
+ServiceType		= %SERVICE_KERNEL_DRIVER%
+StartType		= %SERVICE_DEMAND_START%
+ErrorControl	= %SERVICE_ERROR_IGNORE%
+LoadOrderGroup	= Pointer Port
+ServiceBinary	= %12%\wacomrouterfilter.sys
+
+[wacomrouterfilter.AddReg]
+HKR,,"UpperFilters",0x00010000,"wacomrouterfilter"
+
+[wacomrouterfilter.NT.Wdf]
+KmdfService = wacomrouterfilter, wacomrouterfilter_wdfsect
+
+[wacomrouterfilter_wdfsect]
+KmdfLibraryVersion 							= 1.9
+
+[Strings]
+;  *******Localizable Strings*******
+WACOM				= "Wacom Technology"
+WacFilter		= "HID-Compliant Mouse"
+WacFilter.Desc	= "Wacom Router Filter Driver"
+Diskname			= "Wacom Installer"
+
+;  *******Non Localizable Strings*******
+SERVICE_BOOT_START	= 0x0
+SERVICE_SYSTEM_START	= 0x1
+SERVICE_AUTO_START	= 0x2
+SERVICE_DEMAND_START	= 0x3
+SERVICE_DISABLED		= 0x4
+
+SERVICE_KERNEL_DRIVER	= 0x1
+
+SERVICE_ERROR_IGNORE		= 0x0
+SERVICE_ERROR_NORMAL		= 0x1
+SERVICE_ERROR_SEVERE		= 0x2
+SERVICE_ERROR_CRITICAL	= 0x3
+
+REG_EXPAND_SZ	= 0x00020000
+REG_DWORD		= 0x00010001
+REG_MULTI_SZ	= 0x00010000
+REG_BINARY		= 0x00000001
+REG_SZ			= 0x00000000

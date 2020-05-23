@@ -1,0 +1,520 @@
+; Action list for GFX/HDMI (IVB)
+
+[Variables]
+product=Intel(R) Processor Graphics
+installDir=%ProgFilesDir%\Intel\%product%
+GFXVer=%getdriverversion(GFX)%
+
+
+[Groups]
+ARP=NOT IsCmd(noarp) AND NOT IsCmd(nogfxdrv)
+GFX=NOT IsCmd(nodrv) AND NOT IsCmd(nogfxdrv) AND IfDrvExists(GFX)
+HDMI=NOT IsCmd(nodrv) AND IfDrvExists(HDMI)
+MEDIA=IsVar(HDAUDIO,1) AND IfExists("%source%"\Media\Media.cab) AND IsOS(VISTA,0x060001FF)
+IIPS=NOT IsCmd(nodrv) AND IfDrvExists(IIPS)
+ICC=NOT IsCmd(noicc) AND IfExists("%source%"\ICC)
+GFXOCL=IsGroupSel(GFX) AND IfExists("%source%"\Graphics\OpenCL.dll) AND IsOS(VISTA,MAXOS)
+CPUOCL=IsGroupSel(GFX) AND IfExists("%source%"\OpenCL\OCLSetup.exe) AND IsOS(VISTA,MAXOS)
+ICCS=IsGroupSel(GFX) AND IfExists("%source%"\ICCS\SetupICCS.exe) AND IsOS(VISTA,MAXOS)
+FUA=NOT IsCmd(notc) AND IfExists("%source%"\Update Manager\IntelUpdateManager.msi)
+SHORTCUTS=NOT IsCmd(nosc) AND IfExists("%source%"\Graphics\IntelInvokePanel.exe)
+
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;; Setup files             ;;
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+
+[File]
+operation=copyonly
+mode=overwrite
+source=%setup%
+destination=%installDir%\uninstall\Setup.exe
+sequence=100
+
+[Folder]
+operation=copy
+mode=overwrite
+source=%source%\lang
+destination=%installDir%\uninstall
+sequence=105
+
+[File]
+operation=copy
+mode=overwrite
+source=%source%\x64\Drv64.exe
+destination=%installDir%\uninstall\x64\Drv64.exe
+condition=Is64
+sequence=110
+usequence=11000
+
+[File]
+operation=copyonly
+mode=ifnewer
+source=%source%\difxapi.dll
+destination=%system%\difxapi.dll
+error=ignore
+condition=NOT Is64
+sequence=115
+
+[File]
+operation=copyonly
+mode=ifnewer
+source=%source%\x64\difxapi.dll
+destination=%system64%\difxapi.dll
+condition=Is64
+error=ignore
+sequence=115
+
+[Uninstall]
+name={F0E3AD40-2BBD-4360-9C76-B9AC9A5886EA}
+display=%product%
+display_mui=@%installDir%\Uninstall\Setup.exe,-1166
+command=%installDir%\Uninstall\setup.exe -uninstall
+location=%installDir%
+estimatedsize=76000
+publisher=Intel Corporation
+icon=%installDir%\Uninstall\Setup.exe,0
+modify=no
+repair=no
+version=%GFXVer%
+sequence=120
+group=ARP
+
+[Folder]
+operation=deleteoninstall
+destination=%ProgFilesDir%\Intel\Intel(R) Graphics Media Accelerator Driver
+delete_if_not_empty=yes
+sequence=12100
+group=GFX
+
+; Remove legacy uninstall key 32bit
+[Registry]
+operation=deleteoninstall
+root=HKLM
+path=SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall\HDMI
+delete_if_not_empty=YES
+condition=NOT Is64
+sequence=121
+group=GFX
+
+; Remove legacy uninstall key 64bit
+[Registry]
+operation=deleteoninstall
+hive=64
+root=HKLM
+path=SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall\HDMI
+delete_if_not_empty=YES
+condition=Is64
+sequence=121
+group=GFX
+
+; Remove legacy product key 32bit
+[Registry]
+operation=deleteoninstall
+root=HKLM
+path=SOFTWARE\Intel\IGDI
+delete_if_not_empty=YES
+sequence=122
+group=GFX
+
+
+;;;;;;;;;;;;;;;;;;;;;;;;
+; GFX
+
+[inf]
+name=GFX
+removedevice=yes
+sequence=-5
+usequence=1
+group=GFX
+
+[Registry]
+operation=create
+root=HKLM
+path=System\CurrentControlSet\Control\Windows
+value=SystemDirectory
+data=%system%
+type=sz
+sequence=100
+group=GFX
+
+[Registry]
+operation=create
+root=HKLM
+path=System\CurrentControlSet\Services\ialm\Device0
+value=SystemDirectory
+data=%system%
+type=sz
+sequence=100
+group=GFX
+
+[Registry]
+operation=create
+root=HKLM
+path=System\CurrentControlSet\Services\ialm\Device1
+value=SystemDirectory
+data=%system%
+type=sz
+sequence=100
+group=GFX
+
+[Registry]
+operation=createonly
+root=HKLM
+path=SOFTWARE\Microsoft\Windows\CurrentVersion\RunOnce
+value=WinSat
+data=winsat dwm -xml results.xml
+type=sz
+condition=IsOS(VISTA,MAXOS) AND NOT IsCmd(nowinsat) AND IfDrvExists(GFX) AND NOT Is64
+sequence=100
+group=GFX
+
+[Registry]
+operation=createonly
+hive=64
+root=HKLM
+path=SOFTWARE\Microsoft\Windows\CurrentVersion\RunOnce
+value=WinSat
+data=winsat dwm -xml results.xml
+type=sz
+condition=IsOS(VISTA,MAXOS) AND NOT IsCmd(nowinsat) AND IfDrvExists(GFX) AND Is64
+sequence=100
+group=GFX
+
+
+;;;;;;;;;;;;;;;;;;;;;;;;
+; HDMI
+
+[File]
+operation=copy
+source=%source%\Media\Media.cab
+destination=%windir%\Media
+decompress=yes
+error=ignore
+sequence=-4
+usequence=1002
+group=MEDIA
+
+[inf]
+name=HDMI
+sequence=-3
+usequence=10001
+group=HDMI
+
+
+;;;;;;;;;;;;;;;;;;;;;;;;
+; IIPS
+
+[inf]
+name=IIPS
+sequence=-1
+usequence=10000
+group=IIPS
+
+
+;;;;;;;;;;
+; ICCS   ;
+;;;;;;;;;;
+
+[Process]
+operation=runonly
+bin=%source%\ICCS\SetupICCS.exe
+commandline=/s /g %LangId%
+wait=yes
+hide=yes
+sequence=1061
+group=ICCS
+
+[Process]
+operation=runonuninstall
+bin=%ProgFilesDir%\Intel\Intel(R) Integrated Clock Controller Service\Uninstall\Setup.exe
+commandline=/s /uninstall
+wait=yes
+hide=yes
+error=ignore
+usequence=471
+group=ICCS
+
+;;;;;;;;;;
+; OpenCL ;
+;;;;;;;;;;
+
+[Process]
+operation=runonly
+bin=%source%\OpenCL\OCLSetup.exe
+commandline=/s /g %LangId%
+wait=yes
+hide=yes
+sequence=1060
+group=CPUOCL
+
+;Uninstall registry values placed by INF during installation. Do not delete key!
+[Registry]
+operation=deleteonuninstall
+root=HKLM
+path=SOFTWARE\Khronos\OpenCL\Vendors
+value=igdrcl32.dll
+usequence=1000
+group=GFXOCL
+
+[Registry]
+operation=deleteonuninstall
+hive=64
+root=HKLM
+path=SOFTWARE\Khronos\OpenCL\Vendors
+value=igdrcl64.dll
+condition=Is64
+usequence=1010
+group=GFXOCL
+
+[Process]
+operation=runonuninstall
+bin=%ProgFilesDir%\Intel\OpenCL SDK\3.0\Uninstall\Setup.exe
+commandline=/s /uninstall
+wait=yes
+hide=yes
+error=ignore
+usequence=470
+group=CPUOCL
+
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;;         Update Manager       ;;
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+
+[File]
+operation=copy
+mode=overwrite
+source=%source%\Update Manager\IntelUpdateManager.msi
+destination=%installDir%\Update Manager\IntelUpdateManager.msi
+sequence=6003
+GROUP=FUA
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;;   CLV Shortcuts 				;;
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+
+[Shortcut]
+target=%system%\IntelInvokePanel.exe
+path=%startmenu%\Intel(R) Graphics and Media Control Panel.lnk
+commandline=Metro
+description=%getstring(1169)%
+description_mui=@%installDir%\Uninstall\Setup.exe,-1169
+pathmui=%installDir%\Uninstall\Setup.exe,1169
+condition=IsOS(WIN8,MAXOS)
+sequence=6050
+usequence=25000
+error=ignore
+group=SHORTCUTS
+
+[Shortcut]
+target=%system%\IntelInvokePanel.exe
+path=%commondesktop%\Intel(R) Graphics and Media Control Panel.lnk
+commandline=Desktop
+description=%getstring(1169)%
+description_mui=@%installDir%\Uninstall\Setup.exe,-1169
+pathmui=%installDir%\Uninstall\Setup.exe,1169
+condition=IsOS(WIN8,MAXOS)
+sequence=6051
+usequence=25001
+error=ignore
+group=SHORTCUTS
+
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+; These actions run on uninstall ;;
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+
+[Process]
+operation=stoponuninstall
+bin=GfxUI.exe
+usequence=-13
+group=GFX
+
+[Process]
+operation=stoponuninstall
+bin=igfxtray.exe
+usequence=-12
+group=GFX
+
+[Process]
+operation=stoponuninstall
+bin=igfxsrvc.exe
+usequence=-11
+group=GFX
+
+[Process]
+operation=stoponuninstall
+bin=hkcmd.exe
+usequence=-10
+group=GFX
+
+[Process]
+operation=stoponuninstall
+bin=igfxpers.exe
+usequence=-9
+group=GFX
+
+[Process]
+operation=stoponuninstall
+bin=igfxext.exe
+usequence=-8
+group=GFX
+
+[File]
+operation=deleteonuninstall
+destination=%windir%\system32\igfxsrvc.exe
+sequence=2
+group=GFX
+
+[File]
+operation=deleteonuninstall
+destination=%windir%\System32\igfxtray.exe
+group=GFX
+usequence=2
+
+[Registry]
+operation=deleteonuninstall
+root=HKLM
+path=SOFTWARE\Intel\Display
+delete_if_not_empty=YES
+usequence=12000
+group=GFX
+
+[Registry]
+operation=deleteonuninstall
+root=HKLM
+path=SOFTWARE\Microsoft\Windows\CurrentVersion\Run
+value=HotKeysCmds
+condition=NOT Is64
+group=GFX
+
+[Registry]
+operation=deleteonuninstall
+root=HKLM
+path=SOFTWARE\Microsoft\Windows\CurrentVersion\Run
+value=IgfxTray
+condition=NOT Is64
+group=GFX
+
+[Registry]
+operation=deleteonuninstall
+root=HKLM
+path=SOFTWARE\Microsoft\Windows\CurrentVersion\Run
+value=Persistence
+condition=NOT Is64
+group=GFX
+
+[Registry]
+operation=deleteonuninstall
+root=HKLM
+path=System\CurrentControlSet\Services\ialm\Device0
+delete_if_not_empty=YES
+usequence=100
+group=GFX
+
+[Registry]
+operation=deleteonuninstall
+root=HKLM
+path=System\CurrentControlSet\Services\ialm\Device1
+delete_if_not_empty=YES
+usequence=100
+group=GFX
+
+[Registry]
+operation=deleteonuninstall
+root=HKLM
+path=SOFTWARE\Intel\ICC\Applications\Graphics
+usequence=100
+group=GFX
+
+[registry]
+operation=deleteonuninstall
+root=HKCU
+path=SOFTWARE\Intel\ICC\Applications\Intel Graphics Driver
+delete_if_not_empty=YES
+condition=NOT Is64
+usequence=100
+group=GFX
+
+
+;; 64 bit uninstall stuff
+
+[Folder]
+operation=deleteonuninstall
+destination=%installDir%\uninstall\x64
+delete_if_not_empty=yes
+condition=Is64
+usequence=11010
+
+[Registry]
+operation=deleteonuninstall
+hive=64
+root=HKLM
+path=SOFTWARE\Microsoft\Windows\CurrentVersion\Run
+value=HotKeysCmds
+condition=Is64
+group=GFX
+
+[Registry]
+operation=deleteonuninstall
+hive=64
+root=HKLM
+path=SOFTWARE\Microsoft\Windows\CurrentVersion\Run
+value=IgfxTray
+condition=Is64
+group=GFX
+
+[Registry]
+operation=deleteonuninstall
+hive=64
+root=HKLM
+path=SOFTWARE\Microsoft\Windows\CurrentVersion\Run
+value=Persistence
+condition=Is64
+group=GFX
+
+[registry]
+operation=deleteonuninstall
+hive=64
+root=HKCU
+path=SOFTWARE\Intel\ICC\Applications\Intel Graphics Driver
+delete_if_not_empty=YES
+condition=Is64
+usequence=100
+group=GFX
+
+[Registry]
+operation=deleteonuninstall
+root=HKLM
+hive=64
+path=SOFTWARE\Intel\Display
+delete_if_not_empty=YES
+condition=Is64
+usequence=12000
+group=GFX
+
+; CPHS removal
+[Service]
+operation=stoponuninstall
+name=CPHS
+usequence=20040
+error=ignore
+
+[Service]
+operation=removeonuninstall
+name=CPHS
+usequence=20060
+error=ignore
+
+[File]
+operation=deleteonuninstall
+destination=%windir%\system32\IntelCpHeciSvc.exe
+usequence=20080
+error=ignore
+
+[File]
+operation=deleteonuninstall
+destination=%windir%\system32\iglhcp32.dll
+usequence=20100
+error=ignore

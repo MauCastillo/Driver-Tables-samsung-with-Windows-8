@@ -1,0 +1,516 @@
+#ISD Installer.dat
+[MAIN]
+Languages=EN;ZH_CN;ZH_TW;FR;DE;JA;KO;IT;ES;PT;NL;SV;RU;PL;DA;FI;NO
+Version=1.10.01
+MustUninstallFile=!System!\\ISD_PenCPL.exe
+CurrentInstallFile=!PROGFILES!\\Tablet\\ISD\\installer.dat
+Include=!ISD_OEM!;.\\languages.dat;.\\System32\\Eraser.dat
+DialogData=.\\Strings.dat
+PrefType=ISD_Tablet
+ISD=1
+
+[PlatformData]
+SERVICEBASE=\\SYSTEM\\CurrentControlSet\\Services\\WTabletServiceISD\\PARAMETERS
+PENSERVICEBASE=\\SYSTEM\\CurrentControlSet\\Services\\TabletServiceISD\\PARAMETERS
+TOUCHSERVICEBASE=\\SYSTEM\\CurrentControlSet\\Services\\TouchServiceISD\\PARAMETERS
+OLDSERVICEBASE=\\SYSTEM\\CurrentControlSet\\Services\\TabletService\\PARAMETERS
+
+[Install]
+Command;!ISDOemPreInstall!;!ISD_OEM!
+!PreInstall!
+!CreateUninstaller!
+!StopAllDrivers!
+!RemoveOldVersions!
+!InstallHidRouter!
+InstallPenCheck;!InstallPenService!
+!InstallWebPlugins!
+!Language!
+InstallTouchCheck;!InstallTouchService!
+!InstallCommonService!
+CheckFlag;DISABLE_SELECTIVE_SUSPEND;1;!DisableSelectiveSuspend!
+Command;!ISDOemPostInstall!;!ISD_OEM!
+!StartAllDrivers!
+DONE
+
+[RemoveOldVersions]
+DetectPreISDSplit;!RemovePreISD!
+!RemoveSeparateServices!
+!CleanupOldISDKernel!
+IfVHIDObsolete;!UninstallVHID!
+DONE
+
+[Uninstall]
+!StopThisDriver!
+IfVHIDObsolete;!UninstallVHID!
+!UninstallDriver!
+!UninstallHidRouter!
+!RemoveFiles!
+DONE
+
+[CleanupOldISDKernel]
+!UninstallHidF!
+!UninstallWISD!
+!UninstallVTHID!
+DONE
+
+[InstallHidRouter]
+IfNotOlder;!PROGFILES!\\Tablet\\wachidrouter.sys;!INSTALL_BASE!\\Drivers\\wachidrouter.sys;<SKIPCOPYHR>
+CopyFile;!INSTALL_BASE!\\Drivers\\wachidrouter_con.inf;!PROGFILES!\\Tablet\\wachidrouter_con.inf
+CopyFile;!INSTALL_BASE!\\Drivers\\wachidrouter_con.cat;!PROGFILES!\\Tablet\\wachidrouter_con.cat
+CopyFile;!INSTALL_BASE!\\Drivers\\wachidrouter_pro.inf;!PROGFILES!\\Tablet\\wachidrouter_pro.inf
+CopyFile;!INSTALL_BASE!\\Drivers\\wachidrouter_pro.cat;!PROGFILES!\\Tablet\\wachidrouter_pro.cat
+CopyFile;!INSTALL_BASE!\\Drivers\\!HIDROUTER_NAME!.inf;!PROGFILES!\\Tablet\\!HIDROUTER_NAME!.inf
+CopyFile;!INSTALL_BASE!\\Drivers\\!HIDROUTER_NAME!.cat;!PROGFILES!\\Tablet\\!HIDROUTER_NAME!.cat
+CopyFile;!INSTALL_BASE!\\Drivers\\wachidrouter.sys;!PROGFILES!\\Tablet\\wachidrouter.sys
+CopyFile;!INSTALL_BASE!\\Drivers\\WdfCoInstaller01009.dll;!PROGFILES!\\Tablet\\WdfCoInstaller01009.dll
+CopyFile;!INSTALL_BASE!\\Drivers\\hidkmdf.sys;!PROGFILES!\\Tablet\\hidkmdf.sys
+ProNeedsHidRouter;!UpdateProHidRouter!
+ConNeedsHidRouter;!UpdateConHidRouter!
+<SKIPCOPYHR>InstallWacHidRouter;!PROGFILES!\\Tablet\\DevInst.exe;!PROGFILES!\\Tablet\\!HIDROUTER_NAME!.inf
+Execute;100;!PROGFILES!\\Tablet\\DevInst.exe;CopyOEMInf !HIDROUTER_NAME!.inf
+IfNotOlder;!PROGFILES!\\Tablet\\wacomrouterfilter.sys;!INSTALL_BASE!\\Drivers\\wacomrouterfilter.sys;<SKIPCOPYRF>
+CopyFile;!INSTALL_BASE!\\Drivers\\!ROUTERFILTER_NAME!.cat;!PROGFILES!\\Tablet\\!ROUTERFILTER_NAME!.cat
+CopyFile;!INSTALL_BASE!\\Drivers\\!ROUTERFILTER_NAME!.inf;!PROGFILES!\\Tablet\\!ROUTERFILTER_NAME!.inf
+CopyFile;!INSTALL_BASE!\\Drivers\\wacomrouterfilter.sys;!PROGFILES!\\Tablet\\wacomrouterfilter.sys
+<SKIPCOPYRF>Execute;100;!PROGFILES!\\Tablet\\DevInst.exe;CopyOEMInf !ROUTERFILTER_NAME!.inf
+InstallRouterFilter;!PROGFILES!\\Tablet\\DevInst.exe;!PROGFILES!\\Tablet\\!ROUTERFILTER_NAME!.inf
+DONE
+
+[UpdateProHidRouter]
+Execute;100;!PROGFILES!\\Tablet\\DevInst.exe;CopyOEMInf wachidrouter_pro.inf
+DONE
+
+[UpdateISDHidRouter]
+Execute;100;!PROGFILES!\\Tablet\\DevInst.exe;CopyOEMInf wachidrouter_isd.inf
+DONE
+
+[UpdateConHidRouter]
+Execute;100;!PROGFILES!\\Tablet\\DevInst.exe;CopyOEMInf wachidrouter_con.inf
+DONE
+
+[UninstallHidRouter]
+Execute;1000;!PROGFILES!\\Tablet\\DevInst.exe;RemoveOEMInf wachidrouter_isd
+Execute;1000;!PROGFILES!\\Tablet\\DevInst.exe;RemoveOEMInf ISD_WUInstall.INF
+RemoveWacHidRouter;!PROGFILES!\\Tablet\\DevInst.exe
+ShouldUninstallHidRouter;!RemoveHidRouter!
+DONE
+
+[RemoveHidRouter]
+DeleteFile;!PROGFILES!\\Tablet\\wachidrouter_con.inf
+DeleteFile;!PROGFILES!\\Tablet\\wachidrouter_con.cat
+DeleteFile;!PROGFILES!\\Tablet\\wachidrouter_pro.inf
+DeleteFile;!PROGFILES!\\Tablet\\wachidrouter_pro.cat
+DeleteFile;!PROGFILES!\\Tablet\\!HIDROUTER_NAME!.inf
+DeleteFile;!PROGFILES!\\Tablet\\!HIDROUTER_NAME!.cat
+DeleteFile;!PROGFILES!\\Tablet\\wachidrouter.sys
+DeleteFile;!PROGFILES!\\Tablet\\WdfCoInstaller01009.dll
+DeleteFile;!PROGFILES!\\Tablet\\hidkmdf.sys
+DeleteFile;!SYSTEM!\\Drivers\\wachidrouter.sys
+Execute;1000;!PROGFILES!\\Tablet\\DevInst.exe;RemoveOEMInf wacomrouterfilter.INF
+DeleteFile;!PROGFILES!\\Tablet\\!ROUTERFILTER_NAME!.inf
+DeleteFile;!PROGFILES!\\Tablet\\!ROUTERFILTER_NAME!.cat
+DeleteFile;!PROGFILES!\\Tablet\\wacomrouterfilter.sys
+DeleteFile;!SYSTEM!\\Drivers\\wacomrouterfilter.sys
+DONE
+
+[CreateUninstaller]
+CopyFileCustom;.\\ISDTabletDefaults!PRODUCT_NAME!.xml;!SYSTEM!\\ISDTabletDefaults.xml
+MergeXmlCustom;!TEMP!\\ISDTabletUserDefaults!PRODUCT_NAME!.xml;!SYSTEM!\\ISDTabletUserDefaults.xml
+DeleteFileCustom;!TEMP!\\ISDTabletUserDefaults!PRODUCT_NAME!.xml
+MergeXmlCustom;!TEMP!\\ISDTouchUserDefaults!PRODUCT_NAME!.xml;!SYSTEM!\\ISDTouchUserDefaults.xml
+DeleteFileCustom;!TEMP!\\ISDTouchUserDefaults!PRODUCT_NAME!.xml
+CopyFile;.\\Setup.exe;!PROGFILES!\\Tablet\\ISD\\setup\\Remove.exe
+CopyFileCustom;.\\Installer!PRODUCT_NAME!.dat;!PROGFILES!\\Tablet\\ISD\\setup\\Installer.dat
+CopyFile;.\\Strings.dat;!PROGFILES!\\Tablet\\ISD\\setup\\Strings.dat
+CopyFile;.\\Common.dat;!PROGFILES!\\Tablet\\ISD\\setup\\Common.dat
+CopyFile;.\\ISDTablet.xml;!PROGFILES!\\Tablet\\ISD\\setup\\ISDTablet.xml
+CopyFileCustom;.\\ISDStartMenu!PRODUCT_NAME!.xml;!PROGFILES!\\Tablet\\ISD\\setup\\ISDStartMenu.xml
+CopyFile;.\\System32\\WacomI18N.dll;!PROGFILES!\\Tablet\\ISD\\setup\\WacomI18N.dll
+CopyFile;.\\PrefUtil.exe;!PROGFILES!\\Tablet\\ISD\\setup\\PrefUtil.exe
+RegValueString;Software\\Microsoft\\Windows\\CurrentVersion\\Uninstall\\ISD Tablet Driver;DisplayName;^ISDTablet^
+RegValueString;Software\\Microsoft\\Windows\\CurrentVersion\\Uninstall\\ISD Tablet Driver;DisplayIcon;!PROGFILES!\\Tablet\\ISD\\setup\\Remove.exe
+RegValueString;Software\\Microsoft\\Windows\\CurrentVersion\\Uninstall\\ISD Tablet Driver;UninstallString;!PROGFILES!\\Tablet\\ISD\\setup\\Remove.exe /u
+RegValueString;Software\\Microsoft\\Windows\\CurrentVersion\\Uninstall\\ISD Tablet Driver;UninstallPath;!PROGFILES!\\Tablet\\ISD\\setup
+RegValueString;Software\\Microsoft\\Windows\\CurrentVersion\\Uninstall\\ISD Tablet Driver;ModifyPath;!PROGFILES!\\Tablet\\ISD\\setup\\PrefUtil.exe
+RegValueString;Software\\Microsoft\\Windows\\CurrentVersion\\Uninstall\\ISD Tablet Driver;Publisher;Wacom Technology Corp.
+RegValueString;Software\\Microsoft\\Windows\\CurrentVersion\\Uninstall\\ISD Tablet Driver;URLInfoAbout;http:\\\\www.wacom.com\\
+RegValueDWORD;Software\\Microsoft\\Windows\\CurrentVersion\\Uninstall\\ISD Tablet Driver;NoRepair;1
+RegValueString;Software\\Microsoft\\Windows\\CurrentVersion\\Uninstall\\Touch Driver
+RegValueString;HKEY_CLASSES_ROOT\\Wacom.ISDPrefBackup\\CurVer;@;Wacom.PrefBackup.1
+RegValueString;HKEY_CLASSES_ROOT\\Wacom.ISDPrefBackup.1;@;Wacom Preference Backup Archive
+RegValueString;HKEY_CLASSES_ROOT\\Wacom.ISDPrefBackup.1;FriendlyTypeName;Wacom Preference Backup Archive
+RegValueString;HKEY_CLASSES_ROOT\\Wacom.ISDPrefBackup.1;InfoTip;@!PROGFILES!\\Tablet\\ISD\\setup\\PrefUtil.exe,-2010
+RegValueString;HKEY_CLASSES_ROOT\\Wacom.ISDPrefBackup.1\\CurVer;@;Wacom.ISDPrefBackup.1
+RegValueString;HKEY_CLASSES_ROOT\\Wacom.ISDPrefBackup.1\\DefaultIcon;@;!PROGFILES!\\Tablet\\ISD\\setup\\PrefUtil.exe,-111
+RegValueString;HKEY_CLASSES_ROOT\\Wacom.ISDPrefBackup.1\\shell;@;open
+RegValueString;HKEY_CLASSES_ROOT\\Wacom.ISDPrefBackup.1\\shell\\open\\command;@;"!PROGFILES!\\Tablet\\ISD\\setup\\PrefUtil.exe" /restore "%1"
+RegValueString;HKEY_CLASSES_ROOT\\.isdtabletprefs;@;Wacom.ISDPrefBackup
+Execute;!WINDOWS!\\regedit.exe;/s DPInstall.reg
+CopyFile;.\\DPRemove.reg;!PROGFILES!\\Tablet\\ISD\\setup\\DPRemove.reg
+RegValueString;Software\\Microsoft\\Windows\\CurrentVersion\\Uninstall\\ISD Tablet Driver;DisplayVersion;!APP VERSION!
+RegValueMultiStringDele;SYSTEM\\CurrentControlSet\\Control\\CoDeviceInstallers;{745a17a0-74d3-11d0-b6fe-00a0c90f57da};WHIDCoinst.dll,WHIDCoinstaller
+DONE
+
+[DisableSelectiveSuspend]
+SetDeviceProperties;!PROGFILES!\\Tablet\\DevInst.exe;0
+DONE
+
+[AddStartMenu]
+ProcessXMLData;!PROGFILES!\\Tablet\\ISD\\setup\\ISDStartMenu.xml;
+DONE
+
+[PreInstall]
+CopyFile;!INSTALL_BASE!\\Drivers\\DevInst.exe;!PROGFILES!\\Tablet\\DevInst.exe
+CopyFile;!INSTALL_BASE!\\Drivers\\PenInst.dll;!PROGFILES!\\Tablet\\PenInst.dll
+CopyFile;.\\libxml2.dll;!PROGFILES!\\Tablet\\ISD\\setup\\libxml2.dll
+CopyFile;.\\msvcp100.dll;!PROGFILES!\\Tablet\\ISD\\setup\\msvcp100.dll
+CopyFile;.\\msvcr100.dll;!PROGFILES!\\Tablet\\ISD\\setup\\msvcr100.dll
+CopyFile;!INSTALL_BASE!\\Microsoft.VC90.CRT.manifest;!PROGFILES!\\Tablet\\Microsoft.VC90.CRT.manifest
+CopyFile;!INSTALL_BASE!\\msvcm90.dll;!PROGFILES!\\Tablet\\msvcm90.dll
+CopyFile;!INSTALL_BASE!\\msvcp90.dll;!PROGFILES!\\Tablet\\msvcp90.dll
+CopyFile;!INSTALL_BASE!\\msvcr90.dll;!PROGFILES!\\Tablet\\msvcr90.dll
+CopyFile;.\\System32\\AppGestures.xml;!PROGFILES!\\Tablet\\ISD\\AppGestures.xml
+Is64;!PreInstall64!
+Not64;!PreInstall32!
+DONE
+
+[PreInstall32]
+CopyFile;.\\libxml2.dll;!PROGFILES!\\Tablet\\ISD\\libxml2.dll
+CopyFile;.\\msvcp100.dll;!PROGFILES!\\Tablet\\ISD\\msvcp100.dll
+CopyFile;.\\msvcr100.dll;!PROGFILES!\\Tablet\\ISD\\msvcr100.dll
+CopyFile;.\\msvcp100.dll;!PROGFILES!\\Tablet\\msvcp100.dll
+CopyFile;.\\msvcr100.dll;!PROGFILES!\\Tablet\\msvcr100.dll
+DONE
+
+[PreInstall64]
+CopyFile;!INSTALL_BASE!\\libxml2.dll;!PROGFILES!\\Tablet\\ISD\\libxml2.dll
+CopyFile;!INSTALL_BASE!\\msvcp100.dll;!PROGFILES!\\Tablet\\ISD\\msvcp100.dll
+CopyFile;!INSTALL_BASE!\\msvcr100.dll;!PROGFILES!\\Tablet\\ISD\\msvcr100.dll
+CopyFile;!INSTALL_BASE!\\msvcp100.dll;!PROGFILES!\\Tablet\\msvcp100.dll
+CopyFile;!INSTALL_BASE!\\msvcr100.dll;!PROGFILES!\\Tablet\\msvcr100.dll
+DONE
+
+[StartAllDrivers]
+StartService;WTabletServiceISD
+StartService;WTabletServicePen
+StartService;WTabletServicePro
+DONE
+
+[StopAllDrivers]
+StopTabletService;WTabletServiceISD
+StopTabletService;WTabletServicePen
+StopTabletService;WTabletServicePro
+StopTabletService;TabletService
+StopTabletService;WTouchService
+StopTabletService;TabletServicePen
+StopTabletService;TabletServiceISD
+StopTabletService;TabletServiceWacom
+StopTabletService;TouchServicePen
+StopTabletService;TouchServiceISD
+StopTabletService;TouchServiceWacom
+Delay;5000
+DONE
+
+[StopThisDriver]
+StopTabletService;WTabletServiceISD
+DONE
+
+[InstallMTAPI]
+CheckFlag;SKIP_TOUCH_FLAG;1;<DONE>
+CheckFlag;SKIP_PEN_FLAG;1;<DONE>
+CopyFileIfNewerRedir;.\\System32\\WacomMT.dll;!SYSTEM!\\WacomMT.dll
+CopyFileIfNewer;!INSTALL_BASE!\\WacomMT.dll;!SYSTEM!\\WacomMT.dll
+DONE
+
+[RemoveSeparateServices]
+Execute;100;!PROGFILES!\\Tablet\\Wacom\\ISD_Tablet.exe;u
+RegValueString;!PENSERVICEBASE!
+Execute;1000;!PROGFILES!\\Tablet\\Wacom\\Wacom_TouchService.exe;/r
+DeleteFile;!PROGFILES!\\Tablet\\Wacom\\Wacom_TouchService.exe
+RegValueString;!TOUCHSERVICEBASE!
+DONE
+
+[InstallCommonService]
+CopyFile;.\\System32\\WacomHost.exe;!PROGFILES!\\Tablet\\ISD\\WacomHost.exe
+CopyFile;!INSTALL_BASE!\\WTabletServiceISD.exe;!PROGFILES!\\Tablet\\ISD\\WTabletServiceISD.exe
+Execute;1000;!PROGFILES!\\Tablet\\ISD\\WTabletServiceISD.exe;/i
+DONE
+
+[InstallPenService]
+NotExist;!INSTALL_BASE!\\ISD_Tablet.exe;<DONE>
+CreateDir;!PROGFILES!\\Tablet
+Command;!ZoomData!;.\\System32\\Zoom.dat
+DeleteFile;!SYSTEM!\\Wintab.dll
+CopyFile;!INSTALL_BASE!\\ISD_Tablet.exe;!PROGFILES!\\Tablet\\ISD\\ISD_Tablet.exe
+CopyFile;!INSTALL_BASE!\\ISD_TabletUser.exe;!PROGFILES!\\Tablet\\ISD\\ISD_TabletUser.exe
+CopyFile;!INSTALL_BASE!\\ISD_Tablet.dll;!SYSTEM!\\ISD_Tablet.dll
+CopyFile;!INSTALL_BASE!\\ISD_Touch_Tablet.dll;!SYSTEM!\\ISD_Touch_Tablet.dll
+CopyFileRedir;.\\System32\\ISD_Touch_Tablet.dll;!SYSTEM!\\ISD_Touch_Tablet.dll
+CopyFileRedir;.\\System32\\ISD_Tablet.dll;!SYSTEM!\\ISD_Tablet.dll
+CopyFileIfNewerRedir;.\\System32\\Wintab32.dll;!SYSTEM!\\Wintab32.dll
+CopyFileIfNewer;!INSTALL_BASE!\\Wintab32.dll;!SYSTEM!\\Wintab32.dll
+IsInk;!EraseDataInk!
+NotInk;!EraseData!
+IsPenPresent;!InstallCPL!
+CheckFlag;USE_START_MENU;1;!AddStartMenu!
+IsXPPro;<XPPRO>
+RegValueDWORD;!SERVICEBASE!;UseHID;1
+DONE
+<XPPRO>RegValueDWORD;!SERVICEBASE!;UseHID;0
+DONE
+
+[InstallCPL]
+CopyFile;!INSTALL_BASE!\\ISD_PenCPL.exe;!PROGFILES!\\Tablet\\ISD\\ISD_PenCPL.exe
+CopyFile;.\\System32\\ISDTablet.znc;!PROGFILES!\\Tablet\\ISD\\ISDTablet.znc
+CheckFlag;SKIP_PEN_CPL;1;<DONE>
+RegValueString;HKEY_USERS\\.Default\\Software\\Wacom\\Parameters;ISDDocLocation;!PROGFILES!\\Tablet\\ISD
+ProcessXMLData;!PROGFILES!\\Tablet\\ISD\\setup\\ISDTablet.xml;!PROGFILES!\\Tablet\\ISD\\setup\\WacomI18N.dll;!SYSTEM!\\ISDTabletDefaults.xml;!SYSTEM!\\TabletOEMI18N.dll;!PROGFILES!\\Tablet\\ISD\\ISDTabletTask.xml;!SYSTEM!\\ISDTabletUserDefaults.xml
+SetRebootFlag
+DONE
+
+[InstallWebPlugins]
+IfNotOlder;!PROGRAM FILES!\\TabletPlugins\\ieInstall.exe;.\\TabletPlugins\\ieInstall.exe;<NETSCAPE>
+CopyFile;.\\TabletPlugins\\ieInstall.exe;!PROGRAM FILES!\\TabletPlugins\\ieInstall.exe
+Execute;1000;!PROGRAM FILES!\\TabletPlugins\\ieInstall.exe;/S
+<NETSCAPE>IfNotOlder;!PROGRAM FILES!\\TabletPlugins\\npInstall.exe;.\\TabletPlugins\\npInstall.exe;7
+CopyFile;.\\TabletPlugins\\npInstall.exe;!PROGRAM FILES!\\TabletPlugins\\npInstall.exe
+Execute;1000;!PROGRAM FILES!\\TabletPlugins\\npInstall.exe;/S
+DONE
+
+[InstallTouchService]
+NotExist;!INSTALL_BASE!\\ISD_TouchUser.exe;<DONE>
+CopyFile;!INSTALL_BASE!\\ISD_TouchUser.exe;!PROGFILES!\\Tablet\\ISD\\ISD_TouchUser.exe
+CopyFile;!INSTALL_BASE!\\ISD_Touch_Tablet.dll;!SYSTEM!\\ISD_Touch_Tablet.dll
+CopyFileRedir;.\\System32\\ISD_Touch_Tablet.dll;!SYSTEM!\\ISD_Touch_Tablet.dll
+CopyFileCustom;.\\ISDTouchDefaults!PRODUCT_NAME!.xml;!SYSTEM!\\ISDTouchDefaults.xml
+CopyFile;!INSTALL_BASE!\\ISD_TouchAPI.dll;!PROGFILES!\\Tablet\\ISD\\ISD_TouchAPI.dll
+Execute;1000;!SYSTEM!\\regsvr32.exe;/s \"!PROGFILES!\\Tablet\\ISD\\ISD_TouchAPI.dll\"
+CheckFlag;SKIP_TOUCH_CPL;0;!InstallTouchCPL!
+CheckFlag;USE_START_MENU;1;!AddStartMenu!
+!InstallMTAPI!
+DONE
+
+[InstallTouchCPL]
+NotExist;!INSTALL_BASE!\\ISD_TouchCPL.exe;<DONE>
+RegValueString;SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Explorer\\ControlPanel\\Namespace\\{6C3D42F4-58D4-4940-B898-36F0155EA760};@;^ISDTouchCPLName^
+RegValueString;HKEY_CLASSES_ROOT\\CLSID\\{6C3D42F4-58D4-4940-B898-36F0155EA760};@;^ISDTouchCPLName^
+RegValueString;HKEY_CLASSES_ROOT\\CLSID\\{6C3D42F4-58D4-4940-B898-36F0155EA760};LocalizedString;@!PROGFILES!\\Tablet\\ISD\\ISD_TouchCPL.exe,-101
+RegValueString;HKEY_CLASSES_ROOT\\CLSID\\{6C3D42F4-58D4-4940-B898-36F0155EA760};InfoTip;@!PROGFILES!\\Tablet\\ISD\\ISD_TouchCPL.exe,-102
+RegValueString;HKEY_CLASSES_ROOT\\CLSID\\{6C3D42F4-58D4-4940-B898-36F0155EA760};System.ApplicationName;Wacom.ISD_TouchSettings
+RegValueString;HKEY_CLASSES_ROOT\\CLSID\\{6C3D42F4-58D4-4940-B898-36F0155EA760};System.ControlPanel.Category;2
+RegValueString;HKEY_CLASSES_ROOT\\CLSID\\{6C3D42F4-58D4-4940-B898-36F0155EA760};System.Software.TasksFileURL;!PROGFILES!\\tablet\\ISD\\ISDTouchCPL.xml
+RegValueString;HKEY_CLASSES_ROOT\\CLSID\\{6C3D42F4-58D4-4940-B898-36F0155EA760}\\DefaultIcon;@;!PROGFILES!\\Tablet\\ISD\\ISD_TouchCPL.exe,-103
+RegValueString;HKEY_CLASSES_ROOT\\CLSID\\{6C3D42F4-58D4-4940-B898-36F0155EA760}\\Shell\\Open\\Command;@;!PROGFILES!\\Tablet\\ISD\\ISD_TouchCPL.exe
+CopyFile;!INSTALL_BASE!\\ISD_TouchCPL.exe;!PROGFILES!\\Tablet\\ISD\\ISD_TouchCPL.exe
+CopyFile;.\\ISDTouchCPL.xml;!PROGFILES!\\tablet\\ISD\\ISDTouchCPL.xml
+DONE
+
+[UninstallDriver]
+Execute;1000;!PROGFILES!\\Tablet\\ISD\\WTabletServiceISD.exe;/r
+DONE
+
+[UninstallVHID]
+Execute;1000;!PROGFILES!\\Tablet\\DevInst.exe;RemoveOEMInf wacommousefilter.inf
+Execute;1000;!PROGFILES!\\Tablet\\DevInst.exe;Remove HID\\WACVIRTUALHID&Col04
+Execute;1000;!PROGFILES!\\Tablet\\DevInst.exe;Remove HID\\WACOMVIRTUALHID&Col03
+Execute;1000;!PROGFILES!\\Tablet\\DevInst.exe;RemoveOEMInf wacomvhid.INF
+Execute;1000;!PROGFILES!\\Tablet\\DevInst.exe;Remove ROOT\\WACVIRTUALHID
+Execute;1000;!PROGFILES!\\Tablet\\DevInst.exe;Remove ROOT\\WACOMVIRTUALHID
+RegValueString;System\\CurrentControlSet\\Services\\WacomVHid
+DeleteFile;!PROGFILES!\\Tablet\\wacomvhid.inf
+DeleteFile;!PROGFILES!\\Tablet\\wacomvhid.cat
+DeleteFile;!PROGFILES!\\Tablet\\wacomvhid.sys
+DeleteFile;!SYSTEM!\\Drivers\\wacomvhid.sys
+DeleteFile;!SYSTEM!\\Drivers\\wacommousefilter.sys
+DONE
+
+[UninstallWISD]
+Execute;1000;!PROGFILES!\\Tablet\\DevInst.exe;RemoveOEMInf wisdpen.INF
+Execute;1000;!PROGFILES!\\Tablet\\DevInst.exe;RemoveOEMInf wtpfiltr.inf
+RegValueString;System\\CurrentControlSet\\Services\\WISDPen
+DeleteFile;!PROGFILES!\\Tablet\\wisdpen.inf
+DeleteFile;!PROGFILES!\\Tablet\\wisdpen.cat
+DeleteFile;!PROGFILES!\\Tablet\\wisdpen.sys
+DeleteFile;!SYSTEM!\\Drivers\\wisdpen.sys
+DONE
+
+[UninstallVTHID]
+Execute;1000;!PROGFILES!\\Tablet\\DevInst.exe;Remove ROOT\\WACOMVTHID
+Execute;1000;!PROGFILES!\\Tablet\\DevInst.exe;RemoveOEMInf wacomvthid.inf
+RegValueString;System\\CurrentControlSet\\Services\\wacomvthid
+DeleteFile;!PROGFILES!\\Tablet\\wacomvthid.inf
+DeleteFile;!PROGFILES!\\Tablet\\wacomvthid.cat
+DeleteFile;!PROGFILES!\\Tablet\\wacomvthid.sys
+DONE
+
+[UninstallHidF]
+Execute;1000;!PROGFILES!\\Tablet\\DevInst.exe;RemoveOEMInf wacomhidfilter.inf
+DeleteFile;!SYSTEM!\\Drivers\\wacomhidfilter.sys
+RegValueString;!PENSERVICEBASE!;UsePen
+RegValueDWORD;!PENSERVICEBASE!;TargetOffset
+RegValueDWORD;!PENSERVICEBASE!;DefaultPortrait
+RegValueString;System\\CurrentControlSet\\Services\\wacomhidfilter
+DeleteFile;!PROGFILES!\\Tablet\\wacomhidfilter.inf
+DeleteFile;!PROGFILES!\\Tablet\\wacomhidfilter.cat
+DeleteFile;!PROGFILES!\\Tablet\\wacomhidfilter.sys
+DONE
+
+[RemoveFiles]
+CleanupXMLData;!PROGFILES!\\Tablet\\ISD\\setup\\ISDTablet.xml
+CleanupXMLData;!PROGFILES!\\Tablet\\ISD\\setup\\ISDStartMenu.xml
+RegValueString;Software\\Microsoft\\Windows\\CurrentVersion\\Uninstall\\ISD Tablet Driver
+RegValueString;HKEY_CLASSES_ROOT\\.isdtabletprefs
+RegValueString;HKEY_CLASSES_ROOT\\Wacom.ISDPrefBackup
+RegValueString;HKEY_CLASSES_ROOT\\Wacom.ISDPrefBackup.1
+Execute;!WINDOWS!\\regedit.exe;/s "!PROGFILES!\\Tablet\\ISD\\setup\\DPRemove.reg"
+RegValueString;Software\\Microsoft\\Windows\\CurrentVersion\\Control Panel\\Cpls\\ISD_PenCPL.exe
+RegValueString;Software\\Microsoft\\Windows\\CurrentVersion\\Control Panel\\Cpls;ISD Tablet
+RegValueString;SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Control Panel\\Extended Properties\\{605CA226-D286-468e-B848-2B2E8E697B74} 2;!PROGFILES!\\Tablet\\ISD\\ISD_PenCPL.exe
+RegValueString;SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Control Panel\\Extended Properties\\System.ControlPanel.Category;!PROGFILES!\\Tablet\\ISD\\ISD_PenCPL.exe
+RegValueString;SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Control Panel\\Extended Properties\\System.Software.TasksFileUrl;!PROGFILES!\\Tablet\\ISD\\ISD_PenCPL.exe
+RegValueString;SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Control Panel\\Extended Properties\\System.Software.AppId;!PROGFILES!\\Tablet\\ISD\\ISD_PenCPL.exe
+RegValueString;SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Control Panel\\Extended Properties\\System.ApplicationName;!PROGFILES!\\Tablet\\ISD\\ISD_PenCPL.exe
+RegValueMultiStringDele;SYSTEM\\CurrentControlSet\\Control\\CoDeviceInstallers;{745a17a0-74d3-11d0-b6fe-00a0c90f57da};WHIDCoinst.dll,WHIDCoinstaller
+RegValueString;SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Explorer\\ControlPanel\\Namespace\\{6C3D42F4-58D4-4940-B898-36F0155EA760}
+RegValueString;HKEY_CLASSES_ROOT\\CLSID\\{6C3D42F4-58D4-4940-B898-36F0155EA760}
+RegValueString;Software\\Wacom\\Calibration Assistant;ISDPenCal_Path;
+RegValueString;Software\\Wacom\\Calibration Assistant;ISDTouchCal_Path;
+RegValueString;Software\\Wacom\\Calibration Assistant;ISDPenReset_Path;
+RegValueString;Software\\Wacom\\Calibration Assistant;ISDTouchReset_Path;
+RegValueString;Software\\Wacom\\Calibration Assistant
+Command;!RemoveWebPlugins!
+Command;!RemoveFilesShared!
+DeleteAllPrefs
+DeleteFileRedir;!SYSTEM!\\WacomMT.dll
+DeleteFile;!SYSTEM!\\WacomMT.dll
+DeleteFileRedir;!SYSTEM!\\Wintab32.dll
+DeleteFile;!SYSTEM!\\Wintab32.dll
+DeleteFile;!SYSTEM!\\ISD_Tablet.dll
+DeleteFileRedir;!SYSTEM!\\ISD_Tablet.dll
+DeleteFile;!SYSTEM!\\ISD_Touch_Tablet.dll
+DeleteFileRedir;!SYSTEM!\\ISD_Touch_Tablet.dll
+DeleteFile;!Startup Folder!\\ISD_TabletUser.exe.lnk
+DeleteFile;!PROGFILES!\\Tablet\\ISD\\ISD_TabletUser.exe
+DeleteFile;!PROGFILES!\\Tablet\\ISD\\ISD_Tablet.exe
+DeleteFile;!SYSTEM!\\ISDTabletUserDefaults.xml
+DeleteFile;!SYSTEM!\\ISD_TouchTabletUserDefaults.xml
+DeleteFile;!PROGFILES!\\Tablet\\ISD\\ISD_PenCPL.exe
+DeleteFile;!PROGFILES!\\Tablet\\ISD\\ISDTablet.znc
+DeleteFileReboot;!PROGFILES!\\Tablet\\ISD\\setup\\Remove.exe
+DeleteFileReboot;!PROGFILES!\\Tablet\\ISD\\setup\\Installer.dat
+DeleteFileReboot;!PROGFILES!\\Tablet\\ISD\\setup\\Strings.dat
+DeleteFileReboot;!PROGFILES!\\Tablet\\ISD\\setup\\Common.dat
+DeleteFileReboot;!PROGFILES!\\Tablet\\ISD\\setup\\libxml2.dll
+DeleteFileReboot;!PROGFILES!\\Tablet\\ISD\\setup\\msvcp100.dll
+DeleteFileReboot;!PROGFILES!\\Tablet\\ISD\\setup\\msvcr100.dll
+DeleteFileReboot;!PROGFILES!\\Tablet\\ISD\\libxml2.dll
+DeleteFileReboot;!PROGFILES!\\Tablet\\ISD\\msvcp100.dll
+DeleteFileReboot;!PROGFILES!\\Tablet\\ISD\\msvcr100.dll
+DeleteDirContents;!PROGFILES!\\Tablet\\ISD\\Setup\\
+DeleteFileReboot;!PROGFILES!\\Tablet\\ISD\\setup\\
+DeleteFile;!PROGFILES!\\tablet\\ISD\\ISDTouchCPL.xml
+DeleteFile;!PROGFILES!\\tablet\\ISD\\WTabletServiceISD.exe
+DeleteFile;!PROGFILES!\\tablet\\ISD\\WacomHost.exe
+DeleteFile;!PROGFILES!\\Tablet\\ISD\\ISD_TouchAPI.exe
+DeleteFile;!PROGFILES!\\Tablet\\ISD\\ISD_TouchCPL.exe
+DeleteFile;!PROGFILES!\\Tablet\\ISD\\ISD_TouchService.exe
+DeleteFile;!PROGFILES!\\Tablet\\ISD\\ISD_TouchUser.exe
+DeleteDirContents;!PROGFILES!\\Tablet\\ISD
+DeleteFileReboot;!PROGFILES!\\Tablet\\ISD\\
+Exist;!SYSTEM!\\Wacom_Tablet.dll;<DONE>
+Exist;!SYSTEM!\\Pen_Tablet.dll;<DONE>
+DeleteFileReboot;!PROGFILES!\\Tablet\\msvcm90.dll
+DeleteFileReboot;!PROGFILES!\\Tablet\\msvcp90.dll
+DeleteFileReboot;!PROGFILES!\\Tablet\\msvcr90.dll
+DeleteDirContents;!PROGFILES!\\Tablet\\
+DeleteFileReboot;!PROGFILES!\\Tablet\\
+DONE
+
+[RemoveWebPlugins]
+Exist;!SYSTEM!\\Wacom_Tablet.dll;<DONE>
+Exist;!SYSTEM!\\Pen_Tablet.dll;<DONE>
+ExecuteRedir;1000;!PROGRAM FILES!\\TabletPlugins\\ieUninstall.exe;/S
+DeleteFileRedir;!PROGRAM FILES!\\TabletPlugins\\ieUninstall.exe
+ExecuteRedir;1000;!PROGRAM FILES!\\TabletPlugins\\npUninstall.exe;/S
+DeleteFileRedir;!PROGRAM FILES!\\TabletPlugins\\npUninstall.exe
+DeleteFileRedir;!PROGRAM FILES!\\TabletPlugins\\
+# Clean up old broken installs
+Not64;<DONE>
+DeleteFile;!PROGFILES!\\TabletPlugins\\ieUninstall.exe
+DeleteFile;!PROGFILES!\\TabletPlugins\\npUninstall.exe
+DeleteFile;!PROGFILES!\\TabletPlugins\\ieinstall.exe
+DeleteFile;!PROGFILES!\\TabletPlugins\\npinstall.exe
+DeleteFile;!PROGFILES!\\TabletPlugins\\
+DONE
+
+[RemoveFilesShared]
+Exist;!SYSTEM!\\Wacom_Tablet.dll;<DONE>
+Exist;!SYSTEM!\\Pen_Tablet.dll;<DONE>
+DeleteFile;!PROGFILES!\\Tablet\\CalibrationAssistant.exe
+DeleteFile;!PROGFILES!\\Tablet\\PenInst.dll
+DeleteFile;!PROGFILES!\\Tablet\\DevInst.exe
+DeleteDir;!SYSTEM!\\WTablet
+DeleteDirContents;!PROGFILES!\\Tablet
+DeleteDir;!PROGFILES!\\Tablet
+DeleteFileReboot;!PROGFILES!\\Tablet\\
+DONE
+
+[RemovePreISD]
+NotExist;!SYSTEM!\\Pen_Tablet.exe;<WTOUCH>
+Execute;100;!SYSTEM!\\Pen_Tablet.exe;u
+<WTOUCH>NotExist;!PROGFILES!\\WTouch\\WTouchService.exe;<REGENTRY>
+Execute;100;!PROGFILES!\\WTouch\\WTouchService.exe;/r
+<REGENTRY>RegValueString;\\SYSTEM\\CurrentControlSet\\Services\\TabletServicePen\\PARAMETERS;
+RegValueString;SYSTEM\\CurrentControlSet\\Services\\WTouchService
+CleanupXMLData;!PROGFILES!\\Tablet\\Pen\\PenTablet.xml
+RegValueStringRedir;Software\\Microsoft\\Windows\\CurrentVersion\\Uninstall\\Pen Tablet Driver
+RegValueStringRedir;Software\\Microsoft\\Windows\\CurrentVersion\\Uninstall\\Touch Driver
+RegValueString;HKEY_CLASSES_ROOT\\.pentabletprefs
+RegValueString;HKEY_CLASSES_ROOT\\Wacom.PenPrefBackup
+RegValueString;HKEY_CLASSES_ROOT\\Wacom.PenPrefBackup.1
+Execute;!WINDOWS!\\regedit.exe;/s "!PROGFILES!\\Tablet\\Pen\\DPRemove.reg"
+DeleteCustomLink;!Common Desktop!;HKEY_USERS\\.Default\\Software\\Wacom\\Links;PenTabCPLName
+RegValueString;Software\\Microsoft\\Windows\\CurrentVersion\\Control Panel\\Cpls\\PenTablet.cpl
+RegValueString;Software\\Microsoft\\Windows\\CurrentVersion\\Control Panel\\Cpls;Pen Tablet
+RegValueString;SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Control Panel\\Extended Properties\\{305CA226-D286-468e-B848-2B2E8E697B74} 2;!SYSTEM!\\PenTablet.cpl
+RegValueString;SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Control Panel\\Extended Properties\\System.ControlPanel.Category;!SYSTEM!\\PenTablet.cpl
+RegValueString;SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Control Panel\\Extended Properties\\System.Software.TasksFileUrl;!SYSTEM!\\PenTablet.cpl
+RegValueString;SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Control Panel\\Extended Properties\\System.Software.AppId;!SYSTEM!\\PenTablet.cpl
+RegValueString;SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Control Panel\\Extended Properties\\System.ApplicationName;!SYSTEM!\\PenTablet.cpl
+RegValueString;SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Explorer\\ControlPanel\\Namespace\\{6C3D42F4-58D4-4940-B898-36F0155EA760}
+RegValueString;HKEY_CLASSES_ROOT\\CLSID\\{6C3D42F4-58D4-4940-B898-36F0155EA760}
+RemoveDisplayNameRecursive;!Common Programs!\\^PenTablet^
+DeleteDirContents;!Common Programs!\\^PenTablet^
+DeleteDir;!Common Programs!\\^PenTablet^
+DeleteFile;!Startup Folder!\\Pen_TabletUser.exe.lnk
+DeleteFile;!SYSTEM!\\Pen_Tablet.dll
+DeleteFile;!SYSTEM!\\Touch_Tablet.dll
+DeleteFile;!SYSTEM!\\WTablet\\Pen_TabletUser.exe
+DeleteFile;!SYSTEM!\\PenTablet.cpl
+DeleteFile;!SYSTEM!\\PenTablet.znc
+DeleteFile;!SYSTEM!\\Pen_Tablet.exe
+DeleteFile;!SYSTEM!\\PenTabletUserDefaults.xml
+DeleteFile;!SYSTEM!\\TouchTabletUserDefaults.xml
+DeleteFileRedir;!SYSTEM!\\Wintab32.dll
+DeleteFile;!SYSTEM!\\Wintab32.dll
+DeleteDirContents;!PROGFILES!\\Tablet\\Pen
+DeleteDirContents;!PROGFILES!\\WTouch
+DeleteFile;!PROGFILES!\\Tablet\\Pen\\Remove.exe
+DeleteFile;!PROGFILES!\\Tablet\\Pen\\Installer.dat
+DeleteFile;!PROGFILES!\\Tablet\\Pen\\Strings.dat
+DeleteFile;!PROGFILES!\\Tablet\\Pen\\Common.dat
+DeleteFile;!PROGFILES!\\WTouch\\Installer.dat
+DeleteFile;!PROGFILES!\\WTouch\\Strings.dat
+DeleteFile;!PROGFILES!\\WTouch\\Common.dat
+DeleteFile;!PROGFILES!\\WTouch\\Remove.exe
+DeleteDir;!PROGFILES!\\Tablet\\Pen
+DeleteDir;!PROGFILES!\\WTouch
+DONE
+
+[RemoveSeparateServices]
+Execute;100;!PROGFILES!\\Tablet\\Wacom\\ISD_Tablet.exe;u
+RegValueString;!PENSERVICEBASE!
+Execute;1000;!PROGFILES!\\Tablet\\Wacom\\ISD_TouchService.exe;/r
+DeleteFile;!PROGFILES!\\Tablet\\Wacom\\ISD_TouchService.exe
+RegValueString;!TOUCHSERVICEBASE!
+DONE

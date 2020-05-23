@@ -1,0 +1,2566 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!-- ===========================================================================
+
+FILE NAME
+   AppGestures.xml for Windows
+
+PURPOSE
+   Windows inputs for gestures in various applications.
+
+   Applications are identified by matching on the 'identifier' tag, which
+   in most cases is the application name.  However, in some cases, a 
+   secondary 'auxidentifier' is used when the 'identifier' tag is a
+   not the application name, but is a controlling process and used for 
+   many applications.
+
+   The first match in the file of identifier+auxidentifier (if any) is 
+   the one that gets used. 
+
+   Copyright (c) Wacom Company, Ltd. 2010 All Rights Reserved
+
+============================================================================ -->
+<root type="array">
+  <ArrayElement type="map">
+    <!-- Make this one first to optimize reading -->
+    <identifier type="string">others</identifier>
+    <AutoBehavior>scroll</AutoBehavior>
+    <ScrollUp type="map">
+      <input type="string">scrollwheelup</input>
+      <amount type="double">1</amount>
+      <amountmultiplier type="double">1</amountmultiplier>
+      <granularity type="double">1</granularity>
+    </ScrollUp>
+    <ScrollDown type="map">
+      <input type="string">scrollwheeldown</input>
+      <amount type="double">1</amount>
+      <amountmultiplier type="double">1</amountmultiplier>
+      <granularity type="double">1</granularity>
+    </ScrollDown>
+    <PanLeft type="map">
+      <input type="string">scrollbarleft</input>
+      <amount type="double">20</amount>
+      <amountmultiplier type="double">1</amountmultiplier>
+      <granularity type="double">1</granularity>
+    </PanLeft>
+    <PanRight type="map">
+      <input type="string">scrollbarright</input>
+      <amount type="double">20</amount>
+      <amountmultiplier type="double">1</amountmultiplier>
+      <granularity type="double">1</granularity>
+    </PanRight>
+    <ZoomIn type="map">
+      <modifiers type="string">control</modifiers>
+      <input type="string">scrollwheelup</input>
+      <amount type="double">5</amount>
+      <amountmultiplier type="double">5</amountmultiplier>
+      <granularity type="double">1</granularity>
+    </ZoomIn>
+    <ZoomOut type="map">
+      <modifiers type="string">control</modifiers>
+      <input type="string">scrollwheeldown</input>
+      <amount type="double">5</amount>
+      <amountmultiplier type="double">5</amountmultiplier>
+      <granularity type="double">1</granularity>
+    </ZoomOut>
+    <RotateCW type="map">
+      <keystroke type="kestring"><![CDATA[&alt;&f13;]]></keystroke>
+      <amount type="double">15</amount>
+      <amountmultiplier type="double">1</amountmultiplier>
+      <granularity type="double">1</granularity>
+    </RotateCW>
+    <RotateCCW type="map">
+      <keystroke type="kestring"><![CDATA[&alt;&f14;]]></keystroke>
+      <amount type="double">15</amount>
+      <amountmultiplier type="double">1</amountmultiplier>
+      <granularity type="double">1</granularity>
+    </RotateCCW>
+    <SwipeLeft type="map">
+      <click type="string">back</click>
+      <amount type="double">1</amount>
+      <amountmultiplier type="double">1</amountmultiplier>
+      <granularity type="double">1</granularity>
+    </SwipeLeft>
+    <SwipeRight type="map">
+      <click type="string">forward</click>
+      <amount type="double">1</amount>
+      <amountmultiplier type="double">1</amountmultiplier>
+      <granularity type="double">1</granularity>
+    </SwipeRight>
+    <GrabberHand type="map"></GrabberHand>
+  </ArrayElement>
+
+  <ArrayElement type="map">
+    <displayname>Windows 8 immersive</displayname>
+    <identifier type="string">others</identifier>
+    <immersive type="bool">true</immersive>
+    <PanLeft type="map">
+      <input type="string">scrollwheelleft</input>
+      <amount type="double">1</amount>
+      <amountmultiplier type="double">1</amountmultiplier>
+      <granularity type="double">1</granularity>
+    </PanLeft>
+    <PanRight type="map">
+      <input type="string">scrollwheelright</input>
+      <amount type="double">1</amount>
+      <amountmultiplier type="double">1</amountmultiplier>
+      <granularity type="double">1</granularity>
+    </PanRight>
+  </ArrayElement>
+
+  <ArrayElement type="map">
+    <identifier type="string">dwm</identifier>
+    <auxidentifier type="string">Flip3D</auxidentifier>
+    <PanLeft type="map">
+      <input type="string">disable</input>
+    </PanLeft>
+    <PanRight type="map">
+      <input type="string">disable</input>
+    </PanRight>
+  </ArrayElement>
+
+  <ArrayElement type="map">
+    <displayname>Adobe Photoshop</displayname>
+    <identifier type="string">photoshop</identifier>
+    <AutoBehavior>zoom</AutoBehavior>
+    <PanLeft type="map">
+      <input type="string">scrollbarleft</input>
+      <amount type="double">50</amount>
+      <amountmultiplier type="double">1</amountmultiplier>
+      <granularity type="double">1</granularity>
+    </PanLeft>
+    <PanRight type="map">
+      <input type="string">scrollbarright</input>
+      <amount type="double">50</amount>
+      <amountmultiplier type="double">1</amountmultiplier>
+      <granularity type="double">1</granularity>
+    </PanRight>
+    <ZoomIn type="map">
+      <modifiers type="string">alt</modifiers>
+      <input type="string">scrollwheelup</input>
+      <amount type="double">5</amount>
+      <amountmultiplier type="double">10</amountmultiplier>
+      <granularity type="double">3</granularity>
+    </ZoomIn>
+    <ZoomOut type="map">
+      <modifiers type="string">alt</modifiers>
+      <input type="string">scrollwheeldown</input>
+      <amount type="double">5</amount>
+      <amountmultiplier type="double">10</amountmultiplier>
+      <granularity type="double">3</granularity>
+    </ZoomOut>
+    <RotateCW type="map">
+      <keystroke type="kestring"><![CDATA[&alt;&f13;]]></keystroke>
+      <amount type="double">5</amount>
+    </RotateCW>
+    <RotateCCW type="map">
+      <keystroke type="kestring"><![CDATA[&alt;&f14;]]></keystroke>
+      <amount type="double">5</amount>
+    </RotateCCW>
+    <GrabberHand type="map">
+      <keystroke type="kestring"><![CDATA[&space;]]></keystroke>
+    </GrabberHand>
+  </ArrayElement>
+
+  <ArrayElement type="map">
+    <displayname>Adobe Photoshop</displayname>
+    <identifier type="string">photoshp</identifier>
+    <AutoBehavior>zoom</AutoBehavior>
+    <ZoomIn type="map">
+      <keystroke type="kestring"><![CDATA[&control;&kp+;]]></keystroke>
+    </ZoomIn>
+    <ZoomOut type="map">
+      <keystroke type="kestring"><![CDATA[&control;&kp-;]]></keystroke>
+    </ZoomOut>
+    <GrabberHand type="map">
+      <keystroke type="kestring"><![CDATA[&space;]]></keystroke>
+    </GrabberHand>
+  </ArrayElement>
+
+  <ArrayElement type="map">
+    <displayname>Adobe Photoshop Elements</displayname>
+    <identifier type="string">PhotoshopElements</identifier>
+    <AutoBehavior>zoom</AutoBehavior>
+    <ZoomIn type="map">
+      <keystroke type="kestring"><![CDATA[&control;&kp+;]]></keystroke>
+    </ZoomIn>
+    <ZoomOut type="map">
+      <keystroke type="kestring"><![CDATA[&control;&kp-;]]></keystroke>
+    </ZoomOut>
+    <GrabberHand type="map">
+      <keystroke type="kestring"><![CDATA[&space;]]></keystroke>
+    </GrabberHand>
+  </ArrayElement>
+
+  <ArrayElement type="map">
+    <displayname>Adobe Photoshop Elements 7/8/9/10 Editor</displayname>
+    <identifier type="string">PhotoshopElementsEditor</identifier>
+    <AutoBehavior>zoom</AutoBehavior>
+    <PanLeft type="map">
+      <modifiers type="string">control</modifiers>
+      <input type="string">scrollwheelup</input>
+      <amount type="double">1</amount>
+      <granularity type="double">40</granularity>
+    </PanLeft>
+    <PanRight type="map">
+      <modifiers type="string">control</modifiers>
+      <input type="string">scrollwheeldown</input>
+      <amount type="double">1</amount>
+      <granularity type="double">40</granularity>
+    </PanRight>
+    <ZoomIn type="map">
+      <modifiers type="string">alt</modifiers>
+      <input type="string">scrollwheelup</input>
+      <amount type="double">5</amount>
+      <amountmultiplier type="double">6</amountmultiplier>
+      <granularity type="double">5</granularity>
+    </ZoomIn>
+    <ZoomOut type="map">
+      <modifiers type="string">alt</modifiers>
+      <input type="string">scrollwheeldown</input>
+      <amount type="double">5</amount>
+      <amountmultiplier type="double">6</amountmultiplier>
+      <granularity type="double">5</granularity>
+    </ZoomOut>
+    <GrabberHand type="map">
+      <keystroke type="kestring"><![CDATA[&space;]]></keystroke>
+    </GrabberHand>
+  </ArrayElement>
+
+  <ArrayElement type="map">
+    <displayname>Adobe Photoshop Elements 7/8/9/10 Organizer</displayname>
+    <identifier type="string">PhotoshopElementsOrganizer</identifier>
+    <AutoBehavior>zoom</AutoBehavior>
+    <ZoomIn type="map">
+      <modifiers type="string">alt</modifiers>
+      <input type="string">scrollwheelup</input>
+      <amount type="double">4</amount>
+    </ZoomIn>
+    <ZoomOut type="map">
+      <modifiers type="string">alt</modifiers>
+      <input type="string">scrollwheeldown</input>
+      <amount type="double">4</amount>
+    </ZoomOut>
+    <RotateCW type="map">
+      <keystroke type="kestring"><![CDATA[&control;&right;]]></keystroke>
+      <amount type="double">15</amount>
+    </RotateCW>
+    <RotateCCW type="map">
+      <keystroke type="kestring"><![CDATA[&control;&left;]]></keystroke>
+      <amount type="double">15</amount>
+    </RotateCCW>
+    <SwipeLeft type="map">
+      <keystroke type="kestring"><![CDATA[&left;]]></keystroke>
+    </SwipeLeft>
+    <SwipeRight type="map">
+      <keystroke type="kestring"><![CDATA[&right;]]></keystroke>
+    </SwipeRight>
+  </ArrayElement>
+
+  <ArrayElement type="map">
+    <displayname>Adobe Illustrator</displayname>
+    <identifier type="string">illustrator</identifier>
+    <AutoBehavior>zoom</AutoBehavior>
+    <ScrollUp type="map">
+      <input type="string">scrollwheelup</input>
+      <amount type="double">1</amount>
+      <amountmultiplier type="double">1</amountmultiplier>
+      <granularity type="double">40</granularity>
+    </ScrollUp>
+    <ScrollDown type="map">
+      <input type="string">scrollwheeldown</input>
+      <amount type="double">1</amount>
+      <amountmultiplier type="double">1</amountmultiplier>
+      <granularity type="double">40</granularity>
+    </ScrollDown>
+    <PanLeft type="map">
+      <modifiers type="string">control</modifiers>
+      <input type="string">scrollwheelup</input>
+      <amount type="double">1</amount>
+      <granularity type="double">40</granularity>
+    </PanLeft>
+    <PanRight type="map">
+      <modifiers type="string">control</modifiers>
+      <input type="string">scrollwheeldown</input>
+      <amount type="double">1</amount>
+      <granularity type="double">40</granularity>
+    </PanRight>
+    <ZoomIn type="map">
+      <keystroke type="kestring"><![CDATA[&control;&kp+;]]></keystroke>
+      <amount type="double">20</amount>
+      <amountmultiplier type="double">1</amountmultiplier>
+      <granularity type="double">20</granularity>
+    </ZoomIn>
+    <ZoomOut type="map">
+      <keystroke type="kestring"><![CDATA[&control;&kp-;]]></keystroke>
+      <amount type="double">20</amount>
+      <amountmultiplier type="double">1</amountmultiplier>
+      <granularity type="double">20</granularity>
+    </ZoomOut>
+    <GrabberHand type="map">
+      <keystroke type="kestring"><![CDATA[&space;]]></keystroke>
+    </GrabberHand>
+  </ArrayElement>
+
+  <ArrayElement type="map">
+    <displayname>Adobe Fireworks</displayname>
+    <identifier type="string">fireworks</identifier>
+    <AutoBehavior>zoom</AutoBehavior>
+    <PanLeft type="map">
+      <input type="string">scrollbarleft</input>
+      <amount type="double">30</amount>
+    </PanLeft>
+    <PanRight type="map">
+      <input type="string">scrollbarright</input>
+      <amount type="double">30</amount>
+    </PanRight>
+    <ZoomIn type="map">
+      <modifiers type="string">control</modifiers>
+      <input type="string">scrollwheelup</input>
+      <amount type="double">5</amount>
+      <amountmultiplier type="double">20</amountmultiplier>
+      <granularity type="double">1</granularity>
+    </ZoomIn>
+    <ZoomOut type="map">
+      <modifiers type="string">control</modifiers>
+      <input type="string">scrollwheeldown</input>
+      <amount type="double">5</amount>
+      <amountmultiplier type="double">20</amountmultiplier>
+      <granularity type="double">1</granularity>
+    </ZoomOut>
+  </ArrayElement>
+
+  <ArrayElement type="map">
+    <displayname>Adobe InDesign</displayname>
+    <identifier type="string">indesign</identifier>
+    <AutoBehavior>zoom</AutoBehavior>
+    <ScrollUp type="map">
+      <input type="string">scrollwheelup</input>
+      <amount type="double">1</amount>
+      <amountmultiplier type="double">0.025</amountmultiplier>
+      <granularity type="double">1</granularity>
+    </ScrollUp>
+    <ScrollDown type="map">
+      <input type="string">scrollwheeldown</input>
+      <amount type="double">1</amount>
+      <amountmultiplier type="double">0.025</amountmultiplier>
+      <granularity type="double">1</granularity>
+    </ScrollDown>
+    <PanLeft type="map">
+      <modifiers type="string">control</modifiers>
+      <input type="string">scrollwheelup</input>
+      <amount type="double">1</amount>
+      <amountmultiplier type="double">0.025</amountmultiplier>
+      <granularity type="double">1</granularity>
+    </PanLeft>
+    <PanRight type="map">
+      <modifiers type="string">control</modifiers>
+      <input type="string">scrollwheeldown</input>
+      <amount type="double">1</amount>
+      <amountmultiplier type="double">0.025</amountmultiplier>
+      <granularity type="double">1</granularity>
+    </PanRight>
+    <ZoomIn type="map">
+      <modifiers type="string">alt</modifiers>
+      <input type="string">scrollwheelup</input>
+      <amount type="double">1</amount>
+      <amountmultiplier type="double">0.1</amountmultiplier>
+      <granularity type="double">2</granularity>
+    </ZoomIn>
+    <ZoomOut type="map">
+      <modifiers type="string">alt</modifiers>
+      <input type="string">scrollwheeldown</input>
+      <amount type="double">1</amount>
+      <amountmultiplier type="double">0.1</amountmultiplier>
+      <granularity type="double">2</granularity>
+    </ZoomOut>
+  </ArrayElement>
+
+  <ArrayElement type="map">
+    <displayname>Adobe Reader</displayname>
+    <identifier type="string">acrord32</identifier>
+    <PanLeft type="map">
+      <input type="string">scrollbarleft</input>
+      <amount type="double">50</amount>
+      <amountmultiplier type="double">1</amountmultiplier>
+      <granularity type="double">1</granularity>
+    </PanLeft>
+    <PanRight type="map">
+      <input type="string">scrollbarright</input>
+      <amount type="double">50</amount>
+      <amountmultiplier type="double">1</amountmultiplier>
+      <granularity type="double">1</granularity>
+    </PanRight>
+    <ZoomIn type="map">
+      <modifiers type="string">control;alt</modifiers>
+      <input type="string">scrollwheelup</input>
+      <amount type="double">5</amount>
+      <amountmultiplier type="double">10</amountmultiplier>
+      <granularity type="double">5</granularity>
+    </ZoomIn>
+    <ZoomOut type="map">
+      <modifiers type="string">control;alt</modifiers>
+      <input type="string">scrollwheeldown</input>
+      <amount type="double">5</amount>
+      <amountmultiplier type="double">10</amountmultiplier>
+      <granularity type="double">5</granularity>
+    </ZoomOut>
+    <RotateCW type="map">
+      <keystroke type="kestring"><![CDATA[&control;&shift;&kp+;]]></keystroke>
+      <amount type="double">20</amount>
+      <discrete type="bool">true</discrete>
+    </RotateCW>
+    <RotateCCW type="map">
+      <keystroke type="kestring"><![CDATA[&control;&shift;&kp-;]]></keystroke>
+      <amount type="double">20</amount>
+      <discrete type="bool">true</discrete>
+    </RotateCCW>
+    <SwipeLeft type="map">
+      <keystroke type="kestring"><![CDATA[&left;]]></keystroke>
+    </SwipeLeft>
+    <SwipeRight type="map">
+      <keystroke type="kestring"><![CDATA[&right;]]></keystroke>
+    </SwipeRight>
+    <GrabberHand type="map">
+      <keystroke type="kestring"><![CDATA[&space;]]></keystroke>
+    </GrabberHand>
+  </ArrayElement>
+
+  <ArrayElement type="map">
+    <displayname>Adobe Acrobat</displayname>
+    <identifier type="string">acrobat</identifier>
+    <PanLeft type="map">
+      <input type="string">scrollbarleft</input>
+      <amount type="double">50</amount>
+      <amountmultiplier type="double">1</amountmultiplier>
+      <granularity type="double">1</granularity>
+    </PanLeft>
+    <PanRight type="map">
+      <input type="string">scrollbarright</input>
+      <amount type="double">50</amount>
+      <amountmultiplier type="double">1</amountmultiplier>
+      <granularity type="double">1</granularity>
+    </PanRight>
+    <ZoomIn type="map">
+      <modifiers type="string">control;alt</modifiers>
+      <input type="string">scrollwheelup</input>
+      <amount type="double">5</amount>
+      <amountmultiplier type="double">10</amountmultiplier>
+      <granularity type="double">5</granularity>
+    </ZoomIn>
+    <ZoomOut type="map">
+      <modifiers type="string">control;alt</modifiers>
+      <input type="string">scrollwheeldown</input>
+      <amount type="double">5</amount>
+      <amountmultiplier type="double">10</amountmultiplier>
+      <granularity type="double">5</granularity>
+    </ZoomOut>
+    <RotateCW type="map">
+      <keystroke type="kestring"><![CDATA[&control;&shift;&kp+;]]></keystroke>
+      <amount type="double">20</amount>
+      <discrete type="bool">true</discrete>
+    </RotateCW>
+    <RotateCCW type="map">
+      <keystroke type="kestring"><![CDATA[&control;&shift;&kp-;]]></keystroke>
+      <amount type="double">20</amount>
+      <discrete type="bool">true</discrete>
+    </RotateCCW>
+    <SwipeLeft type="map">
+      <keystroke type="kestring"><![CDATA[&left;]]></keystroke>
+    </SwipeLeft>
+    <SwipeRight type="map">
+      <keystroke type="kestring"><![CDATA[&right;]]></keystroke>
+    </SwipeRight>
+    <GrabberHand type="map">
+      <keystroke type="kestring"><![CDATA[&space;]]></keystroke>
+    </GrabberHand>
+  </ArrayElement>
+
+  <ArrayElement type="map">
+    <displayname>PDF-Viewer</displayname>
+    <identifier type="string">PDFXCview</identifier>
+    <ZoomIn type="map">
+      <modifiers type="string">control</modifiers>
+      <input type="string">scrollwheelup</input>
+      <amount type="double">5</amount>
+      <amountmultiplier type="double">0.2</amountmultiplier>
+      <granularity type="double">1</granularity>
+    </ZoomIn>
+    <ZoomOut type="map">
+      <modifiers type="string">control</modifiers>
+      <input type="string">scrollwheeldown</input>
+      <amount type="double">5</amount>
+      <amountmultiplier type="double">0.2</amountmultiplier>
+      <granularity type="double">1</granularity>
+    </ZoomOut>
+  </ArrayElement>
+
+  <ArrayElement type="map">
+    <displayname>Adobe Flash</displayname>
+    <identifier type="string">flash</identifier>
+    <AutoBehavior>zoom</AutoBehavior>
+    <ScrollUp type="map">
+      <input type="string">scrollbarup</input>
+      <amount type="double">30</amount>
+      <granularity type="double">1</granularity>
+    </ScrollUp>
+    <ScrollDown type="map">
+      <input type="string">scrollbardown</input>
+      <amount type="double">30</amount>
+      <granularity type="double">1</granularity>
+    </ScrollDown>
+    <PanLeft type="map">
+      <input type="string">scrollbarleft</input>
+      <amount type="double">30</amount>
+    </PanLeft>
+    <PanRight type="map">
+      <input type="string">scrollbarright</input>
+      <amount type="double">30</amount>
+    </PanRight>
+    <ZoomIn type="map">
+      <modifiers type="string">shift;control</modifiers>
+      <input type="string">scrollwheelup</input>
+      <amount type="double">5</amount>
+    </ZoomIn>
+    <ZoomOut type="map">
+      <modifiers type="string">shift;control</modifiers>
+      <input type="string">scrollwheeldown</input>
+      <amount type="double">5</amount>
+    </ZoomOut>
+    <RotateCW type="map">
+      <keystroke type="kestring"><![CDATA[&control;&shift;9]]></keystroke>
+      <amount type="double">20</amount>
+      <discrete type="bool">true</discrete>
+    </RotateCW>
+    <RotateCCW type="map">
+      <keystroke type="kestring"><![CDATA[&control;&shift;7]]></keystroke>
+      <amount type="double">20</amount>
+      <discrete type="bool">true</discrete>
+    </RotateCCW>
+    <GrabberHand type="map">
+      <keystroke type="kestring"><![CDATA[&space;]]></keystroke>
+    </GrabberHand>
+  </ArrayElement>
+
+  <!-- Horizontal panning not working in Flash Catalyst -->
+  <ArrayElement type="map">
+    <displayname>Adobe Flash Catalyst</displayname>
+    <identifier type="string">Adobe Flash Catalyst</identifier>
+    <ZoomIn type="map">
+      <keystroke type="kestring"><![CDATA[&control;&kp+;]]></keystroke>
+      <amount type="double">6</amount>
+    </ZoomIn>
+    <ZoomOut type="map">
+      <keystroke type="kestring"><![CDATA[&control;&kp-;]]></keystroke>
+      <amount type="double">6</amount>
+    </ZoomOut>
+  </ArrayElement>
+
+  <ArrayElement type="map">
+    <displayname>Adobe Bridge</displayname>
+    <identifier type="string">bridge</identifier>
+    <SwipeLeft type="map">
+      <keystroke type="kestring"><![CDATA[&left;]]></keystroke>
+    </SwipeLeft>
+    <SwipeRight type="map">
+      <keystroke type="kestring"><![CDATA[&right;]]></keystroke>
+    </SwipeRight>
+  </ArrayElement>
+
+  <ArrayElement type="map">
+    <displayname>Corel Painter Classic</displayname>
+    <identifier type="string">pclassic</identifier>
+    <AutoBehavior>zoom</AutoBehavior>
+    <ZoomIn type="map">
+      <keystroke type="kestring"><![CDATA[&control;&kp+;]]></keystroke>
+    </ZoomIn>
+    <ZoomOut type="map">
+      <keystroke type="kestring"><![CDATA[&control;&kp-;]]></keystroke>
+    </ZoomOut>
+  </ArrayElement>
+
+  <ArrayElement type="map">
+    <displayname>ProCreate Painter Classic</displayname>
+    <identifier type="string">procreate painter classic</identifier>
+    <AutoBehavior>zoom</AutoBehavior>
+    <ZoomIn type="map">
+      <keystroke type="kestring"><![CDATA[&control;&kp+;]]></keystroke>
+    </ZoomIn>
+    <ZoomOut type="map">
+      <keystroke type="kestring"><![CDATA[&control;&kp-;]]></keystroke>
+    </ZoomOut>
+  </ArrayElement>
+
+  <ArrayElement type="map">
+    <displayname>Painter</displayname>
+    <identifier type="string">painter</identifier>
+    <AutoBehavior>zoom</AutoBehavior>
+    <ZoomIn type="map">
+      <keystroke type="kestring"><![CDATA[&control;&kp+;]]></keystroke>
+    </ZoomIn>
+    <ZoomOut type="map">
+      <keystroke type="kestring"><![CDATA[&control;&kp-;]]></keystroke>
+    </ZoomOut>
+    <GrabberHand type="map">
+      <keystroke type="kestring"><![CDATA[&space;]]></keystroke>
+    </GrabberHand>
+  </ArrayElement>
+
+  <ArrayElement type="map">
+    <displayname>Corel Painter 7</displayname>
+    <identifier type="string">painter7</identifier>
+    <AutoBehavior>zoom</AutoBehavior>
+    <ZoomIn type="map">
+      <keystroke type="kestring"><![CDATA[&control;&kp+;]]></keystroke>
+    </ZoomIn>
+    <ZoomOut type="map">
+      <keystroke type="kestring"><![CDATA[&control;&kp-;]]></keystroke>
+    </ZoomOut>
+    <GrabberHand type="map">
+      <keystroke type="kestring"><![CDATA[&space;]]></keystroke>
+    </GrabberHand>
+  </ArrayElement>
+
+  <ArrayElement type="map">
+    <displayname>Corel Painter 8</displayname>
+    <AutoBehavior>zoom</AutoBehavior>
+    <identifier type="string">painter8</identifier>
+    <ZoomIn type="map">
+      <keystroke type="kestring"><![CDATA[&control;&kp+;]]></keystroke>
+    </ZoomIn>
+    <ZoomOut type="map">
+      <keystroke type="kestring"><![CDATA[&control;&kp-;]]></keystroke>
+    </ZoomOut>
+    <GrabberHand type="map">
+      <keystroke type="kestring"><![CDATA[&space;]]></keystroke>
+    </GrabberHand>
+  </ArrayElement>
+
+  <ArrayElement type="map">
+    <displayname>Corel Painter 9</displayname>
+    <identifier type="string">painter IX</identifier>
+    <AutoBehavior>zoom</AutoBehavior>
+    <ZoomIn type="map">
+      <input type="string">scrollwheelup</input>
+      <amount type="double">5</amount>
+      <amountmultiplier type="double">8</amountmultiplier>
+      <granularity type="double">5</granularity>
+    </ZoomIn>
+    <ZoomOut type="map">
+      <input type="string">scrollwheeldown</input>
+      <amount type="double">5</amount>
+      <amountmultiplier type="double">8</amountmultiplier>
+      <granularity type="double">5</granularity>
+    </ZoomOut>
+    <GrabberHand type="map">
+      <keystroke type="kestring"><![CDATA[&space;]]></keystroke>
+    </GrabberHand>
+  </ArrayElement>
+
+  <ArrayElement type="map">
+    <displayname>Corel Painter 10</displayname>
+    <identifier type="string">painter X</identifier>
+    <AutoBehavior>zoom</AutoBehavior>
+    <ZoomIn type="map">
+      <input type="string">scrollwheelup</input>
+      <amount type="double">5</amount>
+      <amountmultiplier type="double">8</amountmultiplier>
+      <granularity type="double">5</granularity>
+    </ZoomIn>
+    <ZoomOut type="map">
+      <input type="string">scrollwheeldown</input>
+      <amount type="double">5</amount>
+      <amountmultiplier type="double">8</amountmultiplier>
+      <granularity type="double">5</granularity>
+    </ZoomOut>
+    <GrabberHand type="map">
+      <keystroke type="kestring"><![CDATA[&space;]]></keystroke>
+    </GrabberHand>
+  </ArrayElement>
+
+  <ArrayElement type="map">
+    <displayname>Corel Painter 11</displayname>
+    <identifier type="string">painter 11</identifier>
+    <AutoBehavior>zoom</AutoBehavior>
+    <ScrollUp type="map">
+      <input type="string">scrollbarup</input>
+      <amount type="double">10</amount>
+      <granularity type="double">1</granularity>
+    </ScrollUp>
+    <ScrollDown type="map">
+      <input type="string">scrollbardown</input>
+      <amount type="double">10</amount>
+      <granularity type="double">1</granularity>
+    </ScrollDown>
+    <PanLeft type="map">
+      <input type="string">scrollbarleft</input>
+      <amount type="double">10</amount>
+      <granularity type="double">1</granularity>
+    </PanLeft>
+    <PanRight type="map">
+      <input type="string">scrollbarright</input>
+      <amount type="double">10</amount>
+      <granularity type="double">1</granularity>
+    </PanRight>
+    <ZoomIn type="map">
+      <input type="string">scrollwheelup</input>
+      <amount type="double">5</amount>
+      <amountmultiplier type="double">8</amountmultiplier>
+      <granularity type="double">5</granularity>
+    </ZoomIn>
+    <ZoomOut type="map">
+      <input type="string">scrollwheeldown</input>
+      <amount type="double">5</amount>
+      <amountmultiplier type="double">8</amountmultiplier>
+      <granularity type="double">5</granularity>
+    </ZoomOut>
+    <SwipeLeft type="map">
+      <input type="string">disable</input>
+    </SwipeLeft>
+    <SwipeRight type="map">
+      <input type="string">disable</input>
+    </SwipeRight>
+    <GrabberHand type="map">
+      <keystroke type="kestring"><![CDATA[&space;]]></keystroke>
+    </GrabberHand>
+  </ArrayElement>
+
+  <ArrayElement type="map">
+    <displayname>Corel Painter 12</displayname>
+    <identifier type="string">painter 12</identifier>
+    <AutoBehavior>zoom</AutoBehavior>
+    <ScrollUp type="map">
+      <input type="string">scrollbarup</input>
+      <amount type="double">10</amount>
+      <granularity type="double">1</granularity>
+    </ScrollUp>
+    <ScrollDown type="map">
+      <input type="string">scrollbardown</input>
+      <amount type="double">10</amount>
+      <granularity type="double">1</granularity>
+    </ScrollDown>
+    <PanLeft type="map">
+      <input type="string">scrollbarleft</input>
+      <amount type="double">10</amount>
+      <granularity type="double">1</granularity>
+    </PanLeft>
+    <PanRight type="map">
+      <input type="string">scrollbarright</input>
+      <amount type="double">10</amount>
+      <granularity type="double">1</granularity>
+    </PanRight>
+    <ZoomIn type="map">
+      <input type="string">scrollwheelup</input>
+      <amount type="double">5</amount>
+      <amountmultiplier type="double">8</amountmultiplier>
+      <granularity type="double">5</granularity>
+    </ZoomIn>
+    <ZoomOut type="map">
+      <input type="string">scrollwheeldown</input>
+      <amount type="double">5</amount>
+      <amountmultiplier type="double">8</amountmultiplier>
+      <granularity type="double">5</granularity>
+    </ZoomOut>
+    <SwipeLeft type="map">
+      <input type="string">disable</input>
+    </SwipeLeft>
+    <SwipeRight type="map">
+      <input type="string">disable</input>
+    </SwipeRight>
+    <RotateCW type="map">
+      <modifiers type="string">control;alt</modifiers>
+      <input type="string">scrollwheeldown</input>
+      <amount type="double">1</amount>
+      <amountmultiplier type="double">123</amountmultiplier>
+    </RotateCW>
+    <RotateCCW type="map">
+      <modifiers type="string">control;alt</modifiers>
+      <input type="string">scrollwheelup</input>
+      <amount type="double">1</amount>
+      <amountmultiplier type="double">123</amountmultiplier>
+    </RotateCCW>
+    <GrabberHand type="map">
+      <keystroke type="kestring"><![CDATA[&space;]]></keystroke>
+    </GrabberHand>
+  </ArrayElement>
+
+  <ArrayElement type="map">
+    <displayname>Corel Painter 12 x64</displayname>
+    <identifier type="string">painter 12 x64</identifier>
+    <AutoBehavior>zoom</AutoBehavior>
+    <ScrollUp type="map">
+      <input type="string">scrollbarup</input>
+      <amount type="double">10</amount>
+      <granularity type="double">1</granularity>
+    </ScrollUp>
+    <ScrollDown type="map">
+      <input type="string">scrollbardown</input>
+      <amount type="double">10</amount>
+      <granularity type="double">1</granularity>
+    </ScrollDown>
+    <PanLeft type="map">
+      <input type="string">scrollbarleft</input>
+      <amount type="double">10</amount>
+      <granularity type="double">1</granularity>
+    </PanLeft>
+    <PanRight type="map">
+      <input type="string">scrollbarright</input>
+      <amount type="double">10</amount>
+      <granularity type="double">1</granularity>
+    </PanRight>
+    <ZoomIn type="map">
+      <input type="string">scrollwheelup</input>
+      <amount type="double">5</amount>
+      <amountmultiplier type="double">8</amountmultiplier>
+      <granularity type="double">5</granularity>
+    </ZoomIn>
+    <ZoomOut type="map">
+      <input type="string">scrollwheeldown</input>
+      <amount type="double">5</amount>
+      <amountmultiplier type="double">8</amountmultiplier>
+      <granularity type="double">5</granularity>
+    </ZoomOut>
+    <SwipeLeft type="map">
+      <input type="string">disable</input>
+    </SwipeLeft>
+    <SwipeRight type="map">
+      <input type="string">disable</input>
+    </SwipeRight>
+    <RotateCW type="map">
+      <modifiers type="string">control;alt</modifiers>
+      <input type="string">scrollwheeldown</input>
+      <amount type="double">1</amount>
+      <amountmultiplier type="double">123</amountmultiplier>
+    </RotateCW>
+    <RotateCCW type="map">
+      <modifiers type="string">control;alt</modifiers>
+      <input type="string">scrollwheelup</input>
+      <amount type="double">1</amount>
+      <amountmultiplier type="double">123</amountmultiplier>
+    </RotateCCW>
+    <GrabberHand type="map">
+      <keystroke type="kestring"><![CDATA[&space;]]></keystroke>
+    </GrabberHand>
+  </ArrayElement>
+
+  <ArrayElement type="map">
+    <displayname>Corel Painter Essentials</displayname>
+    <identifier type="string">essentials</identifier>
+    <AutoBehavior>zoom</AutoBehavior>
+    <ZoomIn type="map">
+      <keystroke type="kestring"><![CDATA[&control;&kp+;]]></keystroke>
+    </ZoomIn>
+    <ZoomOut type="map">
+      <keystroke type="kestring"><![CDATA[&control;&kp-;]]></keystroke>
+    </ZoomOut>
+    <GrabberHand type="map">
+      <keystroke type="kestring"><![CDATA[&space;]]></keystroke>
+    </GrabberHand>
+  </ArrayElement>
+
+  <ArrayElement type="map">
+    <displayname>Corel Painter Essentials 2</displayname>
+    <identifier type="string">CorelPainterEssentials2</identifier>
+    <AutoBehavior>zoom</AutoBehavior>
+    <ZoomIn type="map">
+      <keystroke type="kestring"><![CDATA[&control;&kp+;]]></keystroke>
+    </ZoomIn>
+    <ZoomOut type="map">
+      <keystroke type="kestring"><![CDATA[&control;&kp-;]]></keystroke>
+    </ZoomOut>
+    <GrabberHand type="map">
+      <keystroke type="kestring"><![CDATA[&space;]]></keystroke>
+    </GrabberHand>
+  </ArrayElement>
+
+  <ArrayElement type="map">
+    <displayname>Corel Painter Essentials 3</displayname>
+    <identifier type="string">Corel Painter Essentials 3</identifier>
+    <AutoBehavior>zoom</AutoBehavior>
+    <ZoomIn type="map">
+      <modifiers type="string">alt</modifiers>
+      <input type="string">scrollwheelup</input>
+      <amount type="double">5</amount>
+    </ZoomIn>
+    <ZoomOut type="map">
+      <modifiers type="string">alt</modifiers>
+      <input type="string">scrollwheeldown</input>
+      <amount type="double">5</amount>
+    </ZoomOut>
+    <GrabberHand type="map">
+      <keystroke type="kestring"><![CDATA[&space;]]></keystroke>
+    </GrabberHand>
+  </ArrayElement>
+
+  <ArrayElement type="map">
+    <displayname>Corel Painter Essentials 4</displayname>
+    <identifier type="string">Corel Painter Essentials</identifier>
+    <AutoBehavior>zoom</AutoBehavior>
+    <ScrollUp type="map">
+      <input type="string">scrollbarup</input>
+      <amount type="double">25</amount>
+      <granularity type="double">1</granularity>
+    </ScrollUp>
+    <ScrollDown type="map">
+      <input type="string">scrollbardown</input>
+      <amount type="double">25</amount>
+      <granularity type="double">1</granularity>
+    </ScrollDown>
+    <PanLeft type="map">
+      <input type="string">scrollbarleft</input>
+      <amount type="double">25</amount>
+      <granularity type="double">1</granularity>
+    </PanLeft>
+    <PanRight type="map">
+      <input type="string">scrollbarright</input>
+      <amount type="double">25</amount>
+      <granularity type="double">1</granularity>
+    </PanRight>
+    <ZoomIn type="map">
+      <input type="string">scrollwheelup</input>
+      <amount type="double">5</amount>
+      <amountmultiplier type="double">15</amountmultiplier>
+      <granularity type="double">5</granularity>
+    </ZoomIn>
+    <ZoomOut type="map">
+      <input type="string">scrollwheeldown</input>
+      <amount type="double">5</amount>
+      <amountmultiplier type="double">15</amountmultiplier>
+      <granularity type="double">5</granularity>
+    </ZoomOut>
+    <RotateCW type="map">
+      <modifiers type="string">control;alt</modifiers>
+      <input type="string">scrollwheeldown</input>
+      <amount type="double">1</amount>
+      <amountmultiplier type="double">123</amountmultiplier>
+    </RotateCW>
+    <RotateCCW type="map">
+      <modifiers type="string">control;alt</modifiers>
+      <input type="string">scrollwheelup</input>
+      <amount type="double">1</amount>
+      <amountmultiplier type="double">123</amountmultiplier>
+    </RotateCCW>
+    <GrabberHand type="map">
+      <keystroke type="kestring"><![CDATA[&space;]]></keystroke>
+    </GrabberHand>
+  </ArrayElement>
+
+  <ArrayElement type="map">
+    <!-- TODO AutoZoom / Pan -->
+    <displayname>Corel SketchPad</displayname>
+    <identifier type="string">Sketch Pad</identifier>
+    <ScrollUp type="map">
+      <input type="string">scrollbardown</input>
+      <amount type="double">25</amount>
+      <granularity type="double">1</granularity>
+    </ScrollUp>
+    <ScrollDown type="map">
+      <input type="string">scrollbarup</input>
+      <amount type="double">25</amount>
+      <granularity type="double">1</granularity>
+    </ScrollDown>
+    <PanLeft type="map">
+      <input type="string">scrollbarright</input>
+      <amount type="double">50</amount>
+    </PanLeft>
+    <PanRight type="map">
+      <input type="string">scrollbarleft</input>
+      <amount type="double">50</amount>
+    </PanRight>
+    <ZoomIn type="map">
+      <input type="string">scrollwheelup</input>
+      <amount type="double">5</amount>
+      <amountmultiplier type="double">20</amountmultiplier>
+      <granularity type="double">5</granularity>
+    </ZoomIn>
+    <ZoomOut type="map">
+      <input type="string">scrollwheeldown</input>
+      <amount type="double">5</amount>
+      <amountmultiplier type="double">20</amountmultiplier>
+      <granularity type="double">5</granularity>
+    </ZoomOut>
+  </ArrayElement>
+
+  <!-- Panning is not working in Paint it! touch (scrolling works into one direction only); needs to be fixed by Corel -->
+  <ArrayElement type="map">
+    <!-- TODO AutoZoom / Pan -->
+    <displayname>Corel Paint it! touch</displayname>
+    <identifier type="string">Corel Paint it! touch</identifier>
+    <ZoomIn type="map">
+      <input type="string">scrollwheelup</input>
+      <amount type="double">5</amount>
+      <amountmultiplier type="double">15</amountmultiplier>
+      <granularity type="double">5</granularity>
+    </ZoomIn>
+    <ZoomOut type="map">
+      <input type="string">scrollwheeldown</input>
+      <amount type="double">5</amount>
+      <amountmultiplier type="double">15</amountmultiplier>
+      <granularity type="double">5</granularity>
+    </ZoomOut>
+    <RotateCW type="map">
+      <modifiers type="string">control;alt</modifiers>
+      <input type="string">scrollwheeldown</input>
+      <amount type="double">1</amount>
+      <amountmultiplier type="double">123</amountmultiplier>
+    </RotateCW>
+    <RotateCCW type="map">
+      <modifiers type="string">control;alt</modifiers>
+      <input type="string">scrollwheelup</input>
+      <amount type="double">1</amount>
+      <amountmultiplier type="double">123</amountmultiplier>
+    </RotateCCW>
+  </ArrayElement>
+
+  <ArrayElement type="map">
+    <displayname>Corel Draw</displayname>
+    <identifier type="string">coreldraw</identifier>
+    <AutoBehavior>zoom</AutoBehavior>
+    <ZoomIn type="map">
+      <keystroke type="kestring"><![CDATA[&f3;]]></keystroke>
+    </ZoomIn>
+    <ZoomOut type="map">
+      <keystroke type="kestring"><![CDATA[&f4;]]></keystroke>
+    </ZoomOut>
+  </ArrayElement>
+
+  <ArrayElement type="map">
+    <displayname>Corel Draw Xx</displayname>
+    <identifier type="string">CorelDRW</identifier>
+    <AutoBehavior>zoom</AutoBehavior>
+    <ScrollUp type="map">
+      <input type="string">scrollbarup</input>
+      <amount type="double">50</amount>
+      <amountmultiplier type="double">0.5</amountmultiplier>
+      <granularity type="double">1</granularity>
+    </ScrollUp>
+    <ScrollDown type="map">
+      <input type="string">scrollbardown</input>
+      <amount type="double">50</amount>
+      <amountmultiplier type="double">0.5</amountmultiplier>
+      <granularity type="double">1</granularity>
+    </ScrollDown>
+    <PanLeft type="map">
+      <input type="string">scrollbarleft</input>
+      <amount type="double">30</amount>
+      <amountmultiplier type="double">0.5</amountmultiplier>
+      <granularity type="double">1</granularity>
+    </PanLeft>
+    <PanRight type="map">
+      <input type="string">scrollbarright</input>
+      <amount type="double">30</amount>
+      <amountmultiplier type="double">0.5</amountmultiplier>
+      <granularity type="double">1</granularity>
+    </PanRight>
+    <ZoomIn type="map">
+      <modifiers type="string">shift</modifiers>
+      <input type="string">scrollwheelup</input>
+      <amount type="double">1</amount>
+      <amountmultiplier type="double">0.1</amountmultiplier>
+      <granularity type="double">1</granularity>
+    </ZoomIn>
+    <ZoomOut type="map">
+      <modifiers type="string">shift</modifiers>
+      <input type="string">scrollwheeldown</input>
+      <amount type="double">1</amount>
+      <amountmultiplier type="double">0.1</amountmultiplier>
+      <granularity type="double">1</granularity>
+    </ZoomOut>
+  </ArrayElement>
+
+  <ArrayElement type="map">
+    <displayname>Corel Photo-Paint Xx</displayname>
+    <identifier type="string">CorelPP</identifier>
+    <AutoBehavior>zoom</AutoBehavior>
+    <ScrollUp type="map">
+      <input type="string">scrollbarup</input>
+      <amount type="double">30</amount>
+      <amountmultiplier type="double">1</amountmultiplier>
+      <granularity type="double">10</granularity>
+    </ScrollUp>
+    <ScrollDown type="map">
+      <input type="string">scrollbardown</input>
+      <amount type="double">30</amount>
+      <amountmultiplier type="double">1</amountmultiplier>
+      <granularity type="double">10</granularity>
+    </ScrollDown>
+    <PanLeft type="map">
+      <input type="string">scrollbarleft</input>
+      <amount type="double">30</amount>
+      <amountmultiplier type="double">1</amountmultiplier>
+      <granularity type="double">10</granularity>
+    </PanLeft>
+    <PanRight type="map">
+      <input type="string">scrollbarright</input>
+      <amount type="double">30</amount>
+      <amountmultiplier type="double">1</amountmultiplier>
+      <granularity type="double">10</granularity>
+    </PanRight>
+    <ZoomIn type="map">
+      <modifiers type="string">shift</modifiers>
+      <input type="string">scrollwheelup</input>
+      <amount type="double">1</amount>
+      <amountmultiplier type="double">10</amountmultiplier>
+      <granularity type="double">1</granularity>
+    </ZoomIn>
+    <ZoomOut type="map">
+      <modifiers type="string">shift</modifiers>
+      <input type="string">scrollwheeldown</input>
+      <amount type="double">1</amount>
+      <amountmultiplier type="double">10</amountmultiplier>
+      <granularity type="double">1</granularity>
+    </ZoomOut>
+  </ArrayElement>
+
+  <ArrayElement type="map">
+    <!-- TODO AutoZoom / Pan -->
+    <displayname>Autodesk SketchBook Express</displayname>
+    <identifier type="string">SketchBookExpress</identifier>
+    <ScrollUp type="map">
+      <input type="string">scrollbarup</input>
+      <amount type="double">25</amount>
+      <granularity type="double">1</granularity>
+    </ScrollUp>
+    <ScrollDown type="map">
+      <input type="string">scrollbardown</input>
+      <amount type="double">25</amount>
+      <granularity type="double">1</granularity>
+    </ScrollDown>
+    <PanLeft type="map">
+      <input type="string">scrollbarleft</input>
+      <amount type="double">25</amount>
+    </PanLeft>
+    <PanRight type="map">
+      <input type="string">scrollbarright</input>
+      <amount type="double">25</amount>
+    </PanRight>
+    <ZoomIn type="map">
+      <input type="string">scrollwheelup</input>
+      <amount type="double">5</amount>
+      <amountmultiplier type="double">10</amountmultiplier>
+      <granularity type="double">5</granularity>
+    </ZoomIn>
+    <ZoomOut type="map">
+      <input type="string">scrollwheeldown</input>
+      <amount type="double">5</amount>
+      <amountmultiplier type="double">10</amountmultiplier>
+      <granularity type="double">5</granularity>
+    </ZoomOut>
+    <GrabberHand type="map">
+      <keystroke type="kestring"><![CDATA[&space;]]></keystroke>
+    </GrabberHand>
+  </ArrayElement>
+
+  <ArrayElement type="map">
+    <!-- TODO AutoZoom / Pan -->
+    <displayname>Autodesk SketchBook Pro</displayname>
+    <identifier type="string">SketchBookPro</identifier>
+    <ScrollUp type="map">
+      <input type="string">scrollbarup</input>
+      <amount type="double">25</amount>
+      <granularity type="double">1</granularity>
+    </ScrollUp>
+    <ScrollDown type="map">
+      <input type="string">scrollbardown</input>
+      <amount type="double">25</amount>
+      <granularity type="double">1</granularity>
+    </ScrollDown>
+    <PanLeft type="map">
+      <input type="string">scrollbarleft</input>
+      <amount type="double">25</amount>
+    </PanLeft>
+    <PanRight type="map">
+      <input type="string">scrollbarright</input>
+      <amount type="double">25</amount>
+    </PanRight>
+    <ZoomIn type="map">
+      <input type="string">scrollwheelup</input>
+      <amount type="double">80</amount>
+    </ZoomIn>
+    <ZoomOut type="map">
+      <input type="string">scrollwheeldown</input>
+      <amount type="double">80</amount>
+    </ZoomOut>
+    <GrabberHand type="map">
+      <keystroke type="kestring"><![CDATA[&space;]]></keystroke>
+    </GrabberHand>
+  </ArrayElement>
+
+  <ArrayElement type="map">
+    <displayname>Microsoft Word</displayname>
+    <identifier type="string">winword</identifier>
+    <PanLeft type="map">
+      <input type="string">scrollbarleft</input>
+      <amount type="double">1</amount>
+      <amountmultiplier type="double">0.01</amountmultiplier>
+      <granularity type="double">1</granularity>
+    </PanLeft>
+    <PanRight type="map">
+      <input type="string">scrollbarright</input>
+      <amount type="double">1</amount>
+      <amountmultiplier type="double">0.01</amountmultiplier>
+      <granularity type="double">1</granularity>
+    </PanRight>
+    <ZoomIn type="map">
+      <modifiers type="string">control</modifiers>
+      <input type="string">scrollwheelup</input>
+      <amount type="double">5</amount>
+      <amountmultiplier type="double">20</amountmultiplier>
+      <granularity type="double">1</granularity>
+    </ZoomIn>
+    <ZoomOut type="map">
+      <modifiers type="string">control</modifiers>
+      <input type="string">scrollwheeldown</input>
+      <amount type="double">5</amount>
+      <amountmultiplier type="double">20</amountmultiplier>
+      <granularity type="double">1</granularity>
+    </ZoomOut>
+  </ArrayElement>
+
+  <ArrayElement type="map">
+    <displayname>Microsoft Excel</displayname>
+    <identifier type="string">excel</identifier>
+    <PanLeft type="map">
+      <input type="string">scrollbarleft</input>
+      <amount type="double">75</amount>
+    </PanLeft>
+    <PanRight type="map">
+      <input type="string">scrollbarright</input>
+      <amount type="double">75</amount>
+    </PanRight>
+    <ZoomIn type="map">
+      <modifiers type="string">control</modifiers>
+      <input type="string">scrollwheelup</input>
+      <amount type="double">5</amount>
+      <amountmultiplier type="double">20</amountmultiplier>
+      <granularity type="double">1</granularity>
+    </ZoomIn>
+    <ZoomOut type="map">
+      <modifiers type="string">control</modifiers>
+      <input type="string">scrollwheeldown</input>
+      <amount type="double">5</amount>
+      <amountmultiplier type="double">20</amountmultiplier>
+      <granularity type="double">1</granularity>
+    </ZoomOut>
+    <SwipeLeft type="map">
+      <keystroke type="kestring"><![CDATA[&left;]]></keystroke>
+    </SwipeLeft>
+    <SwipeRight type="map">
+      <keystroke type="kestring"><![CDATA[&right;]]></keystroke>
+    </SwipeRight>
+  </ArrayElement>
+
+  <ArrayElement type="map">
+    <displayname>Microsoft Powerpoint</displayname>
+    <identifier type="string">powerpnt</identifier>
+    <PanLeft type="map">
+      <input type="string">scrollbarleft</input>
+      <amount type="double">75</amount>
+    </PanLeft>
+    <PanRight type="map">
+      <input type="string">scrollbarright</input>
+      <amount type="double">75</amount>
+    </PanRight>
+    <ZoomIn type="map">
+      <modifiers type="string">control</modifiers>
+      <input type="string">scrollwheelup</input>
+      <amount type="double">5</amount>
+    </ZoomIn>
+    <ZoomOut type="map">
+      <modifiers type="string">control</modifiers>
+      <input type="string">scrollwheeldown</input>
+      <amount type="double">5</amount>
+    </ZoomOut>
+    <SwipeLeft type="map">
+      <keystroke type="kestring"><![CDATA[&left;]]></keystroke>
+    </SwipeLeft>
+    <SwipeRight type="map">
+      <keystroke type="kestring"><![CDATA[&right;]]></keystroke>
+    </SwipeRight>
+  </ArrayElement>
+
+  <ArrayElement type="map">
+    <displayname>Microsoft Outlook</displayname>
+    <identifier type="string">outlook</identifier>
+    <ZoomIn type="map">
+      <modifiers type="string">control</modifiers>
+      <input type="string">scrollwheelup</input>
+      <amount type="double">4</amount>
+      <amountmultiplier type="double">15</amountmultiplier>
+      <granularity type="double">5</granularity>
+    </ZoomIn>
+    <ZoomOut type="map">
+      <modifiers type="string">control</modifiers>
+      <input type="string">scrollwheeldown</input>
+      <amount type="double">4</amount>
+      <amountmultiplier type="double">15</amountmultiplier>
+      <granularity type="double">5</granularity>
+    </ZoomOut>
+    <SwipeLeft type="map">
+      <keystroke type="kestring"><![CDATA[&left;]]></keystroke>
+    </SwipeLeft>
+    <SwipeRight type="map">
+      <keystroke type="kestring"><![CDATA[&right;]]></keystroke>
+    </SwipeRight>
+  </ArrayElement>
+
+  <ArrayElement type="map">
+    <displayname>Notepad</displayname>
+    <identifier type="string">notepad</identifier>
+    <PanLeft type="map">
+      <input type="string">scrollbarleft</input>
+      <amount type="double">25</amount>
+    </PanLeft>
+    <PanRight type="map">
+      <input type="string">scrollbarright</input>
+      <amount type="double">25</amount>
+    </PanRight>
+  </ArrayElement>
+
+  <ArrayElement type="map">
+    <displayname>Wordpad</displayname>
+    <identifier type="string">wordpad</identifier>
+    <ZoomIn type="map">
+      <modifiers type="string">control</modifiers>
+      <input type="string">scrollwheelup</input>
+      <amount type="double">4</amount>
+      <amountmultiplier type="double">15</amountmultiplier>
+      <granularity type="double">5</granularity>
+    </ZoomIn>
+    <ZoomOut type="map">
+      <modifiers type="string">control</modifiers>
+      <input type="string">scrollwheeldown</input>
+      <amount type="double">4</amount>
+      <amountmultiplier type="double">15</amountmultiplier>
+      <granularity type="double">5</granularity>
+    </ZoomOut>
+  </ArrayElement>
+
+  <ArrayElement type="map">
+    <displayname>Microsoft Publisher</displayname>
+    <identifier type="string">mspub</identifier>
+    <!-- Disable left/right pan to workaround driver mixing 
+         HSCROLL and scrollwheel messages. -->
+    <PanLeft type="map">
+      <input type="string">disable</input>
+    </PanLeft>
+    <PanRight type="map">
+      <input type="string">disable</input>
+    </PanRight>
+  </ArrayElement>
+
+  <ArrayElement type="map">
+    <!-- TODO AutoZoom / Pan -->
+    <displayname>MindManager</displayname>
+    <identifier type="string">MindManager</identifier>
+    <PanLeft type="map">
+      <input type="string">scrollbarleft</input>
+      <amount type="double">1</amount>
+      <amountmultiplier type="double">0.02</amountmultiplier>
+      <granularity type="double">1</granularity>
+    </PanLeft>
+    <PanRight type="map">
+      <input type="string">scrollbarright</input>
+      <amount type="double">1</amount>
+      <amountmultiplier type="double">0.02</amountmultiplier>
+      <granularity type="double">1</granularity>
+    </PanRight>
+  </ArrayElement>
+
+  <ArrayElement type="map">
+    <!-- TODO AutoZoom / Pan -->
+    <displayname>MindManager Viewer</displayname>
+    <identifier type="string">MindManagerViewer</identifier>
+    <PanLeft type="map">
+      <input type="string">scrollbarleft</input>
+      <amount type="double">1</amount>
+      <amountmultiplier type="double">0.02</amountmultiplier>
+      <granularity type="double">1</granularity>
+    </PanLeft>
+    <PanRight type="map">
+      <input type="string">scrollbarright</input>
+      <amount type="double">1</amount>
+      <amountmultiplier type="double">0.02</amountmultiplier>
+      <granularity type="double">1</granularity>
+    </PanRight>
+  </ArrayElement>
+
+  <ArrayElement type="map">
+    <displayname>MS Paint</displayname>
+    <identifier type="string">mspaint</identifier>
+    <ScrollUp type="map">
+      <input type="string">scrollbarup</input>
+      <amount type="double">1</amount>
+      <amountmultiplier type="double">0.03</amountmultiplier>
+      <granularity type="double">1</granularity>
+    </ScrollUp>
+    <ScrollDown type="map">
+      <input type="string">scrollbardown</input>
+      <amount type="double">1</amount>
+      <amountmultiplier type="double">0.03</amountmultiplier>
+      <granularity type="double">1</granularity>
+    </ScrollDown>
+    <PanLeft type="map">
+      <input type="string">scrollbarleft</input>
+      <amount type="double">1</amount>
+      <amountmultiplier type="double">0.03</amountmultiplier>
+      <granularity type="double">1</granularity>
+    </PanLeft>
+    <PanRight type="map">
+      <input type="string">scrollbarright</input>
+      <amount type="double">1</amount>
+      <amountmultiplier type="double">0.03</amountmultiplier>
+      <granularity type="double">1</granularity>
+    </PanRight>
+    <ZoomIn type="map">
+      <modifiers type="string">control</modifiers>
+      <input type="string">scrollwheelup</input>
+      <amount type="double">10</amount>
+      <amountmultiplier type="double">20</amountmultiplier>
+      <granularity type="double">5</granularity>
+    </ZoomIn>
+    <ZoomOut type="map">
+      <modifiers type="string">control</modifiers>
+      <input type="string">scrollwheeldown</input>
+      <amount type="double">10</amount>
+      <amountmultiplier type="double">20</amountmultiplier>
+      <granularity type="double">5</granularity>
+    </ZoomOut>
+  </ArrayElement>
+
+  <ArrayElement type="map">
+    <displayname>Windows Picture and Fax Viewer</displayname>
+    <identifier type="string">rundll32</identifier>
+    <auxidentifier type="string">ShImgVw:CPreviewWnd</auxidentifier>
+    <ZoomIn type="map">
+      <keystroke type="kestring"><![CDATA[&shift;&kp+;]]></keystroke>
+      <amount type="double">4</amount>
+      <amountmultiplier type="double">1</amountmultiplier>
+      <granularity type="double">1</granularity>
+    </ZoomIn>
+    <ZoomOut type="map">
+      <keystroke type="kestring"><![CDATA[&shift;&kp-;]]></keystroke>
+      <amount type="double">4</amount>
+      <amountmultiplier type="double">1</amountmultiplier>
+      <granularity type="double">1</granularity>
+    </ZoomOut>
+    <RotateCW type="map">
+      <keystroke type="kestring"><![CDATA[&control;k]]></keystroke>
+      <amount type="double">20</amount>
+      <discrete type="bool">true</discrete>
+    </RotateCW>
+    <RotateCCW type="map">
+      <keystroke type="kestring"><![CDATA[&control;l]]></keystroke>
+      <amount type="double">20</amount>
+      <discrete type="bool">true</discrete>
+    </RotateCCW>
+    <ScrollUp type="map">
+      <input type="string">disable</input>
+    </ScrollUp>
+    <ScrollDown type="map">
+      <input type="string">disable</input>
+    </ScrollDown>
+  </ArrayElement>
+
+  <ArrayElement type="map">
+    <displayname>Windows Picture and Fax Viewer 2</displayname>
+    <identifier type="string">explorer</identifier>
+    <auxidentifier type="string">ShImgVw:CPreviewWnd</auxidentifier>
+    <ZoomIn type="map">
+      <keystroke type="kestring"><![CDATA[&shift;&kp+;]]></keystroke>
+      <amount type="double">4</amount>
+      <amountmultiplier type="double">1</amountmultiplier>
+      <granularity type="double">1</granularity>
+    </ZoomIn>
+    <ZoomOut type="map">
+      <keystroke type="kestring"><![CDATA[&shift;&kp-;]]></keystroke>
+      <amount type="double">4</amount>
+      <amountmultiplier type="double">1</amountmultiplier>
+      <granularity type="double">1</granularity>
+    </ZoomOut>
+    <RotateCW type="map">
+      <keystroke type="kestring"><![CDATA[&control;k]]></keystroke>
+      <amount type="double">20</amount>
+      <discrete type="bool">true</discrete>
+    </RotateCW>
+    <RotateCCW type="map">
+      <keystroke type="kestring"><![CDATA[&control;l]]></keystroke>
+      <amount type="double">20</amount>
+      <discrete type="bool">true</discrete>
+    </RotateCCW>
+    <ScrollUp type="map">
+      <input type="string">disable</input>
+    </ScrollUp>
+    <ScrollDown type="map">
+      <input type="string">disable</input>
+    </ScrollDown>
+  </ArrayElement>
+
+  <ArrayElement type="map">
+    <displayname>Windows Live Photo Gallery</displayname>
+    <identifier type="string">WLXPhotoGallery</identifier>
+    <ZoomIn type="map">
+      <keystroke type="kestring"><![CDATA[&control;&kp+;]]></keystroke>
+      <amount type="double">20</amount>
+      <amountmultiplier type="double">1</amountmultiplier>
+      <granularity type="double">1</granularity>
+    </ZoomIn>
+    <ZoomOut type="map">
+      <keystroke type="kestring"><![CDATA[&control;&kp-;]]></keystroke>
+      <amount type="double">20</amount>
+      <amountmultiplier type="double">1</amountmultiplier>
+      <granularity type="double">1</granularity>
+    </ZoomOut>
+    <RotateCW type="map">
+      <keystroke type="kestring"><![CDATA[&control;.]]></keystroke>
+      <amount type="double">20</amount>
+      <discrete type="bool">true</discrete>
+    </RotateCW>
+    <RotateCCW type="map">
+      <keystroke type="kestring"><![CDATA[&control;,]]></keystroke>
+      <amount type="double">20</amount>
+      <discrete type="bool">true</discrete>
+    </RotateCCW>
+    <ScrollUp type="map">
+      <input type="string">disable</input>
+    </ScrollUp>
+    <ScrollDown type="map">
+      <input type="string">disable</input>
+    </ScrollDown>
+    <PanLeft type="map">
+      <input type="string">disable</input>
+    </PanLeft>
+    <PanRight type="map">
+      <input type="string">disable</input>
+    </PanRight>
+  </ArrayElement>
+
+  <ArrayElement type="map">
+    <displayname>Windows Photo Gallery</displayname>
+    <identifier type="string">windowsphotogallery</identifier>
+    <ScrollUp type="map">
+      <input type="string">disable</input>
+    </ScrollUp>
+    <ScrollDown type="map">
+      <input type="string">disable</input>
+    </ScrollDown>
+    <ZoomIn type="map">
+      <keystroke type="kestring"><![CDATA[&control;&kp+;]]></keystroke>
+      <amount type="double">4</amount>
+      <amountmultiplier type="double">1</amountmultiplier>
+      <granularity type="double">1</granularity>
+    </ZoomIn>
+    <ZoomOut type="map">
+      <keystroke type="kestring"><![CDATA[&control;&kp-;]]></keystroke>
+      <amount type="double">4</amount>
+      <amountmultiplier type="double">1</amountmultiplier>
+      <granularity type="double">1</granularity>
+    </ZoomOut>
+    <RotateCW type="map">
+      <keystroke type="kestring"><![CDATA[&control;.]]></keystroke>
+      <amount type="double">20</amount>
+      <discrete type="bool">true</discrete>
+    </RotateCW>
+    <RotateCCW type="map">
+      <keystroke type="kestring"><![CDATA[&control;,]]></keystroke>
+      <amount type="double">20</amount>
+      <discrete type="bool">true</discrete>
+    </RotateCCW>
+  </ArrayElement>
+
+  <ArrayElement type="map">
+    <displayname>Windows Photo Gallery 2</displayname>
+    <identifier type="string">explorer</identifier>
+    <auxidentifier type="string">Photo_Lightweight_Viewer</auxidentifier>
+    <ScrollUp type="map">
+      <input type="string">disable</input>
+    </ScrollUp>
+    <ScrollDown type="map">
+      <input type="string">disable</input>
+    </ScrollDown>
+    <ZoomIn type="map">
+      <keystroke type="kestring"><![CDATA[&control;&kp+;]]></keystroke>
+      <amount type="double">4</amount>
+      <amountmultiplier type="double">1</amountmultiplier>
+      <granularity type="double">1</granularity>
+    </ZoomIn>
+    <ZoomOut type="map">
+      <keystroke type="kestring"><![CDATA[&control;&kp-;]]></keystroke>
+      <amount type="double">4</amount>
+      <amountmultiplier type="double">1</amountmultiplier>
+      <granularity type="double">1</granularity>
+    </ZoomOut>
+    <RotateCW type="map">
+      <keystroke type="kestring"><![CDATA[&control;.]]></keystroke>
+      <amount type="double">20</amount>
+      <discrete type="bool">true</discrete>
+    </RotateCW>
+    <RotateCCW type="map">
+      <keystroke type="kestring"><![CDATA[&control;,]]></keystroke>
+      <amount type="double">20</amount>
+      <discrete type="bool">true</discrete>
+    </RotateCCW>
+  </ArrayElement>
+
+  <ArrayElement type="map">
+    <!-- aka: Windows Photo Viewer -->
+    <displayname>Windows Photo Gallery 3 (Windows 7)</displayname>
+    <identifier type="string">dllhost</identifier>
+    <auxidentifier type="string">Photo_Lightweight_Viewer</auxidentifier>
+    <ScrollUp type="map">
+      <input type="string">disable</input>
+    </ScrollUp>
+    <ScrollDown type="map">
+      <input type="string">disable</input>
+    </ScrollDown>
+    <ZoomIn type="map">
+      <keystroke type="kestring"><![CDATA[&control;&kp+;]]></keystroke>
+      <amount type="double">20</amount>
+      <amountmultiplier type="double">1</amountmultiplier>
+      <granularity type="double">1</granularity>
+    </ZoomIn>
+    <ZoomOut type="map">
+      <keystroke type="kestring"><![CDATA[&control;&kp-;]]></keystroke>
+      <amount type="double">20</amount>
+      <amountmultiplier type="double">1</amountmultiplier>
+      <granularity type="double">1</granularity>
+    </ZoomOut>
+    <RotateCW type="map">
+      <keystroke type="kestring"><![CDATA[&control;.]]></keystroke>
+      <amount type="double">20</amount>
+    </RotateCW>
+    <RotateCCW type="map">
+      <keystroke type="kestring"><![CDATA[&control;,]]></keystroke>
+      <amount type="double">20</amount>
+    </RotateCCW>
+  </ArrayElement>
+
+  <ArrayElement type="map">
+    <!-- TODO AutoZoom / Pan -->
+    <displayname>ACDsee Pro 3</displayname>
+    <identifier type="string">ACDSeePro3</identifier>
+    <RotateCW type="map">
+      <keystroke type="kestring"><![CDATA[&control;&alt;&right;]]></keystroke>
+      <amount type="double">20</amount>
+      <discrete type="bool">true</discrete>
+    </RotateCW>
+    <RotateCCW type="map">
+      <keystroke type="kestring"><![CDATA[&control;&alt;&left;]]></keystroke>
+      <amount type="double">20</amount>
+      <discrete type="bool">true</discrete>
+    </RotateCCW>
+    <SwipeLeft type="map">
+      <keystroke type="kestring"><![CDATA[&pageup;]]></keystroke>
+    </SwipeLeft>
+    <SwipeRight type="map">
+      <keystroke type="kestring"><![CDATA[&pagedown;]]></keystroke>
+    </SwipeRight>
+  </ArrayElement>
+
+  <ArrayElement type="map">
+    <!-- TODO AutoZoom / Pan -->
+    <displayname>ACDsee Quick View Pro 3</displayname>
+    <identifier type="string">ACDSeeQVPro3</identifier>
+    <RotateCW type="map">
+      <keystroke type="kestring"><![CDATA[&control;&alt;&right;]]></keystroke>
+      <amount type="double">20</amount>
+      <discrete type="bool">true</discrete>
+    </RotateCW>
+    <RotateCCW type="map">
+      <keystroke type="kestring"><![CDATA[&control;&alt;&left;]]></keystroke>
+      <amount type="double">20</amount>
+      <discrete type="bool">true</discrete>
+    </RotateCCW>
+    <SwipeLeft type="map">
+      <keystroke type="kestring"><![CDATA[&pageup;]]></keystroke>
+    </SwipeLeft>
+    <SwipeRight type="map">
+      <keystroke type="kestring"><![CDATA[&pagedown;]]></keystroke>
+    </SwipeRight>
+  </ArrayElement>
+
+  <ArrayElement type="map">
+    <!-- TODO AutoZoom / Pan -->
+    <displayname>PhotoLine</displayname>
+    <identifier type="string">PhotoLine</identifier>
+    <ScrollUp type="map">
+      <modifiers type="string">control;alt</modifiers>
+      <input type="string">scrollwheelup</input>
+      <amount type="double">1</amount>
+      <amountmultiplier type="double">1</amountmultiplier>
+      <granularity type="double">1</granularity>
+    </ScrollUp>
+    <ScrollDown type="map">
+      <modifiers type="string">control;alt</modifiers>
+      <input type="string">scrollwheeldown</input>
+      <amount type="double">1</amount>
+      <amountmultiplier type="double">1</amountmultiplier>
+      <granularity type="double">1</granularity>
+    </ScrollDown>
+    <PanLeft type="map">
+      <modifiers type="string">control;shift</modifiers>
+      <input type="string">scrollwheelup</input>
+      <amount type="double">1</amount>
+      <amountmultiplier type="double">1</amountmultiplier>
+      <granularity type="double">1</granularity>
+    </PanLeft>
+    <PanRight type="map">
+      <modifiers type="string">control;shift</modifiers>
+      <input type="string">scrollwheeldown</input>
+      <amount type="double">1</amount>
+      <amountmultiplier type="double">1</amountmultiplier>
+      <granularity type="double">1</granularity>
+    </PanRight>
+    <ZoomIn type="map">
+      <modifiers type="string">alt</modifiers>
+      <input type="string">scrollwheelup</input>
+      <amount type="double">5</amount>
+      <amountmultiplier type="double">5</amountmultiplier>
+      <granularity type="double">1</granularity>
+    </ZoomIn>
+    <ZoomOut type="map">
+      <modifiers type="string">alt</modifiers>
+      <input type="string">scrollwheeldown</input>
+      <amount type="double">5</amount>
+      <amountmultiplier type="double">5</amountmultiplier>
+      <granularity type="double">1</granularity>
+    </ZoomOut>
+  </ArrayElement>
+
+  <ArrayElement type="map">
+    <!-- TODO AutoZoom / Pan -->
+    <displayname>PhotoLine x64</displayname>
+    <identifier type="string">PhotoLine64</identifier>
+    <ScrollUp type="map">
+      <modifiers type="string">control;alt</modifiers>
+      <input type="string">scrollwheelup</input>
+      <amount type="double">1</amount>
+      <amountmultiplier type="double">1</amountmultiplier>
+      <granularity type="double">1</granularity>
+    </ScrollUp>
+    <ScrollDown type="map">
+      <modifiers type="string">control;alt</modifiers>
+      <input type="string">scrollwheeldown</input>
+      <amount type="double">1</amount>
+      <amountmultiplier type="double">1</amountmultiplier>
+      <granularity type="double">1</granularity>
+    </ScrollDown>
+    <PanLeft type="map">
+      <modifiers type="string">control;shift</modifiers>
+      <input type="string">scrollwheelup</input>
+      <amount type="double">1</amount>
+      <amountmultiplier type="double">1</amountmultiplier>
+      <granularity type="double">1</granularity>
+    </PanLeft>
+    <PanRight type="map">
+      <modifiers type="string">control;shift</modifiers>
+      <input type="string">scrollwheeldown</input>
+      <amount type="double">1</amount>
+      <amountmultiplier type="double">1</amountmultiplier>
+      <granularity type="double">1</granularity>
+    </PanRight>
+    <ZoomIn type="map">
+      <modifiers type="string">alt</modifiers>
+      <input type="string">scrollwheelup</input>
+      <amount type="double">5</amount>
+      <amountmultiplier type="double">5</amountmultiplier>
+      <granularity type="double">1</granularity>
+    </ZoomIn>
+    <ZoomOut type="map">
+      <modifiers type="string">alt</modifiers>
+      <input type="string">scrollwheeldown</input>
+      <amount type="double">5</amount>
+      <amountmultiplier type="double">5</amountmultiplier>
+      <granularity type="double">1</granularity>
+    </ZoomOut>
+  </ArrayElement>
+
+  <ArrayElement type="map">
+    <displayname>Apple Safari</displayname>
+    <identifier type="string">safari</identifier>
+    <ScrollUp type="map">
+      <input type="string">scrollwheelup</input>
+      <amount type="double">5</amount>
+      <amountmultiplier type="double">12</amountmultiplier>
+      <granularity type="double">10</granularity>
+    </ScrollUp>
+    <ScrollDown type="map">
+      <input type="string">scrollwheeldown</input>
+      <amount type="double">5</amount>
+      <amountmultiplier type="double">12</amountmultiplier>
+      <granularity type="double">10</granularity>
+    </ScrollDown>
+    <PanLeft type="map">
+      <input type="string">disable</input>
+    </PanLeft>
+    <PanRight type="map">
+      <input type="string">disable</input>
+    </PanRight>
+  </ArrayElement>
+
+  <ArrayElement type="map">
+    <displayname>Mozilla Firefox</displayname>
+    <identifier type="string">firefox</identifier>
+    <ZoomIn type="map">
+      <modifiers type="string">control</modifiers>
+      <input type="string">scrollwheelup</input>
+      <amount type="double">1</amount>
+      <amountmultiplier type="double">1</amountmultiplier>
+      <granularity type="double">5</granularity>
+    </ZoomIn>
+    <ZoomOut type="map">
+      <modifiers type="string">control</modifiers>
+      <input type="string">scrollwheeldown</input>
+      <amount type="double">1</amount>
+      <amountmultiplier type="double">1</amountmultiplier>
+      <granularity type="double">5</granularity>
+    </ZoomOut>
+  </ArrayElement>
+
+  <ArrayElement type="map">
+    <displayname>Google Chrome</displayname>
+    <identifier type="string">chrome</identifier>
+    <ZoomIn type="map">
+      <modifiers type="string">control</modifiers>
+      <input type="string">scrollwheelup</input>
+      <amount type="double">5</amount>
+      <amountmultiplier type="double">1</amountmultiplier>
+      <granularity type="double">5</granularity>
+    </ZoomIn>
+    <ZoomOut type="map">
+      <modifiers type="string">control</modifiers>
+      <input type="string">scrollwheeldown</input>
+      <amount type="double">5</amount>
+      <amountmultiplier type="double">1</amountmultiplier>
+      <granularity type="double">5</granularity>
+    </ZoomOut>
+  </ArrayElement>
+
+  <ArrayElement type="map">
+    <displayname>Internet Explorer</displayname>
+    <identifier type="string">iexplore</identifier>
+    <ZoomIn type="map">
+      <modifiers type="string">control</modifiers>
+      <input type="string">scrollwheelup</input>
+      <amount type="double">2</amount>
+      <amountmultiplier type="double">10</amountmultiplier>
+      <granularity type="double">10</granularity>
+    </ZoomIn>
+    <ZoomOut type="map">
+      <modifiers type="string">control</modifiers>
+      <input type="string">scrollwheeldown</input>
+      <amount type="double">2</amount>
+      <amountmultiplier type="double">10</amountmultiplier>
+      <granularity type="double">10</granularity>
+    </ZoomOut>
+  </ArrayElement>
+
+  <ArrayElement type="map">
+    <displayname>Google Earth</displayname>
+    <identifier type="string">googleearth</identifier>
+    <ScrollUp type="map">
+      <input type="string">disable</input>
+    </ScrollUp>
+    <ScrollDown type="map">
+      <input type="string">disable</input>
+    </ScrollDown>
+    <PanLeft type="map">
+      <keystroke type="kestring"><![CDATA[&right;]]></keystroke>
+      <amount type="double">20</amount>
+      <amountmultiplier type="double">1</amountmultiplier>
+      <granularity type="double">1</granularity>
+    </PanLeft>
+    <PanRight type="map">
+      <keystroke type="kestring"><![CDATA[&left;]]></keystroke>
+      <amount type="double">20</amount>
+      <amountmultiplier type="double">1</amountmultiplier>
+      <granularity type="double">1</granularity>
+    </PanRight>
+    <ZoomIn type="map">
+      <input type="string">scrollwheelup</input>
+      <amount type="double">1.5</amount>
+      <amountmultiplier type="double">1</amountmultiplier>
+      <granularity type="double">1</granularity>
+    </ZoomIn>
+    <ZoomOut type="map">
+      <input type="string">scrollwheeldown</input>
+      <amount type="double">1.5</amount>
+      <amountmultiplier type="double">1</amountmultiplier>
+      <granularity type="double">1</granularity>
+    </ZoomOut>
+    <RotateCW type="map">
+      <modifiers type="string">control</modifiers>
+      <input type="string">scrollwheelup</input>
+      <amount type="double">10</amount>
+      <amountmultiplier type="double">400</amountmultiplier>
+      <granularity type="double">10</granularity>
+    </RotateCW>
+    <RotateCCW type="map">
+      <modifiers type="string">control</modifiers>
+      <input type="string">scrollwheeldown</input>
+      <amount type="double">10</amount>
+      <amountmultiplier type="double">400</amountmultiplier>
+      <granularity type="double">10</granularity>
+    </RotateCCW>
+  </ArrayElement>
+
+  <ArrayElement type="map">
+    <displayname>AutoCAD</displayname>
+    <identifier type="string">acad</identifier>
+    <ZoomIn type="map">
+      <modifiers type="string">control</modifiers>
+      <input type="string">scrollwheelup</input>
+    </ZoomIn>
+    <ZoomOut type="map">
+      <modifiers type="string">control</modifiers>
+      <input type="string">scrollwheeldown</input>
+    </ZoomOut>
+  </ArrayElement>
+
+  <ArrayElement type="map">
+    <displayname>Bamboo Dock</displayname>
+    <identifier type="string">Bamboo Dock</identifier>
+    <ScrollUp type="map">
+      <keystroke type="kestring"><![CDATA[&control;&kp+;]]></keystroke>
+      <amount type="double">1</amount>
+    </ScrollUp>
+    <ScrollDown type="map">
+      <keystroke type="kestring"><![CDATA[&control;&kp-;]]></keystroke>
+      <amount type="double">1</amount>
+    </ScrollDown>
+    <PanLeft type="map">
+      <keystroke type="kestring"><![CDATA[&control;,]]></keystroke>
+      <amount type="double">1</amount>
+    </PanLeft>
+    <PanRight type="map">
+      <keystroke type="kestring"><![CDATA[&control;.]]></keystroke>
+      <amount type="double">1</amount>
+    </PanRight>
+    <ZoomIn type="map">
+      <modifiers type="string">control</modifiers>
+      <input type="string">scrollwheelup</input>
+      <amount type="double">10</amount>
+      <amountmultiplier type="double">100000</amountmultiplier>
+      <granularity type="double">100</granularity>
+    </ZoomIn>
+    <ZoomOut type="map">
+      <modifiers type="string">control</modifiers>
+      <input type="string">scrollwheeldown</input>
+      <amount type="double">10</amount>
+      <amountmultiplier type="double">100000</amountmultiplier>
+      <granularity type="double">100</granularity>
+    </ZoomOut>
+    <RotateCW type="map">
+      <modifiers type="string">control alt</modifiers>
+      <input type="string">scrollwheelup</input>
+      <amount type="double">1</amount>
+      <amountmultiplier type="double">40</amountmultiplier>
+    </RotateCW>
+    <RotateCCW type="map">
+      <modifiers type="string">control alt</modifiers>
+      <input type="string">scrollwheeldown</input>
+      <amount type="double">1</amount>
+      <amountmultiplier type="double">40</amountmultiplier>
+    </RotateCCW>
+    <SwipeLeft type="map">
+      <keystroke type="kestring"><![CDATA[&alt;&left;]]></keystroke>
+    </SwipeLeft>
+    <SwipeRight type="map">
+      <keystroke type="kestring"><![CDATA[&alt;&right;]]></keystroke>
+    </SwipeRight>
+  </ArrayElement>
+
+  <ArrayElement type="map">
+    <displayname>Adobe Debug Launcher</displayname>
+    <identifier type="string">adl</identifier>
+    <ScrollUp type="map">
+      <keystroke type="kestring"><![CDATA[&control;&kp+;]]></keystroke>
+      <amount type="double">1</amount>
+    </ScrollUp>
+    <ScrollDown type="map">
+      <keystroke type="kestring"><![CDATA[&control;&kp-;]]></keystroke>
+      <amount type="double">1</amount>
+    </ScrollDown>
+    <PanLeft type="map">
+      <keystroke type="kestring"><![CDATA[&control;,]]></keystroke>
+      <amount type="double">1</amount>
+    </PanLeft>
+    <PanRight type="map">
+      <keystroke type="kestring"><![CDATA[&control;.]]></keystroke>
+      <amount type="double">1</amount>
+    </PanRight>
+    <ZoomIn type="map">
+      <modifiers type="string">control</modifiers>
+      <input type="string">scrollwheelup</input>
+      <amount type="double">10</amount>
+      <amountmultiplier type="double">100000</amountmultiplier>
+      <granularity type="double">100</granularity>
+    </ZoomIn>
+    <ZoomOut type="map">
+      <modifiers type="string">control</modifiers>
+      <input type="string">scrollwheeldown</input>
+      <amount type="double">10</amount>
+      <amountmultiplier type="double">100000</amountmultiplier>
+      <granularity type="double">100</granularity>
+    </ZoomOut>
+    <RotateCW type="map">
+      <modifiers type="string">control alt</modifiers>
+      <input type="string">scrollwheelup</input>
+      <amount type="double">1</amount>
+      <amountmultiplier type="double">40</amountmultiplier>
+    </RotateCW>
+    <RotateCCW type="map">
+      <modifiers type="string">control alt</modifiers>
+      <input type="string">scrollwheeldown</input>
+      <amount type="double">1</amount>
+      <amountmultiplier type="double">40</amountmultiplier>
+    </RotateCCW>
+    <SwipeLeft type="map">
+      <keystroke type="kestring"><![CDATA[&alt;&left;]]></keystroke>
+    </SwipeLeft>
+    <SwipeRight type="map">
+      <keystroke type="kestring"><![CDATA[&alt;&right;]]></keystroke>
+    </SwipeRight>
+  </ArrayElement>
+
+  <ArrayElement type="map">
+    <!-- TODO AutoZoom / Pan -->
+    <displayname>inTouch</displayname>
+    <identifier type="string">inTouch</identifier>
+    <PanLeft type="map">
+      <keystroke type="kestring"><![CDATA[&control;,]]></keystroke>
+      <amount type="double">1</amount>
+    </PanLeft>
+    <PanRight type="map">
+      <keystroke type="kestring"><![CDATA[&control;.]]></keystroke>
+      <amount type="double">1</amount>
+    </PanRight>
+    <ZoomIn type="map">
+      <modifiers type="string">control</modifiers>
+      <input type="string">scrollwheelup</input>
+      <amount type="double">10</amount>
+      <amountmultiplier type="double">100000</amountmultiplier>
+      <granularity type="double">100</granularity>
+    </ZoomIn>
+    <ZoomOut type="map">
+      <modifiers type="string">control</modifiers>
+      <input type="string">scrollwheeldown</input>
+      <amount type="double">10</amount>
+      <amountmultiplier type="double">100000</amountmultiplier>
+      <granularity type="double">100</granularity>
+    </ZoomOut>
+    <RotateCW type="map">
+      <modifiers type="string">control alt</modifiers>
+      <input type="string">scrollwheelup</input>
+      <amount type="double">1</amount>
+      <amountmultiplier type="double">40</amountmultiplier>
+    </RotateCW>
+    <RotateCCW type="map">
+      <modifiers type="string">control alt</modifiers>
+      <input type="string">scrollwheeldown</input>
+      <amount type="double">1</amount>
+      <amountmultiplier type="double">40</amountmultiplier>
+    </RotateCCW>
+    <SwipeLeft type="map">
+      <keystroke type="kestring"><![CDATA[&alt;&left;]]></keystroke>
+    </SwipeLeft>
+    <SwipeRight type="map">
+      <keystroke type="kestring"><![CDATA[&alt;&right;]]></keystroke>
+    </SwipeRight>
+  </ArrayElement>
+
+  <ArrayElement type="map">
+    <!-- TODO AutoZoom / Pan -->
+    <displayname>Photo Creator</displayname>
+    <identifier type="string">pcr_sw</identifier>
+    <ZoomIn type="map">
+      <modifiers type="string">control</modifiers>
+      <input type="string">scrollwheelup</input>
+      <amount type="double">5</amount>
+    </ZoomIn>
+    <ZoomOut type="map">
+      <modifiers type="string">control</modifiers>
+      <input type="string">scrollwheeldown</input>
+      <amount type="double">5</amount>
+    </ZoomOut>
+    <RotateCW type="map">
+      <keystroke type="kestring"><![CDATA[&alt;&f13;]]></keystroke>
+      <amount type="double">30</amount>
+    </RotateCW>
+    <RotateCCW type="map">
+      <keystroke type="kestring"><![CDATA[&alt;&f14;]]></keystroke>
+      <amount type="double">30</amount>
+    </RotateCCW>
+  </ArrayElement>
+
+  <ArrayElement type="map">
+    <!-- TODO AutoZoom / Pan -->
+    <displayname>LoiLoScope</displayname>
+    <identifier type="string">LoiLoScope</identifier>
+    <ZoomIn type="map">
+      <modifiers type="string">control</modifiers>
+      <input type="string">scrollwheelup</input>
+      <amount type="double">5</amount>
+    </ZoomIn>
+    <ZoomOut type="map">
+      <modifiers type="string">control</modifiers>
+      <input type="string">scrollwheeldown</input>
+      <amount type="double">5</amount>
+    </ZoomOut>
+    <RotateCW type="map">
+      <input type="string">disable</input>
+    </RotateCW>
+    <RotateCCW type="map">
+      <input type="string">disable</input>
+    </RotateCCW>
+  </ArrayElement>
+
+  <ArrayElement type="map">
+    <displayname>Manga Studio EX</displayname>
+    <identifier type="string">MS_EX</identifier>
+    <AutoBehavior>zoom</AutoBehavior>
+    <PanLeft type="map">
+      <modifiers type="string">alt</modifiers>
+      <input type="string">scrollwheelup</input>
+      <amount type="double">1</amount>
+      <amountmultiplier type="double">1</amountmultiplier>
+      <granularity type="double">1</granularity>
+    </PanLeft>
+    <PanRight type="map">
+      <modifiers type="string">alt</modifiers>
+      <input type="string">scrollwheeldown</input>
+      <amount type="double">1</amount>
+      <amountmultiplier type="double">1</amountmultiplier>
+      <granularity type="double">1</granularity>
+    </PanRight>
+    <ZoomIn type="map">
+      <modifiers type="string">control</modifiers>
+      <input type="string">scrollwheelup</input>
+      <amount type="double">5</amount>
+      <amountmultiplier type="double">15</amountmultiplier>
+      <granularity type="double">5</granularity>
+    </ZoomIn>
+    <ZoomOut type="map">
+      <modifiers type="string">control</modifiers>
+      <input type="string">scrollwheeldown</input>
+      <amount type="double">5</amount>
+      <amountmultiplier type="double">15</amountmultiplier>
+      <granularity type="double">5</granularity>
+    </ZoomOut>
+    <GrabberHand type="map">
+      <keystroke type="kestring"><![CDATA[&space;]]></keystroke>
+    </GrabberHand>
+  </ArrayElement>
+
+  <ArrayElement type="map">
+    <displayname>Manga Studio Debut</displayname>
+    <identifier type="string">MS_Debut</identifier>
+    <AutoBehavior>zoom</AutoBehavior>
+    <PanLeft type="map">
+      <input type="string">scrollbarleft</input>
+      <amount type="double">1</amount>
+      <amountmultiplier type="double">0.02</amountmultiplier>
+      <granularity type="double">1</granularity>
+    </PanLeft>
+    <PanRight type="map">
+      <input type="string">scrollbarright</input>
+      <amount type="double">1</amount>
+      <amountmultiplier type="double">0.02</amountmultiplier>
+      <granularity type="double">1</granularity>
+    </PanRight>
+    <ZoomIn type="map">
+      <modifiers type="string">control</modifiers>
+      <input type="string">scrollwheelup</input>
+      <amount type="double">5</amount>
+      <amountmultiplier type="double">15</amountmultiplier>
+      <granularity type="double">5</granularity>
+    </ZoomIn>
+    <ZoomOut type="map">
+      <modifiers type="string">control</modifiers>
+      <input type="string">scrollwheeldown</input>
+      <amount type="double">5</amount>
+      <amountmultiplier type="double">15</amountmultiplier>
+      <granularity type="double">5</granularity>
+    </ZoomOut>
+    <GrabberHand type="map">
+      <keystroke type="kestring"><![CDATA[&space;]]></keystroke>
+    </GrabberHand>
+  </ArrayElement>
+
+  <ArrayElement type="map">
+    <displayname>ComicStudioMini</displayname>
+    <identifier type="string">cs_mini</identifier>
+    <AutoBehavior>zoom</AutoBehavior>
+    <ScrollUp type="map">
+      <input type="string">scrollwheelup</input>
+    </ScrollUp>
+    <ScrollDown type="map">
+      <input type="string">scrollwheeldown</input>
+    </ScrollDown>
+    <PanLeft type="map">
+      <modifiers type="string">alt</modifiers>
+      <input type="string">scrollwheelup</input>
+      <amount type="double">10</amount>
+      <amountmultiplier type="double">20</amountmultiplier>
+      <granularity type="double">200</granularity>
+    </PanLeft>
+    <PanRight type="map">
+      <modifiers type="string">alt</modifiers>
+      <input type="string">scrollwheeldown</input>
+      <amount type="double">10</amount>
+      <amountmultiplier type="double">20</amountmultiplier>
+      <granularity type="double">10</granularity>
+    </PanRight>
+    <ZoomIn type="map">
+      <modifiers type="string">control</modifiers>
+      <input type="string">scrollwheelup</input>
+      <amountmultiplier type="double">10</amountmultiplier>
+    </ZoomIn>
+    <ZoomOut type="map">
+      <modifiers type="string">control</modifiers>
+      <input type="string">scrollwheeldown</input>
+      <amountmultiplier type="double">10</amountmultiplier>
+    </ZoomOut>
+    <RotateCW type="map">
+      <modifiers type="string">shift</modifiers>
+      <input type="string">scrollwheelup</input>
+      <amountmultiplier type="double">300</amountmultiplier>
+    </RotateCW>
+    <RotateCCW type="map">
+      <modifiers type="string">shift</modifiers>
+      <input type="string">scrollwheeldown</input>
+      <amountmultiplier type="double">300</amountmultiplier>
+    </RotateCCW>
+    <GrabberHand type="map">
+      <keystroke type="kestring">
+        <![CDATA[&space;]]>
+      </keystroke>
+    </GrabberHand>
+  </ArrayElement>
+
+  <ArrayElement type="map">
+    <displayname>ComicStudioDebut</displayname>
+    <identifier type="string">CS_Debut</identifier>
+    <AutoBehavior>zoom</AutoBehavior>
+    <ScrollUp type="map">
+      <input type="string">scrollwheelup</input>
+    </ScrollUp>
+    <ScrollDown type="map">
+      <input type="string">scrollwheeldown</input>
+    </ScrollDown>
+    <PanLeft type="map">
+      <modifiers type="string">alt</modifiers>
+      <input type="string">scrollwheelup</input>
+      <amount type="double">10</amount>
+      <amountmultiplier type="double">20</amountmultiplier>
+      <granularity type="double">200</granularity>
+    </PanLeft>
+    <PanRight type="map">
+      <modifiers type="string">alt</modifiers>
+      <input type="string">scrollwheeldown</input>
+      <amount type="double">10</amount>
+      <amountmultiplier type="double">20</amountmultiplier>
+      <granularity type="double">10</granularity>
+    </PanRight>
+    <ZoomIn type="map">
+      <modifiers type="string">control</modifiers>
+      <input type="string">scrollwheelup</input>
+      <amountmultiplier type="double">10</amountmultiplier>
+    </ZoomIn>
+    <ZoomOut type="map">
+      <modifiers type="string">control</modifiers>
+      <input type="string">scrollwheeldown</input>
+      <amountmultiplier type="double">10</amountmultiplier>
+    </ZoomOut>
+    <RotateCW type="map">
+      <modifiers type="string">shift</modifiers>
+      <input type="string">scrollwheelup</input>
+      <amountmultiplier type="double">300</amountmultiplier>
+    </RotateCW>
+    <RotateCCW type="map">
+      <modifiers type="string">shift</modifiers>
+      <input type="string">scrollwheeldown</input>
+      <amountmultiplier type="double">300</amountmultiplier>
+    </RotateCCW>
+    <GrabberHand type="map">
+      <keystroke type="kestring">
+        <![CDATA[&space;]]>
+      </keystroke>
+    </GrabberHand>
+  </ArrayElement>
+
+  <ArrayElement type="map">
+    <displayname>ComicStudioPro</displayname>
+    <identifier type="string">CS_pro</identifier>
+    <AutoBehavior>zoom</AutoBehavior>
+    <ScrollUp type="map">
+      <input type="string">scrollwheelup</input>
+    </ScrollUp>
+    <ScrollDown type="map">
+      <input type="string">scrollwheeldown</input>
+    </ScrollDown>
+    <PanLeft type="map">
+      <modifiers type="string">alt</modifiers>
+      <input type="string">scrollwheelup</input>
+      <amount type="double">10</amount>
+      <amountmultiplier type="double">20</amountmultiplier>
+      <granularity type="double">200</granularity>
+    </PanLeft>
+    <PanRight type="map">
+      <modifiers type="string">alt</modifiers>
+      <input type="string">scrollwheeldown</input>
+      <amount type="double">10</amount>
+      <amountmultiplier type="double">20</amountmultiplier>
+      <granularity type="double">10</granularity>
+    </PanRight>
+    <ZoomIn type="map">
+      <modifiers type="string">control</modifiers>
+      <input type="string">scrollwheelup</input>
+      <amountmultiplier type="double">10</amountmultiplier>
+    </ZoomIn>
+    <ZoomOut type="map">
+      <modifiers type="string">control</modifiers>
+      <input type="string">scrollwheeldown</input>
+      <amountmultiplier type="double">10</amountmultiplier>
+    </ZoomOut>
+    <RotateCW type="map">
+      <modifiers type="string">shift</modifiers>
+      <input type="string">scrollwheelup</input>
+      <amountmultiplier type="double">300</amountmultiplier>
+    </RotateCW>
+    <RotateCCW type="map">
+      <modifiers type="string">shift</modifiers>
+      <input type="string">scrollwheeldown</input>
+      <amountmultiplier type="double">300</amountmultiplier>
+    </RotateCCW>
+    <GrabberHand type="map">
+      <keystroke type="kestring">
+        <![CDATA[&space;]]>
+      </keystroke>
+    </GrabberHand>
+  </ArrayElement>
+
+  <ArrayElement type="map">
+    <displayname>ComicStudioEx</displayname>
+    <identifier type="string">CS_EX</identifier>
+    <AutoBehavior>zoom</AutoBehavior>
+    <ScrollUp type="map">
+      <input type="string">scrollwheelup</input>
+    </ScrollUp>
+    <ScrollDown type="map">
+      <input type="string">scrollwheeldown</input>
+    </ScrollDown>
+    <PanLeft type="map">
+      <modifiers type="string">alt</modifiers>
+      <input type="string">scrollwheelup</input>
+      <amount type="double">10</amount>
+      <amountmultiplier type="double">20</amountmultiplier>
+      <granularity type="double">200</granularity>
+    </PanLeft>
+    <PanRight type="map">
+      <modifiers type="string">alt</modifiers>
+      <input type="string">scrollwheeldown</input>
+      <amount type="double">10</amount>
+      <amountmultiplier type="double">20</amountmultiplier>
+      <granularity type="double">10</granularity>
+    </PanRight>
+    <ZoomIn type="map">
+      <modifiers type="string">control</modifiers>
+      <input type="string">scrollwheelup</input>
+      <amountmultiplier type="double">10</amountmultiplier>
+    </ZoomIn>
+    <ZoomOut type="map">
+      <modifiers type="string">control</modifiers>
+      <input type="string">scrollwheeldown</input>
+      <amountmultiplier type="double">10</amountmultiplier>
+    </ZoomOut>
+    <RotateCW type="map">
+      <modifiers type="string">shift</modifiers>
+      <input type="string">scrollwheelup</input>
+      <amountmultiplier type="double">300</amountmultiplier>
+    </RotateCW>
+    <RotateCCW type="map">
+      <modifiers type="string">shift</modifiers>
+      <input type="string">scrollwheeldown</input>
+      <amountmultiplier type="double">300</amountmultiplier>
+    </RotateCCW>
+    <GrabberHand type="map">
+      <keystroke type="kestring">
+        <![CDATA[&space;]]>
+      </keystroke>
+    </GrabberHand>
+  </ArrayElement>
+
+  <ArrayElement type="map">
+    <displayname>CLIP PAINT Lab</displayname>
+    <identifier type="string">CLIPPaintLab</identifier>
+    <AutoBehavior>zoom</AutoBehavior>
+    <ScrollUp type="map">
+      <input type="string">disable</input>
+    </ScrollUp>
+    <ScrollDown type="map">
+      <input type="string">disable</input>
+    </ScrollDown>
+    <ZoomIn type="map">
+      <modifiers type="string">control</modifiers>
+      <input type="string">scrollwheelup</input>
+      <amount type="double">20</amount>
+    </ZoomIn>
+    <ZoomOut type="map">
+      <modifiers type="string">control</modifiers>
+      <input type="string">scrollwheeldown</input>
+      <amount type="double">20</amount>
+    </ZoomOut>
+    <RotateCW type="map">
+      <modifiers type="string">shift;control</modifiers>
+      <input type="string">scrollwheelup</input>
+      <amount type="double">5</amount>
+      <amountmultiplier type="double">50</amountmultiplier>
+    </RotateCW>
+    <RotateCCW type="map">
+      <modifiers type="string">shift;control</modifiers>
+      <input type="string">scrollwheeldown</input>
+      <amount type="double">5</amount>
+      <amountmultiplier type="double">50</amountmultiplier>
+    </RotateCCW>
+    <GrabberHand type="map">
+      <keystroke type="kestring"><![CDATA[&space;]]></keystroke>
+    </GrabberHand>
+  </ArrayElement>
+
+  <ArrayElement type="map">
+    <displayname>CLIP STUDIO PAINT</displayname>
+    <identifier type="string">CLIPStudioPaint</identifier>
+    <AutoBehavior>zoom</AutoBehavior>
+    <ScrollUp type="map">
+      <input type="string">disable</input>
+    </ScrollUp>
+    <ScrollDown type="map">
+      <input type="string">disable</input>
+    </ScrollDown>
+    <ZoomIn type="map">
+      <modifiers type="string">control</modifiers>
+      <input type="string">scrollwheelup</input>
+      <amount type="double">50</amount>
+    </ZoomIn>
+    <ZoomOut type="map">
+      <modifiers type="string">control</modifiers>
+      <input type="string">scrollwheeldown</input>
+      <amount type="double">50</amount>
+    </ZoomOut>
+    <RotateCW type="map">
+      <keystroke type="kestring"><![CDATA[^]]></keystroke>
+      <amount type="double">5</amount>
+    </RotateCW>
+    <RotateCCW type="map">
+      <keystroke type="kestring"><![CDATA[-]]></keystroke>
+      <amount type="double">5</amount>
+    </RotateCCW>
+    <GrabberHand type="map">
+      <keystroke type="kestring"><![CDATA[&space;]]></keystroke>
+    </GrabberHand>
+  </ArrayElement>
+
+  <ArrayElement type="map">
+    <displayname>IllustStudio</displayname>
+    <identifier type="string">illuststudio</identifier>
+    <AutoBehavior>zoom</AutoBehavior>
+    <ScrollUp type="map">
+      <input type="string">scrollbarup</input>
+      <amount type="double">50</amount>
+      <granularity type="double">1</granularity>
+    </ScrollUp>
+    <ScrollDown type="map">
+      <input type="string">scrollbardown</input>
+      <amount type="double">50</amount>
+      <granularity type="double">1</granularity>
+    </ScrollDown>
+    <PanLeft type="map">
+      <input type="string">scrollbarleft</input>
+      <amount type="double">50</amount>
+    </PanLeft>
+    <PanRight type="map">
+      <input type="string">scrollbarright</input>
+      <amount type="double">50</amount>
+    </PanRight>
+    <ZoomIn type="map">
+      <modifiers type="string">control</modifiers>
+      <input type="string">scrollwheelup</input>
+      <amount type="double">5</amount>
+    </ZoomIn>
+    <ZoomOut type="map">
+      <modifiers type="string">control</modifiers>
+      <input type="string">scrollwheeldown</input>
+      <amount type="double">5</amount>
+    </ZoomOut>
+    <RotateCW type="map">
+      <modifiers type="string">shift;alt</modifiers>
+      <input type="string">scrollwheelup</input>
+      <amount type="double">1</amount>
+      <amountmultiplier type="double">40</amountmultiplier>
+    </RotateCW>
+    <RotateCCW type="map">
+      <modifiers type="string">shift;alt</modifiers>
+      <input type="string">scrollwheeldown</input>
+      <amount type="double">1</amount>
+      <amountmultiplier type="double">40</amountmultiplier>
+    </RotateCCW>
+    <GrabberHand type="map">
+      <keystroke type="kestring"><![CDATA[&space;]]></keystroke>
+    </GrabberHand>
+  </ArrayElement>
+
+  <ArrayElement type="map">
+    <!-- TODO AutoZoom / Pan -->
+    <displayname>Pixia</displayname>
+    <identifier type="string">pixia</identifier>
+    <ZoomIn type="map">
+      <modifiers type="string">control</modifiers>
+      <input type="string">scrollwheelup</input>
+      <amount type="double">80</amount>
+    </ZoomIn>
+    <ZoomOut type="map">
+      <modifiers type="string">control</modifiers>
+      <input type="string">scrollwheeldown</input>
+      <amount type="double">80</amount>
+    </ZoomOut>
+    <RotateCW type="map">
+      <keystroke type="kestring"><![CDATA[&alt;&f13;]]></keystroke>
+      <amount type="double">30</amount>
+    </RotateCW>
+    <RotateCCW type="map">
+      <keystroke type="kestring"><![CDATA[&alt;&f14;]]></keystroke>
+      <amount type="double">30</amount>
+    </RotateCCW>
+  </ArrayElement>
+
+  <ArrayElement type="map">
+    <displayname>Quark Express</displayname>
+    <identifier type="string">quarkxpress</identifier>
+    <AutoBehavior>zoom</AutoBehavior>
+  </ArrayElement>
+
+  <ArrayElement type="map">
+    <displayname>Ulead PhotoImpact</displayname>
+    <identifier type="string">iedit</identifier>
+    <AutoBehavior>zoom</AutoBehavior>
+  </ArrayElement>
+
+  <!--
+   \\paintshop pro 8;;Jasc Paintshop Pro
+   \\paintshop pro 8;AutoZoom;1
+   \\paintshop pro 8;InCode;107
+   \\paintshop pro 8;OutCode;109
+
+   \\ArtRage;;ArtRage 2.5 Full and Wacom Editions
+   \\ArtRage;DragPanKeystroke;32
+   \\ArtRage;AutoZoom;1
+   \\ArtRage;Modifier;0
+   \\ArtRage;ReverseDirection;1
+
+   \\ArtRage 2 Starter Edition;;ArtRage 2.5 Starter Edition
+   \\ArtRage 2 Starter Edition;DragPanKeystroke;32
+   \\ArtRage 2 Starter Edition;AutoZoom;1
+   \\ArtRage 2 Starter Edition;Modifier;0
+   \\ArtRage 2 Starter Edition;ReverseDirection;1
+   -->
+</root>

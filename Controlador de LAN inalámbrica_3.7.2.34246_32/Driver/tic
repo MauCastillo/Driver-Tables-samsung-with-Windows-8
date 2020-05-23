@@ -1,0 +1,14 @@
+Driver version: 3.7.2.09226
+
+Host:  3.7.2.9
+
+FW  :  40022
+
+BoardData:  Samsung v3_6
+
+
+Fix issue:
+
+Fix RedX caused of cmd35(deleted the WA for ARM platform): Driver.
+
+
